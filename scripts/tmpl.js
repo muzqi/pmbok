@@ -1,3 +1,4 @@
+// node scripts/tmpl.js --name=xxx --filename=xxx
 const fs = require('fs');
 const path = require('path');
 const args = require('minimist')(process.argv.slice(2));
