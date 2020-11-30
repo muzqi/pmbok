@@ -1,0 +1,22 @@
+{
+  "name": "pmbok",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muzqi/pmbok.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muzqi/pmbok/issues"
+  },
+  "homepage": "https://github.com/muzqi/pmbok#readme",
+  "devDependencies": {
+    "minimist": "^1.2.5"
+  }
+}
