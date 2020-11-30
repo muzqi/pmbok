@@ -6,7 +6,7 @@ const handleJumpPage = (pagename) => {
 
   for (let i = 0; i < eles.length; i ++) {
     eles[i].setAttribute('style', 'color: blue;cursor: pointer');
-    eles[i].onclick = () => window.location.href = `./pages/${pagename}.html`;
+    eles[i].onclick = () => window.open(`./pages/${pagename}.html`);
   }
 }
 
@@ -76,6 +76,7 @@ window.onload = () => {
   handleJumpPage('project-manage-plan');            // <td class="project-manage-plan">项目管理计划</td>
   handleJumpPage('scope-manage-plan');              // <td class="scope-manage-plan">范围管理计划</td>
   handleJumpPage('requirements-manage-plan');       // <td class="requirements-manage-plan">需求管理计划</td>
+  handleJumpPage('progress-manage-plan');           // <td class="progress-manage-plan">进度管理计划</td>
   handleJumpPage('scope-baseline');                 // <td class="scope-baseline">范围基准</td>
   handleJumpPage('project-scope-statement');        // <td class="project-scope-statement">项目范围说明书</td>
   handleJumpPage('career-env-factor');              // <td class="career-env-factor">事业环境因素</td>
@@ -93,4 +94,8 @@ window.onload = () => {
   handleJumpPage('job-performance-infomation');     // <td class="job-performance-infomation">工作绩效信息</td>
   handleJumpPage('job-performance-report');         // <td class="job-performance-report">工作绩效报告</td>
   handleJumpPage('change-request');                 // <td class="change-request">变更请求</td>
+  handleJumpPage('rolling-planning');               // <td class="change-request">滚动式规划</td>
+  handleJumpPage('activity-list');                  // <td class="activity-list">活动清单</td>
+  handleJumpPage('activity-attribute');             // <td class="activity-attribute">活动属性</td>
+  handleJumpPage('milestone-list');                 // <td class="milestone-list">里程碑清单</td>
 }
