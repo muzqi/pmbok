@@ -99,4 +99,5 @@ window.onload = () => {
   handleJumpPage('activity-attribute');             // <td class="activity-attribute">活动属性</td>
   handleJumpPage('milestone-list');                 // <td class="milestone-list">里程碑清单</td>
 handleJumpPage('compact-forward-relation-plotting'); // <td class="compact-forward-relation-plotting">紧前关系绘图法</td>
+handleJumpPage('deterministic-dependency'); // <td class="deterministic-dependency">确定依赖关系</td>
 }
