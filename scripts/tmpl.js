@@ -8,13 +8,26 @@ const fs = require('fs');
 const path = require('path');
 const args = require('minimist')(process.argv.slice(2));
 
-const pathResolve = (_path) => path.resolve(__dirname, _path);
-
 const name = args['name'];
 const filename = args['filename'];
 const renameimgs = args['renameimgs'] ? args['renameimgs'].split(',') : [];
 
-const tmplFn = (name) => (`
+const pathResolve = (_path) => path.resolve(__dirname, _path);
+
+// 重命名图片
+const handleRenameImgs = () => {
+  if (renameimgs.length) {
+    renameimgs.map((d, i) => {
+      if (fs.existsSync(pathResolve(`../images/${d}`))) {
+        fs.renameSync(pathResolve(`../images/${d}`), pathResolve(`../images/${filename}${renameimgs.length > 1 ? `-${i + 1}` : ''}.png`));
+      }
+    });
+  }
+};
+
+// 创建 html 模版文件
+const handleCreateHtmlTmpl = () => {
+  const tmplFn = () => (`
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,32 +44,44 @@ const tmplFn = (name) => (`
   }
 </body>
 </html>
-`)
+  `);
 
-const exe = () => {
-  // 重命名图片
-  if (renameimgs.length) {
-    renameimgs.map((d, i) => {
-      if (fs.existsSync(pathResolve(`../images/${d}`))) {
-        fs.renameSync(pathResolve(`../images/${d}`), pathResolve(`../images/${filename}${renameimgs.length > 1 ? `-${i + 1}` : ''}.png`));
-      }
-    });
-  }
-
-  // 创建 html 模版文件
   if (!fs.existsSync(pathResolve(`../pages/${filename}.html`))) {
     fs.writeFileSync(pathResolve(`../pages/${filename}.html`), tmplFn(name), 'utf-8');
+  } else {
+    console.log(`${filename}.html existed.`);
   }
+};
 
-  // 编辑 index.js 文件，添加跳转方法
+// 编辑 index.js 文件，添加跳转方法
+const handleEditJavascript = () => {
   const oindexjsData = fs.readFileSync(pathResolve('../index.js'), 'utf-8').split('\n');
-  oindexjsData.splice(oindexjsData.length - 2, 0, `handleJumpPage('${filename}'); // <td class="${filename}">${name}</td>`);
+  oindexjsData.splice(oindexjsData.length - 2, 0, `  handleJumpPage('${filename}');                                          // <td class="${filename}">${name}</td>`);
   fs.writeFileSync(pathResolve('../index.js'), oindexjsData.join('\n'), 'utf-8');
+};
 
-  // 替换 index.html 文件中所有对应的 td
+// 替换 index.html 文件中所有对应的 td
+const handleReplaceTdTag = () => {
   const oindexhtmlData = fs.readFileSync(pathResolve('../index.html'), 'utf-8').toString();
   const reg = new RegExp("<td>" + name + "<\/td>", 'g');
   fs.writeFileSync(pathResolve('../index.html'), oindexhtmlData.replace(reg, `<td class="${filename}">${name}</td>`), 'utf-8');
+};
+
+const exe = () => {
+  if (!filename) {
+    console.error('Error: filename is undefined.');
+    return;
+  }
+
+  if (!name) {
+    console.error('Error: name is undefined.');
+    return;
+  }
+
+  handleRenameImgs();
+  handleCreateHtmlTmpl();
+  handleEditJavascript();
+  handleReplaceTdTag();
 };
 
 exe();
