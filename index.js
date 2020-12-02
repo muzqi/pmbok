@@ -73,14 +73,19 @@ window.onload = () => {
 
   handleJumpPage('article-of-project');                             // <td class="article-of-project">项目章程</td>
   handleJumpPage('sow');                                            // <td class="sow">项目工作说明书</td>
+  handleJumpPage('career-env-factor');                              // <td class="career-env-factor">事业环境因素</td>
+  handleJumpPage('org-process-assets');                             // <td class="org-process-assets">组织过程资产</td>
+
   handleJumpPage('project-manage-plan');                            // <td class="project-manage-plan">项目管理计划</td>
   handleJumpPage('scope-manage-plan');                              // <td class="scope-manage-plan">范围管理计划</td>
   handleJumpPage('requirements-manage-plan');                       // <td class="requirements-manage-plan">需求管理计划</td>
   handleJumpPage('progress-manage-plan');                           // <td class="progress-manage-plan">进度管理计划</td>
+  handleJumpPage('project-schedule-plan');                          // <td class="project-schedule-plan">项目进度计划</td>
+
   handleJumpPage('scope-baseline');                                 // <td class="scope-baseline">范围基准</td>
   handleJumpPage('project-scope-statement');                        // <td class="project-scope-statement">项目范围说明书</td>
-  handleJumpPage('career-env-factor');                              // <td class="career-env-factor">事业环境因素</td>
-  handleJumpPage('org-process-assets');                             // <td class="org-process-assets">组织过程资产</td>
+  handleJumpPage('progress-baseline');                              // <td class="progress-baseline">进度基准</td>
+
   handleJumpPage('focus-team');                                     // <td class="focus-team">焦点小组</td>
   handleJumpPage('guided-meeting');                                 // <td class="guided-meeting">引导式研讨会</td>
   handleJumpPage('group-innovation-technology');                    // <td class="group-innovation-technology">群体创新技术</td>
@@ -111,16 +116,14 @@ window.onload = () => {
   handleJumpPage('parameters-estimate');                            // <td class="parameters-estimate">参数估算</td>
   handleJumpPage('reserve-analysis');                               // <td class="reserve-analysis">储备分析</td>
   handleJumpPage('activity-duration-estimates');                    // <td class="activity-duration-estimates">活动持续时间估算</td>
-  handleJumpPage('progress-network-analysis');                                          // <td class="progress-network-analysis">进度网络分析</td>
-  handleJumpPage('critical-path-method');                                          // <td class="critical-path-method">关键路径法</td>
-  handleJumpPage('critical-chain-method');                                          // <td class="critical-chain-method">关键链法</td>
-  handleJumpPage('resource-optimization-technique');                                          // <td class="resource-optimization-technique">资源优化技术</td>
-  handleJumpPage('schedule-compression');                                          // <td class="schedule-compression">进度压缩</td>
-  handleJumpPage('modeling-techniques');                                          // <td class="modeling-techniques">建模技术</td>
-  handleJumpPage('progress-baseline');                                          // <td class="progress-baseline">进度基准</td>
-  handleJumpPage('project-schedule-plan');                                          // <td class="project-schedule-plan">项目进度计划</td>
-  handleJumpPage('progress-of-data');                                          // <td class="progress-of-data">进度数据</td>
-  handleJumpPage('project-calendar');                                          // <td class="project-calendar">项目日历</td>
-  handleJumpPage('performance-review');                                          // <td class="performance-review">绩效审查</td>
-  handleJumpPage('progress-of-the-forecast');                                          // <td class="progress-of-the-forecast">进度预测</td>
+  handleJumpPage('progress-network-analysis');                      // <td class="progress-network-analysis">进度网络分析</td>
+  handleJumpPage('critical-path-method');                           // <td class="critical-path-method">关键路径法</td>
+  handleJumpPage('critical-chain-method');                          // <td class="critical-chain-method">关键链法</td>
+  handleJumpPage('resource-optimization-technique');                // <td class="resource-optimization-technique">资源优化技术</td>
+  handleJumpPage('schedule-compression');                           // <td class="schedule-compression">进度压缩</td>
+  handleJumpPage('modeling-techniques');                            // <td class="modeling-techniques">建模技术</td>
+  handleJumpPage('progress-of-data');                               // <td class="progress-of-data">进度数据</td>
+  handleJumpPage('project-calendar');                               // <td class="project-calendar">项目日历</td>
+  handleJumpPage('performance-review');                             // <td class="performance-review">绩效审查</td>
+  handleJumpPage('progress-of-the-forecast');                       // <td class="progress-of-the-forecast">进度预测</td>
 }
