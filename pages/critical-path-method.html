@@ -8,8 +8,62 @@
   <link rel="stylesheet" href="../index.css">
 </head>
 <body>
-  <img style="width:700px;" src="../images/critical-path-method-1.png" alt="" />
-<img style="width:700px;" src="../images/critical-path-method-2.png" alt="" />
+  <p>估算项目最短工期，确定逻辑网络路径的进度灵活性大小</p>
+  <img style="width:700px;" src="../images/critical-path-method.png" alt="" />
+
+  <table border="1">
+    <tbody>
+      <tr>
+        <th>关键路径</th>
+        <td>所有从开始到结束的路径中，活动历时（D）之和最大的路径</td>
+      </tr>
+      <tr>
+        <th>总工期</th>
+        <td>关键路径的活动历时之和</td>
+      </tr>
+      <tr>
+        <th rowspan="2">ES(earliest start)</th>
+        <td>所有开始条件都达成的<b>最早时刻</b></td>
+      </tr>
+      <tr>
+        <td><span class="mark">ES = max(...before.EFs) | 0</span></td>
+      </tr>
+      <tr>
+        <th rowspan="2">EF(earliest finish)</th>
+        <td>最早结束时间。最早正推，起点为0</td>
+      </tr>
+      <tr>
+        <td><span class="mark">EF = ES + D</span></td>
+      </tr>
+      <tr>
+        <th rowspan="2">LF(latest finish)</th>
+        <td>最晚结束时间。不影响总工期的最晚的结束时间</td>
+      </tr>
+      <tr>
+        <td><span class="mark">LF = min(...after.LSs)</span></td>
+      </tr>
+      <tr>
+        <th rowspan="2">LS(latest start)</th>
+        <td>最晚开始时间。最晚反推，起点=总工期</td>
+      </tr>
+      <tr>
+        <td><span class="mark">LS = LF - D</span></td>
+      </tr>
+      <tr>
+        <th rowspan="2">TF(time diffrence)</th>
+        <td>活动的总时差（总浮动时间）。此活动最长可耽误的时间段，而不影响总工期</td>
+      </tr>
+      <tr>
+        <td><span class="mark">TF = LS-ES</span> | <span class="mark">TF = LF-EF</span></td>
+      </tr>
+      <tr>
+        <th rowspan="2">FF(free diffrence)</th>
+        <td>自由时差。此活动最长可耽误的时间段，而不影响任何紧后活动的ES</td>
+      </tr>
+      <tr>
+        <td><span class="mark">FF = min(...after.ESs) - EF</span></td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
-  

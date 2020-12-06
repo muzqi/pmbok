@@ -82,9 +82,10 @@ window.onload = () => {
   handleJumpPage('progress-manage-plan');                           // <td class="progress-manage-plan">进度管理计划</td>
   handleJumpPage('project-schedule-plan');                          // <td class="project-schedule-plan">项目进度计划</td>
 
-  handleJumpPage('scope-baseline');                                 // <td class="scope-baseline">范围基准</td>
   handleJumpPage('project-scope-statement');                        // <td class="project-scope-statement">项目范围说明书</td>
+  handleJumpPage('scope-baseline');                                 // <td class="scope-baseline">范围基准</td>
   handleJumpPage('progress-baseline');                              // <td class="progress-baseline">进度基准</td>
+  handleJumpPage('cost-baseline');                                  // <td class="cost-baseline">成本基准</td>
 
   handleJumpPage('focus-team');                                     // <td class="focus-team">焦点小组</td>
   handleJumpPage('guided-meeting');                                 // <td class="guided-meeting">引导式研讨会</td>
@@ -126,4 +127,9 @@ window.onload = () => {
   handleJumpPage('project-calendar');                               // <td class="project-calendar">项目日历</td>
   handleJumpPage('performance-review');                             // <td class="performance-review">绩效审查</td>
   handleJumpPage('progress-of-the-forecast');                       // <td class="progress-of-the-forecast">进度预测</td>
+  handleJumpPage('cost-manage-plan');                                          // <td class="cost-manage-plan">成本管理计划</td>
+  handleJumpPage('activity-cost-estimation');                                          // <td class="activity-cost-estimation">活动成本估算</td>
+  handleJumpPage('estimates-based-on');                                          // <td class="estimates-based-on">估算依据</td>
+  handleJumpPage('history-relationship');                                          // <td class="history-relationship">历史关系</td>
+  handleJumpPage('capital-constraint-balance');                                          // <td class="capital-constraint-balance">资金限制平衡</td>
 }
