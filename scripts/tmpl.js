@@ -39,7 +39,7 @@ const handleCreateHtmlTmpl = () => {
 <body>
   ${
     renameimgs.length
-      ? renameimgs.map((d, i) => `<img style="width:700px;" src="../images/${filename}${renameimgs.length > 1 ? `-${i + 1}` : ''}.png" alt="" />`).join('\n')
+      ? renameimgs.map((d, i) => `<img style="width:800px;" src="../images/${filename}${renameimgs.length > 1 ? `-${i + 1}` : ''}.png" alt="" />`).join('\n')
       : `<h1>${name}</h1>`
   }
 </body>
