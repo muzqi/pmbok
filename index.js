@@ -81,6 +81,8 @@ window.onload = () => {
   handleJumpPage('requirements-manage-plan');                       // <td class="requirements-manage-plan">需求管理计划</td>
   handleJumpPage('progress-manage-plan');                           // <td class="progress-manage-plan">进度管理计划</td>
   handleJumpPage('project-schedule-plan');                          // <td class="project-schedule-plan">项目进度计划</td>
+  handleJumpPage('quality-manage-plan');                            // <td class="quality-manage-plan">质量管理计划</td>
+  handleJumpPage('process-improvement-plan');                       // <td class="process-improvement-plan">过程改进计划</td>
 
   handleJumpPage('project-scope-statement');                        // <td class="project-scope-statement">项目范围说明书</td>
   handleJumpPage('scope-baseline');                                 // <td class="scope-baseline">范围基准</td>
@@ -127,21 +129,19 @@ window.onload = () => {
   handleJumpPage('project-calendar');                               // <td class="project-calendar">项目日历</td>
   handleJumpPage('performance-review');                             // <td class="performance-review">绩效审查</td>
   handleJumpPage('progress-of-the-forecast');                       // <td class="progress-of-the-forecast">进度预测</td>
-  handleJumpPage('cost-manage-plan');                                          // <td class="cost-manage-plan">成本管理计划</td>
-  handleJumpPage('activity-cost-estimation');                                          // <td class="activity-cost-estimation">活动成本估算</td>
-  handleJumpPage('estimates-based-on');                                          // <td class="estimates-based-on">估算依据</td>
-  handleJumpPage('history-relationship');                                          // <td class="history-relationship">历史关系</td>
-  handleJumpPage('capital-constraint-balance');                                          // <td class="capital-constraint-balance">资金限制平衡</td>
-  handleJumpPage('cost-benefit-analysis');                                          // <td class="cost-benefit-analysis">成本效益分析</td>
-  handleJumpPage('quality-cost');                                          // <td class="quality-cost">质量成本</td>
-  handleJumpPage('seven-basic-quality-tools');                                          // <td class="seven-basic-quality-tools">七种基本质量工具</td>
-  handleJumpPage('the-experiment-design');                                          // <td class="the-experiment-design">实验设计</td>
-  handleJumpPage('statistical-sampling');                                          // <td class="statistical-sampling">统计抽样</td>
-  handleJumpPage('quality-manage-plan');                                          // <td class="quality-manage-plan">质量管理计划</td>
-  handleJumpPage('process-improvement-plan');                                          // <td class="process-improvement-plan">过程改进计划</td>
-  handleJumpPage('quality-measurement-index');                                          // <td class="quality-measurement-index">质量测量指标</td>
-  handleJumpPage('quality-check-sheet');                                          // <td class="quality-check-sheet">质量核对单</td>
-  handleJumpPage('quality-management-and-control-tools');                                          // <td class="quality-management-and-control-tools">质量管理和控制工具</td>
-  handleJumpPage('quality-audit');                                          // <td class="quality-audit">质量审计</td>
-  handleJumpPage('process-analysis');                                          // <td class="process-analysis">过程分析</td>
+  handleJumpPage('cost-manage-plan');                               // <td class="cost-manage-plan">成本管理计划</td>
+  handleJumpPage('activity-cost-estimation');                       // <td class="activity-cost-estimation">活动成本估算</td>
+  handleJumpPage('estimates-based-on');                             // <td class="estimates-based-on">估算依据</td>
+  handleJumpPage('history-relationship');                           // <td class="history-relationship">历史关系</td>
+  handleJumpPage('capital-constraint-balance');                     // <td class="capital-constraint-balance">资金限制平衡</td>
+  handleJumpPage('cost-benefit-analysis');                          // <td class="cost-benefit-analysis">成本效益分析</td>
+  handleJumpPage('quality-cost');                                   // <td class="quality-cost">质量成本</td>
+  handleJumpPage('seven-basic-quality-tools');                      // <td class="seven-basic-quality-tools">七种基本质量工具</td>
+  handleJumpPage('the-experiment-design');                          // <td class="the-experiment-design">实验设计</td>
+  handleJumpPage('statistical-sampling');                           // <td class="statistical-sampling">统计抽样</td>
+  handleJumpPage('quality-measurement-index');                      // <td class="quality-measurement-index">质量测量指标</td>
+  handleJumpPage('quality-check-sheet');                            // <td class="quality-check-sheet">质量核对单</td>
+  handleJumpPage('quality-management-and-control-tools');           // <td class="quality-management-and-control-tools">质量管理和控制工具</td>
+  handleJumpPage('quality-audit');                                  // <td class="quality-audit">质量审计</td>
+  handleJumpPage('process-analysis');                               // <td class="process-analysis">过程分析</td>
 }
