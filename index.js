@@ -83,6 +83,7 @@ window.onload = () => {
   handleJumpPage('project-schedule-plan');                          // <td class="project-schedule-plan">项目进度计划</td>
   handleJumpPage('quality-manage-plan');                            // <td class="quality-manage-plan">质量管理计划</td>
   handleJumpPage('process-improvement-plan');                       // <td class="process-improvement-plan">过程改进计划</td>
+  handleJumpPage('cost-manage-plan');                               // <td class="cost-manage-plan">成本管理计划</td>
 
   handleJumpPage('project-scope-statement');                        // <td class="project-scope-statement">项目范围说明书</td>
   handleJumpPage('scope-baseline');                                 // <td class="scope-baseline">范围基准</td>
@@ -129,7 +130,6 @@ window.onload = () => {
   handleJumpPage('project-calendar');                               // <td class="project-calendar">项目日历</td>
   handleJumpPage('performance-review');                             // <td class="performance-review">绩效审查</td>
   handleJumpPage('progress-of-the-forecast');                       // <td class="progress-of-the-forecast">进度预测</td>
-  handleJumpPage('cost-manage-plan');                               // <td class="cost-manage-plan">成本管理计划</td>
   handleJumpPage('activity-cost-estimation');                       // <td class="activity-cost-estimation">活动成本估算</td>
   handleJumpPage('estimates-based-on');                             // <td class="estimates-based-on">估算依据</td>
   handleJumpPage('history-relationship');                           // <td class="history-relationship">历史关系</td>
@@ -144,4 +144,24 @@ window.onload = () => {
   handleJumpPage('quality-management-and-control-tools');           // <td class="quality-management-and-control-tools">质量管理和控制工具</td>
   handleJumpPage('quality-audit');                                  // <td class="quality-audit">质量审计</td>
   handleJumpPage('process-analysis');                               // <td class="process-analysis">过程分析</td>
+  handleJumpPage('project-file');                                          // <td class="project-file">项目文件</td>
+  handleJumpPage('risk-register');                                          // <td class="risk-register">风险登记册</td>
+  handleJumpPage('risk-reassessment');                                          // <td class="risk-reassessment">风险再评估</td>
+  handleJumpPage('audit-risk');                                          // <td class="audit-risk">风险审计</td>
+  handleJumpPage('bias-and-trend-analysis');                                          // <td class="bias-and-trend-analysis">偏差和趋势分析</td>
+  handleJumpPage('technical-performance-measurement');                                          // <td class="technical-performance-measurement">技术绩效测量</td>
+  handleJumpPage('risk-management-plan');                                          // <td class="risk-management-plan">风险管理计划</td>
+  handleJumpPage('check-list-analysis');                                          // <td class="check-list-analysis">核对单分析</td>
+  handleJumpPage('graphic-technology');                                          // <td class="graphic-technology">图解技术</td>
+  handleJumpPage('swot-analysis');                                          // <td class="swot-analysis">SWOT分析</td>
+  handleJumpPage('risk-probability-and-impact-assessment');                                          // <td class="risk-probability-and-impact-assessment">风险概率和影响评估</td>
+  handleJumpPage('probability-and-impact-matrix');                                          // <td class="probability-and-impact-matrix">概率和影响矩阵</td>
+  handleJumpPage('quantitative-and-qualitative-assessment-of-risks');                                          // <td class="quantitative-and-qualitative-assessment-of-risks">风险数量质量评估</td>
+  handleJumpPage('risk-classification');                                          // <td class="risk-classification">风险分类</td>
+  handleJumpPage('risk-urgency-assessment');                                          // <td class="risk-urgency-assessment">风险紧迫性评估</td>
+  handleJumpPage('quantitative-risk-analysis-and-modeling-techniques');                                          // <td class="quantitative-risk-analysis-and-modeling-techniques">定量风险分析和建模技术</td>
+  handleJumpPage('response-to-negative-risks-or-threats');                                          // <td class="response-to-negative-risks-or-threats">消极风险或威胁的应对措施</td>
+  handleJumpPage('response-to-negative-risks-or-threats');                                          // <td class="response-to-negative-risks-or-threats">消极风险或威胁的应对策略</td>
+  handleJumpPage('strategy-for-responding-to-positive-risks-or-opportunities');                                          // <td class="strategy-for-responding-to-positive-risks-or-opportunities">积极风险或机会的应对策略</td>
+  handleJumpPage('emergency-response-strategy');                                          // <td class="emergency-response-strategy">应急应对策略</td>
 }
