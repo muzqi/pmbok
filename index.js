@@ -164,4 +164,21 @@ window.onload = () => {
   handleJumpPage('response-to-negative-risks-or-threats');                                          // <td class="response-to-negative-risks-or-threats">消极风险或威胁的应对策略</td>
   handleJumpPage('strategy-for-responding-to-positive-risks-or-opportunities');                                          // <td class="strategy-for-responding-to-positive-risks-or-opportunities">积极风险或机会的应对策略</td>
   handleJumpPage('emergency-response-strategy');                                          // <td class="emergency-response-strategy">应急应对策略</td>
+  handleJumpPage('homemade-or-outsourced-analysis');                                          // <td class="homemade-or-outsourced-analysis">自制或外购分析</td>
+  handleJumpPage('procurement-management-plan');                                          // <td class="procurement-management-plan">采购管理计划</td>
+  handleJumpPage('purchasing-job-description');                                          // <td class="purchasing-job-description">采购工作说明书</td>
+  handleJumpPage('purchasing-documents');                                          // <td class="purchasing-documents">采购文件</td>
+  handleJumpPage('supplier-selection-criteria');                                          // <td class="supplier-selection-criteria">供方选择标准</td>
+  handleJumpPage('meeting-of-bidders');                                          // <td class="meeting-of-bidders">投标人会议</td>
+  handleJumpPage('proposal-evaluation-technique');                                          // <td class="proposal-evaluation-technique">建议书评价技术</td>
+  handleJumpPage('independent-estimates');                                          // <td class="independent-estimates">独立估算</td>
+  handleJumpPage('purchasing-negotiation');                                          // <td class="purchasing-negotiation">采购谈判</td>
+  handleJumpPage('contract-change-control-system');                                          // <td class="contract-change-control-system">合同变更控制系统</td>
+  handleJumpPage('procurement-performance-review');                                          // <td class="procurement-performance-review">采购绩效审查</td>
+  handleJumpPage('inspection-and-audit');                                          // <td class="inspection-and-audit">检查与审计</td>
+  handleJumpPage('payment-system');                                          // <td class="payment-system">支付系统</td>
+  handleJumpPage('claims-management');                                          // <td class="claims-management">索赔管理</td>
+  handleJumpPage('record-management-system');                                          // <td class="record-management-system">记录管理系统</td>
+  handleJumpPage('purchase-audit');                                          // <td class="purchase-audit">采购审计</td>
+  handleJumpPage('closed-purchase');                                          // <td class="closed-purchase">结束的采购</td>
 }
