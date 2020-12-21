@@ -181,4 +181,9 @@ window.onload = () => {
   handleJumpPage('record-management-system');                                          // <td class="record-management-system">记录管理系统</td>
   handleJumpPage('purchase-audit');                                          // <td class="purchase-audit">采购审计</td>
   handleJumpPage('closed-purchase');                                          // <td class="closed-purchase">结束的采购</td>
+  handleJumpPage('stakeholder-analysis');                                          // <td class="stakeholder-analysis">干系人分析</td>
+  handleJumpPage('register-of-stakeholders');                                          // <td class="register-of-stakeholders">干系人登记册</td>
+  handleJumpPage('analysis-techniques');                                          // <td class="analysis-techniques">分析技术</td>
+  handleJumpPage('stakeholder-management-plan');                                          // <td class="stakeholder-management-plan">干系人管理计划</td>
+  handleJumpPage('change-log');                                          // <td class="change-log">变更日志</td>
 }
