@@ -186,4 +186,5 @@ window.onload = () => {
   handleJumpPage('analysis-techniques');                                          // <td class="analysis-techniques">分析技术</td>
   handleJumpPage('stakeholder-management-plan');                                          // <td class="stakeholder-management-plan">干系人管理计划</td>
   handleJumpPage('change-log');                                          // <td class="change-log">变更日志</td>
+  handleJumpPage('contract');                                          // <td class="contract">合同</td>
 }
