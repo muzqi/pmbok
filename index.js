@@ -65,10 +65,26 @@ window.onload = () => {
 
         for (let k = 0; k < tables.length; k ++) {
           const table = tables[k];
-          table.setAttribute('class', b ? 'child-table' : 'child-table hide')
+          table.setAttribute('class', b ? 'child-table' : 'child-table hide');
         }
       });
     }
+  }
+
+  const modal = doc.getElementById('modal-container');
+  modal.addEventListener('click', () => {
+    modal.setAttribute('class', '');
+    modal.querySelector('.modal').innerHTML = '';
+  });
+  const btnsModal = doc.getElementsByClassName('btn-modal');
+  for (let i = 0; i < btnsModal.length; i++) {
+    const ele = btnsModal[i];
+    ele.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const { content } = e.currentTarget.dataset;
+      modal.setAttribute('class', 'show');
+      modal.querySelector('.modal').innerHTML = content;
+    });
   }
 
   handleJumpPage('article-of-project');                             // <td class="article-of-project">项目章程</td>
@@ -187,4 +203,10 @@ window.onload = () => {
   handleJumpPage('stakeholder-management-plan');                                          // <td class="stakeholder-management-plan">干系人管理计划</td>
   handleJumpPage('change-log');                                          // <td class="change-log">变更日志</td>
   handleJumpPage('contract');                                          // <td class="contract">合同</td>
+  handleJumpPage('commercial-demonstration');                                          // <td class="commercial-demonstration">商业论证</td>
+  handleJumpPage('approved-change-request');                                          // <td class="approved-change-request">批准的变更请求</td>
+  handleJumpPage('project-management-information-system');                                          // <td class="project-management-information-system">项目管理信息系统</td>
+  handleJumpPage('deliverables');                                          // <td class="deliverables">可交付成果</td>
+  handleJumpPage('confirmed-changes');                                          // <td class="confirmed-changes">确认的变更</td>
+  handleJumpPage('meeting');                                          // <td class="meeting">会议</td>
 }
