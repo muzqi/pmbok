@@ -8,3 +8,7 @@ span.mark {
 span.underline {
   text-decoration: underline;
 }
+
+.sub {
+  color: gray;
+}
