@@ -137,7 +137,7 @@ Math.max(EMVs) || Math.min(EMVs);
     </tr>
     <tr>
       <td><b>r</b></td>
-      <td>贴现率（利率）</td>
+      <td>贴现率（利率或通货膨胀）</td>
     </tr>
   </table>
 
@@ -164,18 +164,18 @@ Math.max(EMVs) || Math.min(EMVs);
 
       <tr>
         <td>现值</td>
-        <td>-600</td>
-        <td>364</td>
-        <td>331</td>
-        <td>301</td>
+        <td>Math.ceil(-600 / Math.pow(1 + 0.1, 0)) = -600</td>
+        <td>Math.ceil(400 / Math.pow(1 + 0.1, 1)) = 364</td>
+        <td>Math.ceil(400 / Math.pow(1 + 0.1, 2)) = 331</td>
+        <td>Math.ceil(400 / Math.pow(1 + 0.1, 3)) = 301</td>
       </tr>
 
       <tr>
         <td>累计净现值</td>
-        <td>-600</td>
-        <td>-236</td>
-        <td>95</td>
-        <td>396</td>
+        <td>0 + -600 = -600</td>
+        <td>-600 + 364 = -236</td>
+        <td>-236 + 331 = 95</td>
+        <td>95 + 301 = 396</td>
       </tr>
     </table>
 
