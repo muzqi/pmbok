@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>三点估算</title>
+  <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+  <h1>三点估算</h1>
+  <h2>公式</h2>
+  <table border="1">
+    <tr>
+      <th>Tm(Time Maybe)</th>
+      <td>最可能的时间</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>To(Time Optimistic)</th>
+      <td>最乐观的时间</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Tp(Time Pessimistic)</th>
+      <td>最悲观的时间</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>σ</th>
+      <td>标准差</td>
+      <td>(Tp - To) / 6</td>
+    </tr>
+    <tr>
+      <th>μ</th>
+      <td>期望时间（预估时间）</td>
+      <td>(To + 4Tm + Tp) / 6</td>
+    </tr>
+  </table>
+
+  <h2>正态分布图</h2>
+  <img src="../images/three-estimates.png" style="width:800px;" alt="">
+</body>
+</html>

@@ -134,6 +134,7 @@ window.onload = () => {
   handleJumpPage('resource-break-structure');                       // <td class="resource-break-structure">资源分解结构</td>
   handleJumpPage('analogy-estimate');                               // <td class="analogy-estimate">类比估算</td>
   handleJumpPage('parameters-estimate');                            // <td class="parameters-estimate">参数估算</td>
+  handleJumpPage('three-estimates');                                // <td class="three-estimates">三点估算</td>
   handleJumpPage('reserve-analysis');                               // <td class="reserve-analysis">储备分析</td>
   handleJumpPage('activity-duration-estimates');                    // <td class="activity-duration-estimates">活动持续时间估算</td>
   handleJumpPage('progress-network-analysis');                      // <td class="progress-network-analysis">进度网络分析</td>
