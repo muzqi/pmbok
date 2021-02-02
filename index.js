@@ -210,4 +210,21 @@ window.onload = () => {
   handleJumpPage('deliverables');                                          // <td class="deliverables">可交付成果</td>
   handleJumpPage('confirmed-changes');                                          // <td class="confirmed-changes">确认的变更</td>
   handleJumpPage('meeting');                                          // <td class="meeting">会议</td>
+  handleJumpPage('organization-chart-and-job-description');                                          // <td class="organization-chart-and-job-description">组织图和职位描述</td>
+  handleJumpPage('human-resource-management-plan');                                          // <td class="human-resource-management-plan">人力资源管理计划</td>
+  handleJumpPage('preassigned-pie');                                          // <td class="preassigned-pie">预分派</td>
+  handleJumpPage('negotiations');                                          // <td class="negotiations">谈判</td>
+  handleJumpPage('virtual-team');                                          // <td class="virtual-team">虚拟团队</td>
+  handleJumpPage('multistandard-decision-analysis');                                          // <td class="multistandard-decision-analysis">多标准决策分析</td>
+  handleJumpPage('project-personnel-assignment');                                          // <td class="project-personnel-assignment">项目人员分派</td>
+  handleJumpPage('interpersonal-skills');                                          // <td class="interpersonal-skills">人际关系技能</td>
+  handleJumpPage('training');                                          // <td class="training">培训</td>
+  handleJumpPage('team-building-activities');                                          // <td class="team-building-activities">团队建设活动</td>
+  handleJumpPage('the-basic-rule');                                          // <td class="the-basic-rule">基本规则</td>
+  handleJumpPage('central-office');                                          // <td class="central-office">集中办公</td>
+  handleJumpPage('recognition-and-rewards');                                          // <td class="recognition-and-rewards">认可与奖励</td>
+  handleJumpPage('personnel-assessment-tool');                                          // <td class="personnel-assessment-tool">人事测评工具</td>
+  handleJumpPage('team-performance-evaluation');                                          // <td class="team-performance-evaluation">团队绩效评价</td>
+  handleJumpPage('project-performance-evaluation');                                          // <td class="project-performance-evaluation">项目绩效评估</td>
+  handleJumpPage('conflict-management');                                          // <td class="conflict-management">冲突管理</td>
 }
