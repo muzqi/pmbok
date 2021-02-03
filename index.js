@@ -227,4 +227,11 @@ window.onload = () => {
   handleJumpPage('team-performance-evaluation');                                          // <td class="team-performance-evaluation">团队绩效评价</td>
   handleJumpPage('project-performance-evaluation');                                          // <td class="project-performance-evaluation">项目绩效评估</td>
   handleJumpPage('conflict-management');                                          // <td class="conflict-management">冲突管理</td>
+  handleJumpPage('communication-needs-analysis');                                          // <td class="communication-needs-analysis">沟通需求分析</td>
+  handleJumpPage('communication-technology');                                          // <td class="communication-technology">沟通技术</td>
+  handleJumpPage('communication-method');                                          // <td class="communication-method">沟通方法</td>
+  handleJumpPage('communication-management-plan');                                          // <td class="communication-management-plan">沟通管理计划</td>
+  handleJumpPage('information-management-system');                                          // <td class="information-management-system">信息管理系统</td>
+  handleJumpPage('performance-report');                                          // <td class="performance-report">报告绩效</td>
+  handleJumpPage('project-communication');                                          // <td class="project-communication">项目沟通</td>
 }
