@@ -5,8 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WBS 分解</title>
   <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/swiper.min.css">
+  <style>
+    .swiper-container {
+      width: 1400px;
+      height: 600px;
+    }
+  </style>
 </head>
 <body>
+  <h1>WBS(Work Breakdown Structure) 工作分解结构</h1>
+  <p>✓ 对项目团队为实现项目目标、创建所需可交付成果而需要实施的全部工作范围的层级分解</p>
+  <p>✓ 工作分解结构每向下分解一层，代表着对项目工作更详细的定义</p>
+  <p>✓ 是后续管理工作的主要依据，是项目时间、成本、人力等管理工作基础</p>
+  <p>✓ 树形结构、列表形式</p>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../images/wbs-1.png" alt=""></div>
+        <div class="swiper-slide"><img src="../images/wbs-2.png" alt=""></div>
+        <div class="swiper-slide"><img src="../images/wbs-3.png" alt=""></div>
+        <div class="swiper-slide"><img src="../images/wbs-4.png" alt=""></div>
+        <div class="swiper-slide"><img src="../images/wbs-5.png" alt=""></div>
+        <div class="swiper-slide"><img src="../images/wbs-6.png" alt=""></div>
+        <div class="swiper-slide"><img src="../images/wbs-7.png" alt=""></div>
+        <div class="swiper-slide"><img src="../images/wbs-8.png" alt=""></div>
+        <div class="swiper-slide"><img src="../images/wbs-9.png" alt=""></div>
+        <div class="swiper-slide"><img src="../images/wbs-10.png" alt=""></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+  <hr>
+
   <h1>WBS 分解</h1>
 
   <h2>分解流程（从上往下）</h2>
@@ -18,6 +53,8 @@
     <li>核实可交付成果分解的程度是否恰当</li>
   </ol>
 
+  <hr>
+
   <h2>分解方式</h2>
 
   <h3>按生命周期</h3>
@@ -28,4 +65,15 @@
   <p>例如将生产一辆自行车，分解为若干零件：</p>
   <img style="width: 600px" src="../images/wbs-decomposition-2.png" alt="">
 </body>
+<script src="../libs/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    pagination: '.swiper-pagination',
+  })
+  </script>
+</script>
 </html>

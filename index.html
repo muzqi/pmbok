@@ -57,11 +57,10 @@
     <button id="display-child-table">展开所有子表格</button>
     <button id="hide-child-table">折叠所有子表格</button>
 
-    <a href="./pages/earned-value-analysis.html" target="_blank"
-      >挣值分析公式</a
-    >
+    <a href="./pages/earned-value-analysis.html" target="_blank">挣值分析公式</a>
     <a href="./pages/critical-path-method.html" target="_blank">关键路径法</a>
     <a href="./pages/operations-research.html" target="_blank">运筹学</a>
+    <a href="./pages/wbs-decomposition.html" target="_blank">WBS</a>
 
     <div id="modal-container">
       <div class="modal"></div>
@@ -1875,7 +1874,31 @@
           <th rowspan="5">风险管理</th>
           <td></td>
           <td>
-            <b class="progress-title">11.1规划风险管理</b>
+            <b class="progress-title">
+              11.1规划风险管理
+
+              <a
+                href="#"
+                class="btn-modal"
+                data-content="
+              <table border='1'>
+                <tr>
+                  <th>定义</th>
+                  <td>定义如何实施项目风险管理活动</td>
+                </tr>
+                <tr>
+                  <th>作用</th>
+                  <td>
+                    <span>确保风险管理的程度、类型和可见度与风险及项目对组织的重要性相匹配</span><br>
+                    <span class='mark'>不能盲目管理。比如项目的重要程度不高，但管理风险造成的成本却大于项目带来的收益。</span>
+                  </td>
+                </tr>
+              </table>
+              "
+              >
+                定义
+              </a>
+            </b>
 
             <table class="child-table" border="1">
               <tbody>
@@ -1979,7 +2002,7 @@
                 </tr>
                 <tr>
                   <td class="cost-manage-plan">成本管理计划</td>
-                  <td>信息收集技术</td>
+                  <td class="information-gathering-technology">信息收集技术</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -2086,7 +2109,7 @@
                 </tr>
                 <tr>
                   <td class="org-process-assets">组织过程资产</td>
-                  <td>风险紧迫度评估</td>
+                  <td class="risk-urgency-assessment">风险紧迫性评估</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -2160,7 +2183,7 @@
         <tr>
           <td></td>
           <td>
-            <b class="progress-title">11.5规划风险应对</b>
+            <b class="progress-title">11.5规划风险应对 <span class="mark">制定应对措施</span></b>
 
             <table class="child-table" border="1">
               <tbody>

@@ -234,4 +234,6 @@ window.onload = () => {
   handleJumpPage('information-management-system');                                          // <td class="information-management-system">信息管理系统</td>
   handleJumpPage('performance-report');                                          // <td class="performance-report">报告绩效</td>
   handleJumpPage('project-communication');                                          // <td class="project-communication">项目沟通</td>
+  handleJumpPage('information-gathering-technology');                                          // <td class="information-gathering-technology">信息收集技术</td>
+  handleJumpPage('risk-urgency-assessment');                                          // <td class="risk-urgency-assessment">风险紧迫性评估</td>
 }
