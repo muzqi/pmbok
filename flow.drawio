@@ -1,44 +1,9 @@
 <mxfile host="65bd71144e">
     <diagram id="iVscjCF53jSntFp0XOt4" name="Page-1">
-        <mxGraphModel dx="2829" dy="2329" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="990" dy="815" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="29" value="" style="group" parent="1" vertex="1" connectable="0">
-                    <mxGeometry x="80" y="540" width="430" height="360" as="geometry"/>
-                </mxCell>
-                <mxCell id="19" value="监控项目工作" style="rounded=0;whiteSpace=wrap;html=1;" parent="29" vertex="1">
-                    <mxGeometry y="150" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="20" value="实施整体变更控制" style="rounded=0;whiteSpace=wrap;html=1;" parent="29" vertex="1">
-                    <mxGeometry x="310" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="29" source="19" target="20" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="21" value="管理项目团队" style="rounded=0;whiteSpace=wrap;html=1;" parent="29" vertex="1">
-                    <mxGeometry x="310" y="100" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="29" source="19" target="21" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="22" value="控制风险" style="rounded=0;whiteSpace=wrap;html=1;" parent="29" vertex="1">
-                    <mxGeometry x="310" y="200" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="29" source="19" target="22" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="23" value="控制采购" style="rounded=0;whiteSpace=wrap;html=1;" parent="29" vertex="1">
-                    <mxGeometry x="310" y="300" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="29" source="19" target="23" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="28" value="工作绩效报告" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="27" vertex="1" connectable="0">
-                    <mxGeometry x="-0.7429" relative="1" as="geometry">
-                        <mxPoint as="offset"/>
-                    </mxGeometry>
-                </mxCell>
                 <mxCell id="30" value="" style="group" parent="1" vertex="1" connectable="0">
                     <mxGeometry x="80" y="270" width="320" height="190" as="geometry"/>
                 </mxCell>
@@ -285,6 +250,47 @@
                     <mxGeometry x="176" y="610" width="200" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="99" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="100" source="97" target="98">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="90" y="540" width="420" height="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="监控项目工作" style="rounded=0;whiteSpace=wrap;html=1;" parent="104" vertex="1">
+                    <mxGeometry y="200" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="实施整体变更控制" style="rounded=0;whiteSpace=wrap;html=1;" parent="104" vertex="1">
+                    <mxGeometry x="300" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="104" source="19" target="20" edge="1">
+                    <mxGeometry x="-10" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="管理项目团队" style="rounded=0;whiteSpace=wrap;html=1;" parent="104" vertex="1">
+                    <mxGeometry x="300" y="100" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="104" source="19" target="21" edge="1">
+                    <mxGeometry x="-10" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="控制风险" style="rounded=0;whiteSpace=wrap;html=1;" parent="104" vertex="1">
+                    <mxGeometry x="300" y="300" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="104" source="19" target="22" edge="1">
+                    <mxGeometry x="-10" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="控制采购" style="rounded=0;whiteSpace=wrap;html=1;" parent="104" vertex="1">
+                    <mxGeometry x="300" y="400" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="104" source="19" target="23" edge="1">
+                    <mxGeometry x="-10" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="工作绩效报告" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="27" vertex="1" connectable="0">
+                    <mxGeometry x="-0.7429" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="102" value="管理沟通" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="104">
+                    <mxGeometry x="300" y="200" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="104" source="19" target="102">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
