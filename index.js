@@ -238,4 +238,6 @@ window.onload = () => {
   handleJumpPage('risk-urgency-assessment');                                          // <td class="risk-urgency-assessment">风险紧迫性评估</td>
   handleJumpPage('output-from-other-processes');                                          // <td class="utput-from-other-processes">其他过程的输出</td>
   handleJumpPage('check');                                          // <td class="check">检查</td>
+  handleJumpPage('communication-model');                                          // <td class="communication-model">沟通模型</td>
+
 }
