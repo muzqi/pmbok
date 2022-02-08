@@ -240,5 +240,6 @@ window.onload = () => {
   handleJumpPage('check');                                          // <td class="check">检查</td>
   handleJumpPage('communication-model');                                          // <td class="communication-model">沟通模型</td>
   handleJumpPage('project-proposal');                                          // <td class="project-proposal">卖方建议书</td>
+  handleJumpPage('expert-judgment');                                          // <td class="expert-judgment">专家判断</td>
 
 }
