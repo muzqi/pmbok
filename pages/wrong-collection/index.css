@@ -33,6 +33,7 @@ main#subject-container {
 .subject .title {
   font-weight: bold;
   margin-bottom: 8px;
+  line-height: 28px;
 }
 .subject .title .tag {
   padding: 4px 6px;
