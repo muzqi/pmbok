@@ -1,6 +1,17 @@
+const TAGS = {
+  SOFTWARE_STANDARDS: '软件标准',
+  INFORMATION_TECHNOLOGY: '信息技术',
+  CHANGE_MANAGEMENT: '变更管理',
+  POLITICS: '时政',
+  OPERATIONS_RESEARCH: '运筹学',
+  AUXILIARY_KNOWLEDGE: '辅助知识',
+  ENGLISH: '英文',
+  PROJECT_MANAGEMENT: '项目管理',
+}
+
 const dataSource = [
   {
-    tag: '软件标准',
+    tag: TAGS.SOFTWARE_STANDARDS,
     title: '关于项目招投标的描述，正确的是（）。',
     options: [
       '资格预审档或者招标档的发售期不得少于7天',
@@ -16,7 +27,7 @@ const dataSource = [
     `,
   },
   {
-    tag: '软件标准',
+    tag: TAGS.SOFTWARE_STANDARDS,
     title: '关于项目招投标的描述，不正确的是：（）。',
     options: [
       '任何单位和个人不得以任何方式为招标人指定招标代理机构',
@@ -28,7 +39,7 @@ const dataSource = [
     analysis: '如果以邮寄方式送达的，投标人必须留出邮寄时间，保证投标档能够在截止日期之前送达招标人指定的地点，而不是以“邮戳为准”',
   },
   {
-    tag: '软件标准',
+    tag: TAGS.SOFTWARE_STANDARDS,
     title: '关于招投标的描述，不正确的是: ( ) 。',
     options: [
       '招标人采用邀请招标方式的，应当向三个以上具备承担项目的能力、资信良好的特定法人或者其他组织发出投标邀请书',
@@ -40,7 +51,7 @@ const dataSource = [
     analysis: '第三十七条 评标由招标人依法组建的评标委员会负责。依法必须进行招标的项目，其评标委员会由招标人的代表和有关技术、经济等方面的专家组成，成员人数为五人以上单数，其中技术、经济等方面的专家不得少于成员总数的三分之二。',
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '（）不属于信息系统规划工具。',
     options: [
       'CU矩阵',
@@ -52,7 +63,7 @@ const dataSource = [
     analysis: 'RACI的责任分配矩阵的一种(人力资源管理)，这是重点讲过的。另外，关于ABC这三个矩阵，近年高项选择题常考。',
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '信息系统规划是从（ ）出发，构建企业基本的信息系统架构，利用信息系统管理企业行为，辅助企业进行决策。',
     options: [
       '企业客户需求',
@@ -64,7 +75,7 @@ const dataSource = [
     analysis: '规划要支持企业的战略目标。企业的战略目标是信息系统规划的出发点。信息系统规划从企业目标出发，分析企业管理的信息需求，逐步导出信息系统的战略目标和总体结构。',
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: 'UML 2.0中共包括14种图，其中（）属于交互图。',
     options: [
       '类图',
@@ -76,7 +87,7 @@ const dataSource = [
     analysis: '教程p41-1.4.1 需求分析 定时图（timing diagram，也称计时图）：定时图也是一种交互图，它强调消息跨越不同对象或参与者的实际时间，而不仅仅只是关心消息的相对顺序。',
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '关于两化融合的描述，不正确的是（）',
     options: [
       '虚拟经济与工业实体经济的融合',
@@ -97,7 +108,7 @@ const dataSource = [
     `,
   },
   {
-    tag: '软件标准',
+    tag: TAGS.SOFTWARE_STANDARDS,
     title: '信息系统安全保护等级的定级要素是（ ）。',
     options: [
       '等级保护对象和保护客体',
@@ -109,7 +120,7 @@ const dataSource = [
     analysis: '高级教程 p612',
   },
   {
-    tag: '软件标准',
+    tag: TAGS.SOFTWARE_STANDARDS,
     title: '（ ）验证一个配置项的实际工作性能是否符合他的需求规格说明。',
     options: [
       '功能配置审计',
@@ -121,7 +132,7 @@ const dataSource = [
     analysis: '高级教程p851；',
   },
   {
-    tag: '软件标准',
+    tag: TAGS.SOFTWARE_STANDARDS,
     title: '关于合同管理描述不正确（）。',
     options: [
       '合同签订前需做好市场调查',
@@ -136,7 +147,7 @@ const dataSource = [
     `,
   },
   {
-    tag: '软件标准',
+    tag: TAGS.SOFTWARE_STANDARDS,
     title: '在项目中经常会利用外包的手段，以提高项目的验收能力，对于工作规模或产品规定不是特别清楚的项目。外包时一般应采用（）',
     options: [
       '成本补偿合同',
@@ -148,7 +159,7 @@ const dataSource = [
     analysis: '范围不明确，缺乏项目管理能力用工料合同。',
   },
   {
-    tag: '软件标准',
+    tag: TAGS.SOFTWARE_STANDARDS,
     title: '根据《软件工程术语GB/T11457-2006》，基线事业已经过正式审核与统一，可用作下一步开发的基础，并且只有通过正式的修改管理步骤方能加以修改的规格说明或产品。对于配置管理，有以下三种基线：功能基线、（）和产品基线。',
     options: [
       '编码基线',
@@ -160,7 +171,7 @@ const dataSource = [
     analysis: '根据《软件工程术语GB/T11457-2006》，对于配置管理，有以下三种基线：功能基线、分配基线和产品基线。',
   },
   {
-    tag: '配置管理',
+    tag: TAGS.SOFTWARE_STANDARDS,
     title: '在软件配置管理中，版本控制的目的是按照一定的规则保存配置项的( )。',
     options: [
       '重要版本',
@@ -172,7 +183,7 @@ const dataSource = [
     analysis: '版本控制的目的是按照一定的规则保存配置项的所有版本，避免发生版本丢失或混淆的现象，并且可以快速准确的查找到配置项的任何版本。',
   },
   {
-    tag: '变更管理',
+    tag: TAGS.CHANGE_MANAGEMENT,
     title: '关于变更管理的描述，不正确的是：（ ）。',
     options: [
       '引起工程变更的因素及变更产生的时间是不可以掌控的',
@@ -184,7 +195,7 @@ const dataSource = [
     analysis: '不是所有的变更都必须采用变更管理工具，C选项说法过于绝对。',
   },
   {
-    tag: '变更管理',
+    tag: TAGS.CHANGE_MANAGEMENT,
     title: `
     <span>变更管理组织机构的工作程序按时间先后顺序，排列正确的是（）。</span>
     <ol>
@@ -208,7 +219,7 @@ const dataSource = [
     analysis: '参考，变更控制工作程序。',
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '结束软件测试工作时，应按照软件配置管理的要求，将（）纳入配置管理。',
     options: [
       '全部测试工具',
@@ -231,7 +242,7 @@ const dataSource = [
     `,
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '在信息安全管理中，数字签名主要用于确保数据的（）。',
     options: [
       '完整性 ',
@@ -243,7 +254,7 @@ const dataSource = [
     analysis: '确保数据完整性的技术包括∶CA认证；数字签名；防火墙系统；传输安全（通信安全）；入侵检测系统。',
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '以下关于项目验收的描述，不正确的是（）',
     options: [
       '验收测试是对信息系统进行全面的测试，依照双方合同约定的系统环境，以确保系统的功能和技术设计满足建设方的功能需求和非功能需求，并能正常运行。',
@@ -255,7 +266,7 @@ const dataSource = [
     analysis: '项目验收阶段主要包含以下四方面的工作内容，即验收测试、系统试运行、系统文档验收以及项目终验。',
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '（ ）不属于无线网络安全技术或协议。',
     options: [
       'WEP',
@@ -267,7 +278,7 @@ const dataSource = [
     analysis: '小型计算机系统接口（SCSI，Small Computer System Interface）是一种用于计算机及其周边设备之间（硬盘、软驱、光驱、打印机、扫描仪等）系统级接口的独立处理器标准。',
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '（ ）不属于移动互联网的特点。',
     options: [
       '终端移动性',
@@ -287,7 +298,7 @@ const dataSource = [
     `,
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '（ ）属于评估测试过程的指标。',
     options: [
       '缺陷分布',
@@ -299,7 +310,7 @@ const dataSource = [
     analysis: '教材p746-23.3.3测试监控管理。此题目考查测试执行中工作效率相关指标，测试进度是考核很重要的一步，如果没有进度保证，所有的测试都存在风险。',
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '信息必须依赖其存储、传输、处理及应用的载体媒介而存在信息系统设备的安全主要包括（）。',
     options: [
       '秘密性 可靠性 稳定性',
@@ -326,7 +337,7 @@ const dataSource = [
     `,
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '信息安全管理系统通过应用（）保护信息的机密性、完整性和可用性。',
     options: [
       '技术管理过程',
@@ -338,7 +349,7 @@ const dataSource = [
     analysis: 'ISO/IEC27001:2013是国际标准化组织联合技术委员会ISO/IECJTC1（信息技术）分委员会SC27（安全技术）在2013年9月25日发布的的信息安全管理体系标准。旨在保障组织的信息系统与业务的安全与正常运作，充分防范信息的损坏和泄露。通过应用风险管理过程来保持信息的保密性、完整性和可用性。',
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: `
     <span>安全审计的手段主要包括（）</span>
     <ol>
@@ -364,7 +375,7 @@ const dataSource = [
     `,
   },
   {
-    tag: '时政',
+    tag: TAGS.POLITICS,
     title: '2022年2月5日，中国向世界知识产权组织递交《关于为盲人、视力障碍者或其他印刷品阅读障碍者获得已出版作品提供便利的马拉喀什条约》批准书，按条约规定，条约将于（）个月后对中国正式生效。该条约是世界上第一部、也是迄今为止唯一一部版权领域的人权条约，将进一步保障阅读障碍者平等获取文化和教育的权利。',
     options: [
       '一',
@@ -376,7 +387,7 @@ const dataSource = [
     analysis: '新华社北京2月5日电 2022年2月5日，中方向世界知识产权组织递交《关于为盲人、视力障碍者或其他印刷品阅读障碍者获得已出版作品提供便利的马拉喀什条约》批准书，按条约规定，条约将于三个月后对中国正式生效。该条约是世界上第一部、也是迄今为止唯一一部版权领域的人权条约，将进一步保障阅读障碍者平等获取文化和教育的权利。',
   },
   {
-    tag: '软件标准',
+    tag: TAGS.SOFTWARE_STANDARDS,
     title: '关于招投标相关的描述，不正确的是（）。',
     options: [
       '合同的主要条款应与招标档和中标人的投标档内容一致',
@@ -391,7 +402,7 @@ const dataSource = [
     `,
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '软件测试是（）。',
     options: [
       '质量保证过程的活动',
@@ -403,7 +414,7 @@ const dataSource = [
     analysis: '软件测试不再只是一种仅在编码阶段完成后才开始的活动，其被认为是一种应该包括在整个开发和维护过程中的活动，它本身是实际产品构造的一个重要部分。',
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '信息系统安全保护等级的定级要素是（ ）。',
     options: [
       '等级保护对象和保护客体',
@@ -415,7 +426,7 @@ const dataSource = [
     analysis: '信息系统的安全保护等级由两个定级要素决定：等级保护对象受到破坏时所侵害的客体和对客体造成侵害的程度。',
   },
   {
-    tag: '时政',
+    tag: TAGS.POLITICS,
     title: '【时政题】2021年12月28日，中央网络安全和信息化委员会印发《“十四五”国家信息化规划》（以下简称《规划》），对我国“十四五”时期信息化发展作出部署安排。《规划》是“十四五”国家规划体系的重要组成部分，是指导各地区、各部门信息化工作的行动指南。《规划》指出，“十四五”时期，信息化进入加快数字化发展、建设数字中国的新阶段。其中，在总体发展水平上，到2025年预期数字中国发展指数为（）',
     options: [
       '80',
@@ -427,7 +438,7 @@ const dataSource = [
     analysis: '近日，中央网络安全和信息化委员会印发《“十四五”国家信息化规划》（以下简称《规划》），对我国“十四五”时期信息化发展作出部署安排。《规划》是“十四五”国家规划体系的重要组成部分，是指导各地区、各部门信息化工作的行动指南。《规划》指出，“十四五”时期，信息化进入加快数字化发展、建设数字中国的新阶段。',
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '当前我国政府信息化和电子政务建设发展迅速，人民群众办理很多业务只需要通过浏览器就可以完成，这些业务单位信息系统架构规划属于（）。',
     options: [
       '文件服务器架构',
@@ -439,7 +450,7 @@ const dataSource = [
     analysis: 'web（WorldWideWeb）即全球广域网，也称为万维网，它是一种基于超文本和HTTP的、全球性的、动态交互的、跨平台的分布式图形信息系统。是建立在Internet上的一种网络服务，为浏览者在Internet上查找和浏览信息提供了图形化的、易于访问的直观界面，其中的文档及超级链接将Internet上的信息节点组织成一个互为关联的网状结构。',
   },
   {
-    tag: '运筹学',
+    tag: TAGS.OPERATIONS_RESEARCH,
     title: '[单选] 某项目2016年投资额12万元，2018年开始取得项目的净收益(产品－原料辅料及公用工程)6万元/年，2018-2021年每年还会产生其他成本(包括人员工资、管理成本、制造成本等)1.1万元/年:增值税0.35万元/年、营业税金及附加0.05万元/年，则该项目的静态投资回收期为 () 年 。',
     options: [
       '2',
@@ -451,7 +462,7 @@ const dataSource = [
     analysis: '静态投资回收期是在不考虑资金时间价值的条件下，以项目的净收益回收其全部投资所需要的时间。投资回收期可以自项目建设开始年算起，也可以自项目投产年开始算起，但应予注明。 项目是2016年投资，通常是指年底投资到位，然后2017年就是建设期。该项目的静态投资回收期=3+（12-4.5-4.5）/4.5≈3.67。',
   },
   {
-    tag: '时政',
+    tag: TAGS.POLITICS,
     title: '【时政题】2022年2月18日，国家发展改革委、工业和信息化部等12部门出台（ ）（以下简称《若干政策》），从财税、用地、用能等方面加大对相关企业帮扶力度。此次出台的《若干政策》特别提到“专精特新”中小企业。工业和信息化部运行监测协调局负责人陶青表示，工信部将积极采取举措，进一步加大“专精特新”中小企业培育力度。',
     options: [
       '《关于促进工业经济平稳增长的若干政策',
@@ -463,7 +474,7 @@ const dataSource = [
     analysis: '日前，国家发展改革委、工业和信息化部等12部门出台《关于促进工业经济平稳增长的若干政策》（以下简称《若干政策》），从财税、用地、用能等方面加大对相关企业帮扶力度。国家发改委相关负责人表示，此次出台的政策共包括5方面18项具体措施，聚焦做好预调微调和跨周期调节，着力解决制约工业经济运行中的掣肘问题，确保全年工业经济运行在合理区间。',
   },
   {
-    tag: '十五至尊图',
+    tag: TAGS.PROJECT_MANAGEMENT,
     title: '[单选] 属于整体变更控制成果的是 () 。 ①变更请求②项目管理计划更新③工作绩效信息 ④工作绩效报告⑤变更日志⑥项目文件更新',
     options: [
       '①②⑤',
@@ -475,7 +486,7 @@ const dataSource = [
     analysis: '整体变更控制的输出包括批准的变更请求，变更日志，项目管理计划更新，项目文件更新。',
   },
   {
-    tag: '运筹学',
+    tag: TAGS.OPERATIONS_RESEARCH,
     title: ' [单选] 某项目按工作量平均分配到 10个月完成，每月成本相同。项目管理储备15万元。在项目进行到第3个月末时，项目实际花费为BAC的30%，完成总工作量的20%，如果不加以纠偏，根据当前进度，项目完工估算为120万元，则项目总预算为 () 。',
     options: [
       '80W',
@@ -487,7 +498,7 @@ const dataSource = [
     analysis: 'EV=BAC*0.2，AC=BAC*0.3，CPI=EV/AC=2/3。 EAC=120，EAC=BAC/CPI，BAC=EAC*CPI=120*2/3=80。 总预算为BAC加上管理储备，所以总预算=80+15=95。',
   },
   {
-    tag: '十五至尊图',
+    tag: TAGS.PROJECT_MANAGEMENT,
     title: ' [单选] 关于质量控制的描述，不正确的是： ()  。',
     options: [
       '该过程所产生的数据为质量保证过程所用',
@@ -506,7 +517,7 @@ const dataSource = [
     `,
   },
   {
-    tag: '运筹学',
+    tag: TAGS.OPERATIONS_RESEARCH,
     title: `
     <span>[单选] 下图表示某项目各个活动关系及乐观、最可能、悲观完成时间，假设各活动的三种完成时间服从β分布，按照三点估算法该项目标准差为 3.2天，则项目在 () 完成的概率为 95%。</span>
     <img src="./images/1.png" />
@@ -525,7 +536,7 @@ const dataSource = [
     `,
   },
   {
-    tag: '时政',
+    tag: TAGS.POLITICS,
     title: '【时政题】新华社北京2月22日电（记者高敬、于文静）21世纪以来第19个指导“三农”工作的中央一号文件22日由新华社受权发布。这份文件题为《中共中央 国务院关于做好2022年全面推进乡村振兴重点工作的意见》，全文共8个部分，不包括：（）。',
     options: [
       '突出实效改进农业治理',
@@ -537,7 +548,7 @@ const dataSource = [
     analysis: '新华社北京2月22日电（记者高敬、于文静）21世纪以来第19个指导“三农”工作的中央一号文件22日由新华社受权发布。这份文件题为《中共中央 国务院关于做好2022年全面推进乡村振兴重点工作的意见》，全文共8个部分，包括：全力抓好粮食生产和重要农产品供给、强化现代农业基础支撑、坚决守住不发生规模性返贫底线、聚焦产业促进乡村发展、扎实稳妥推进乡村建设、突出实效改进乡村治理、加大政策保障和体制机制创新力度、坚持和加强党对“三农”工作的全面领导。',
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '关于网络存储技术的描述，不正确的是（4） 。',
     options: [
       '当存储容量增加时，采用直接添加存储（DAS）方式很难扩容',
@@ -549,7 +560,7 @@ const dataSource = [
     analysis: 'FC SAN有两个较大的缺陷，分别是成本高和复杂性，其原因就是因为使用了FC。在光纤通道上部署SAN，需要每个服务器上都要有FC适配器、专用的FC交换机和独立的布线基础架构。这些设施使成本大幅增加，更不用说精通FC协议的人员培训成本。',
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: ' [单选] 用户在开发环境下进行的测试是（11）。',
     options: [
       '配置项测试',
@@ -564,7 +575,7 @@ const dataSource = [
     `,
   },
   {
-    tag: '信息技术',
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: ' [单选] 能把企业组织结构和企业过程联系起来的信息系统规划工具为（17）。',
     options: [
       'P/O 矩阵',
@@ -576,7 +587,7 @@ const dataSource = [
     analysis: '为把企业组织结构与企业过程联系起来，说明每个过程与组织的联系，指出过程决策人，可以采用建立过程/组织(Process/Organization，P/O)矩阵的方法。 p/o矩阵 建立过程/组织矩阵 r/d矩阵 资源/数据矩阵 ipo图 过程法 归纳出系统的数据类 cu矩阵 企业数据矩阵',
   },
   {
-    tag: '软件标准',
+    tag: TAGS.SOFTWARE_STANDARDS,
     title: '[单选] 学生小李3月20日向某学术期刊投了一篇论文，自3月20日起（18）日内，如果未收到投稿期刊社决定刊登的通知，小李可以将该论文投稿给其他期刊社。',
     options: [
       '15',
@@ -588,7 +599,7 @@ const dataSource = [
     analysis: '根据《中华人民共和国著作权法》，如果向期刊社投稿，则法定再投稿期限为自稿件发出之日起30日内。',
   },
   {
-    tag: '十五至尊图',
+    tag: TAGS.PROJECT_MANAGEMENT,
     title: '[单选] 关于沟通管理过程的描述，正确的是（42）。',
     options: [
       '控制沟通是为了促进项目干系人之间实现有效率且有效果的沟通',
@@ -604,7 +615,7 @@ const dataSource = [
     `,
   },
   {
-    tag: '十五至尊图',
+    tag: TAGS.PROJECT_MANAGEMENT,
     title: ' [单选] 关于项目干系人管理的描述，不正确的是（43）。',
     options: [
       '项目成员的家属也可能成为项目干系人',
@@ -614,6 +625,84 @@ const dataSource = [
     ],
     anwser: 2,
     analysis: '规划干系人管理是一个反复过程，应由项目经理定期开展。',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    title: '信息系统规划（ISP）的第三阶段以集成为核心，围绕（16）进行，主要方法包括价值链分析法等。',
+    options: [
+      '职能部门需求',
+      '企业战略需求',
+      '市场环境需求',
+      '企业整体需求',
+    ],
+    anwser: 1,
+    analysis: `
+    <ul>
+      <li><b>第一个阶段</b>主要以<b>数据处理</b>为核心，围绕职能部门需求的信息系统规划，主要方法包括企业系统规划法、关键成功因素法和战略集合转化法；</li>
+      <li><b>第二个阶段</b>主要以<b>企业内部管理信息系统</b>为核心，围绕企业整体需求进行的信息系统规划，主要的方法包括战略数据规划法、信息工程法和战略棚格法；</li>
+      <li><b>第三个阶段</b>的方法在综合考虑企业内外环境的情况下，以集成为核心，围绕<b>企业战略</b>需求进行的信息系统规划，主要的方法包括价值链分析法和战略一致性模型。</li>
+    </ul>
+    `,
+  },
+  {
+    tag: TAGS.AUXILIARY_KNOWLEDGE,
+    title: '关于可行性研究的描述，正确的是（21）。',
+    options: [
+      '详细可行性研究由项目经理负责',
+      '可行性研究报告在项目章程制定之后编写',
+      '详细可行性研究是不可省略的',
+      '可行性研究报告是项目执行文件',
+    ],
+    anwser: 2,
+    analysis: '机会研究、初步可行性研究、详细可行性研究、评估与决策是投资前时期的四个阶段。在实际工作中，前三个阶段根据项目的规模和繁简程度可把前两个阶段省略或合二为一，但详细可行性研究是不可缺少的',
+  },
+  {
+    tag: TAGS.PROJECT_MANAGEMENT,
+    title: ' 关于项目干系人管理的描述，不正确的是（43）。',
+    options: [
+      '项目成员的家属也可能成为项目干系人',
+      '整个项目周期中项目干系人都可能发生增减变化',
+      '规划干系人管理应由项目经理在项目规划阶段完成',
+      '应把干系人满意度作为一个关键的项目目标来管理',
+    ],
+    anwser: 2,
+    analysis: '规划干系人管理是一个反复过程，应由项目经理定期开展。',
+  },
+  {
+    tag: TAGS.PROJECT_MANAGEMENT,
+    title: '管理项目团队所获得的主要收益体现在（50）。 ①指导团队选择和职责分配 ②管理冲突 ③解决问题 ④改进团队协作 ⑤影响团队行为 ⑥评估团队成员绩效',
+    options: [
+      '①③⑤⑥',
+      '②③④⑥',
+      '①③④⑥',
+      '②③⑤⑥',
+    ],
+    anwser: 3,
+    analysis: '管理项目团队是跟踪团队成员工作表现，提供反馈，解决问题并管理团队变更，以优化项目绩效的过程。本过程的主要收益是：影响团队行为，管理冲突，解决问题，并评估团队成员的绩效。',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    title: '敏捷项目管理的流程包括构想，推测，探索、（58）、结束。',
+    options: [
+      '执行',
+      '改进',
+      '测试',
+      '适应',
+    ],
+    anwser: 3,
+    analysis: '敏捷项目管理的流程包括构想、推测、探索、适应、结束。',
+  },
+  {
+    tag: TAGS.ENGLISH,
+    title: '（73）includes the processes and activities to identify, define, combine, unify, and coordinate the various processes and project management activities within the Project Management Process Groups.',
+    options: [
+      'Quality management',
+      'Cost management',
+      'Human Resource management',
+      'Integration management',
+    ],
+    anwser: 3,
+    analysis: '包括在项目管理过程组内识别、定义、合并、统一和协调各种过程和项目管理活动的过程和活动。 （73）A．质量管理 B．成本管理 C．人力资源管理 D．整体管理',
   },
   // {
   //   tag: '',
