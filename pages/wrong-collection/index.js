@@ -9,7 +9,7 @@ const renderSubject = (dataSource, container) => {
 
     const title = doc.createElement('div');
     title.setAttribute('class', 'title')
-    title.innerHTML = `${index + 1}. <span class="tag">${data.tag}</span> ${data.title}`;
+    title.innerHTML = `${data.isFocus ? '<span style="color: red;">*</span> ' : ''}${index + 1}. <span class="tag">${data.tag}</span> ${data.title}`;
     subject.appendChild(title);
 
     const options = doc.createElement('div');
@@ -53,6 +53,9 @@ const renderSubject = (dataSource, container) => {
 window.onload = () => {
   const subjectContainer = doc.getElementById('subject-container');
 
+  // 渲染题目总数
+  doc.getElementById('total').innerHTML = `共 ${dataSource.length} 题`;
+
   // 渲染标签
   const tagContainer = doc.getElementById('tag-container');
   const tagObj = {};
@@ -68,6 +71,7 @@ window.onload = () => {
 
   let _dataSource = JSON.parse(JSON.stringify(dataSource));
 
+  // 每个标签绑定事件
   Object.keys(tagObj).map(key => {
     const tag = doc.createElement('div');
     tag.setAttribute('class', 'tag active');
@@ -93,6 +97,29 @@ window.onload = () => {
 
     tagContainer.appendChild(tag);
   });
+
+  // 全选标签
+  doc.getElementById('select-all-tag').onclick = () => {
+    Array.from(doc.querySelectorAll('div.tag')).map(tag => {
+      tag.setAttribute('class', 'tag active');
+      tag.setAttribute('data-active', 'true');
+    });
+
+    subjectContainer.innerHTML = '';
+    _dataSource = JSON.parse(JSON.stringify(dataSource));
+    renderSubject(_dataSource, subjectContainer);
+  }
+
+  // 取消全选
+  doc.getElementById('unselect-all-tag').onclick = () => {
+    Array.from(doc.querySelectorAll('div.tag')).map(tag => {
+      tag.setAttribute('class', 'tag');
+      tag.setAttribute('data-active', 'false');
+    });
+
+    subjectContainer.innerHTML = '';
+    _dataSource = [];
+  }
 
   // 渲染题目
   renderSubject(dataSource, subjectContainer);
