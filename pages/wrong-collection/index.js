@@ -12,15 +12,17 @@ const renderSubject = (dataSource, container) => {
     title.innerHTML = `${data.isFocus ? '<span style="color: red;">*</span> ' : ''}${index + 1}. <span class="tag">${data.tag}</span> ${data.title}`;
     subject.appendChild(title);
 
-    const options = doc.createElement('div');
-    options.setAttribute('class', 'options');
-    data.options.map((d, i) => {
-      const option = doc.createElement('div');
-      option.setAttribute('class', 'option');
-      option.innerHTML = `<b>${MAP[i]}</b>. ${d}`;
-      options.appendChild(option);
-    });
-    subject.appendChild(options);
+    if (data.options) {
+      const options = doc.createElement('div');
+      options.setAttribute('class', 'options');
+      data.options.map((d, i) => {
+        const option = doc.createElement('div');
+        option.setAttribute('class', 'option');
+        option.innerHTML = `<b>${MAP[i]}</b>. ${d}`;
+        options.appendChild(option);
+      });
+      subject.appendChild(options);
+    }
 
     const checkBtn = doc.createElement('button');
     checkBtn.innerHTML = '查看答案';
@@ -39,7 +41,7 @@ const renderSubject = (dataSource, container) => {
     anwser.setAttribute('data-visible', 'false');
     anwser.setAttribute('style', 'display: none');
     anwser.innerHTML = `
-    <div>答案：<span style="color: green; font-weight: bold;">${MAP[data.anwser]}</span></div>
+    ${data.anwser ? `<div>答案：<span style="color: green; font-weight: bold;">${MAP[data.anwser]}</span></div>` : ''}
     <div>解析：${data.analysis}</div>
     `;
     subject.appendChild(anwser);

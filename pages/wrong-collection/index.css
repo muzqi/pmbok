@@ -1,17 +1,27 @@
 html, body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
 }
 
-#controler-container {
+aside {
   display: flex;
-  width: 800px;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+  padding: 0 12px;
+  box-sizing: border-box;
+  background-color: #FFF;
+}
+aside #controler-container {
+  display: flex;
+  width: 100%;
   margin-bottom: 32px;
 }
-#controler-container .btn {
+aside #controler-container .btn {
   cursor: pointer;
   padding: 4px 6px;
   margin: 0 8px;
@@ -20,13 +30,13 @@ html, body {
 }
 
 
-#tag-container {
+aside #tag-container {
   display: flex;
   flex-wrap: wrap;
-  width: 800px;
+  width: 100%;
   margin-bottom: 32px;
 }
-#tag-container .tag {
+aside #tag-container .tag {
   cursor: pointer;
   padding: 4px 6px;
   margin: 8px;
@@ -34,15 +44,19 @@ html, body {
   color: #666;
   background-color: #eee;
 }
-#tag-container .tag.active {
+aside #tag-container .tag.active {
   background-color: lightblue;
   color: #fff;
 }
 
 main#subject-container {
   flex: 1;
-  width: 800px;
+  height: 100%;
   overflow-y: auto;
+  margin-left: 12px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #FFF;
 }
 .subject .title {
   font-weight: bold;
