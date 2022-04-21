@@ -26,7 +26,8 @@ const renderSubject = (dataSource, container) => {
 
     const checkBtn = doc.createElement('button');
     checkBtn.innerHTML = '查看答案';
-    checkBtn.onclick = () => {
+    checkBtn.onclick = (e) => {
+      e.stopPropagation();
       const anwser = checkBtn.nextSibling;
       const anwserVisible = anwser.getAttribute('data-visible') === 'true';
 
@@ -125,4 +126,23 @@ window.onload = () => {
 
   // 渲染题目
   renderSubject(dataSource, subjectContainer);
+
+  // 随机模式
+  const randomPracticeBtn = doc.getElementById('random-practice');
+  const modalWrapperEle = doc.getElementById('modal-wrapper');
+  const modalEle = doc.getElementById('modal');
+  randomPracticeBtn.onclick = () => {
+    modalWrapperEle.setAttribute('style', '');
+    const _dataSource = JSON.parse(JSON.stringify(dataSource));
+    _dataSource.sort(() => Math.random() - 0.5);
+    _dataSource.splice(20);
+    renderSubject(_dataSource, modalEle);
+  }
+  modalEle.onclick = (e) => {
+    e.stopPropagation();
+  }
+  modalWrapperEle.onclick = () => {
+    modalWrapperEle.setAttribute('style', 'display: none');
+    modalEle.innerHTML = '';
+  }
 }
