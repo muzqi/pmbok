@@ -100,6 +100,7 @@ main#subject-container {
 #modal-wrapper {
   position: fixed;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -113,4 +114,14 @@ main#subject-container {
   box-sizing: border-box;
   background-color: #FFF;
   overflow-y: auto;
+}
+#modal-wrapper #cancel-modal {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  margin-top: 8px;
+  background-color: #FFF;
 }

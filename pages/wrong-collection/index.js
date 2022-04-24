@@ -42,7 +42,7 @@ const renderSubject = (dataSource, container) => {
     anwser.setAttribute('data-visible', 'false');
     anwser.setAttribute('style', 'display: none');
     anwser.innerHTML = `
-    ${data.anwser ? `<div>答案：<span style="color: green; font-weight: bold;">${MAP[data.anwser]}</span></div>` : ''}
+    ${!isNaN(data.anwser) ? `<div>答案：<span style="color: green; font-weight: bold;">${MAP[data.anwser]}</span></div>` : ''}
     <div>解析：${data.analysis}</div>
     `;
     subject.appendChild(anwser);
@@ -131,6 +131,7 @@ window.onload = () => {
   const randomPracticeBtn = doc.getElementById('random-practice');
   const modalWrapperEle = doc.getElementById('modal-wrapper');
   const modalEle = doc.getElementById('modal');
+  const cancelModalBtn = doc.getElementById('cancel-modal');
   randomPracticeBtn.onclick = () => {
     modalWrapperEle.setAttribute('style', '');
     const _dataSource = JSON.parse(JSON.stringify(dataSource));
@@ -141,7 +142,7 @@ window.onload = () => {
   modalEle.onclick = (e) => {
     e.stopPropagation();
   }
-  modalWrapperEle.onclick = () => {
+  cancelModalBtn.onclick = () => {
     modalWrapperEle.setAttribute('style', 'display: none');
     modalEle.innerHTML = '';
   }
