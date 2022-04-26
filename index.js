@@ -241,5 +241,6 @@ window.onload = () => {
   handleJumpPage('communication-model');                                          // <td class="communication-model">沟通模型</td>
   handleJumpPage('project-proposal');                                          // <td class="project-proposal">卖方建议书</td>
   handleJumpPage('expert-judgment');                                          // <td class="expert-judgment">专家判断</td>
+  handleJumpPage('benchmarking');                                          // <td class="benchmarking">标杆对照</td>
 
 }
