@@ -404,6 +404,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '软件测试是（）。',
     options: [
       '质量保证过程的活动',
@@ -1062,6 +1063,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '企业系统规划（BSP）是通过全面调查分析企业信息需求，制定信息系统总体方案的一种方法，其活动步骤顺序是：（24）。 ①准备工作 ②识别定义数据类 ③确定管理部门对系统的要求 ④成果报告 ⑤分析现有系统 ⑥制订建议书和开发计划 ⑦定义企业过程',
     options: [
       '①⑦②③⑤⑥④',
@@ -1525,6 +1527,7 @@ const dataSource = [
   },
   {
     tag: TAGS.OPERATIONS_RESEARCH,
+    isFocus: true,
     title: '<p>【其他】分配甲、乙、丙、丁四个人去完成五项任务。每人完成各项任务时间如表所示。由于任务多于人数，故规定其中有一个人可兼完成两项任务，其余三人每人完成一项。为了花费时间最少，（）应该完成两项任务。<br><img alt="image.png" title=".png" src="./images/10.png"></p>',
     options: [
       '甲',
@@ -1918,6 +1921,7 @@ const dataSource = [
   {
     tag: TAGS.PROJECT_MANAGEMENT,
     title: '下列（ ）不属于组织过程资产。',
+    isFocus: true,
     options: [
       '组织对沟通的要求',
       '财务控制程序',
