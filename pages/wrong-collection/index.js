@@ -129,14 +129,21 @@ window.onload = () => {
 
   // 随机模式
   const randomPracticeBtn = doc.getElementById('random-practice');
+  const focusSubjectBtn = doc.getElementById('focus-subject');
   const modalWrapperEle = doc.getElementById('modal-wrapper');
   const modalEle = doc.getElementById('modal');
   const cancelModalBtn = doc.getElementById('cancel-modal');
+
   randomPracticeBtn.onclick = () => {
     modalWrapperEle.setAttribute('style', '');
     const _dataSource = JSON.parse(JSON.stringify(dataSource));
     _dataSource.sort(() => Math.random() - 0.5);
     _dataSource.splice(20);
+    renderSubject(_dataSource, modalEle);
+  }
+  focusSubjectBtn.onclick = () => {
+    modalWrapperEle.setAttribute('style', '');
+    const _dataSource = JSON.parse(JSON.stringify(dataSource.filter(n => n.isFocus)));
     renderSubject(_dataSource, modalEle);
   }
   modalEle.onclick = (e) => {

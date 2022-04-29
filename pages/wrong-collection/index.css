@@ -83,7 +83,7 @@ main#subject-container {
   margin-bottom: 8px;
 }
 
-#random-practice {
+#random-practice, #focus-subject {
   cursor: pointer;
   display: flex;
   justify-content: center;
