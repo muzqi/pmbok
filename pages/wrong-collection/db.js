@@ -13,6 +13,7 @@ const TAGS = {
 const dataSource = [
   {
     tag: TAGS.SOFTWARE_STANDARDS,
+    isFocus: true,
     title: '关于项目招投标的描述，正确的是（）。',
     options: [
       '资格预审档或者招标档的发售期不得少于7天',
@@ -460,7 +461,7 @@ const dataSource = [
       '3.25',
       '3.67',
     ],
-    anwser: 0,
+    anwser: 3,
     analysis: '静态投资回收期是在不考虑资金时间价值的条件下，以项目的净收益回收其全部投资所需要的时间。投资回收期可以自项目建设开始年算起，也可以自项目投产年开始算起，但应予注明。 项目是2016年投资，通常是指年底投资到位，然后2017年就是建设期。该项目的静态投资回收期=3+（12-4.5-4.5）/4.5≈3.67。',
   },
   {
@@ -1163,6 +1164,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '在面向对象的基本概念中，（）体现对象间的交互，通过它向目标对象发送操作请求。',
     options: [
       '继承',
