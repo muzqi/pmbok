@@ -2256,6 +2256,11 @@ const dataSource = [
     AC=260 万；CPI=EV/AC。
     `,
   },
+  {
+    tag: TAGS.CASE_QUESTIONS,
+    title: '【配置管理】(8 分) 简述配置库变更控制流程。',
+    analysis: '<div id="detail_div" class="detail_div xe-removeblank"><p>1）将要升级的基线从产品库取出，放入受控库；</p><p>2）程序员将经修改的代码段从受控库检出，放入自己的开发库中进行修改；</p><p>3）程序员将开发库中修改好的代码段检入受控库；</p><p>4）软件产品的升级修改工作全部完成后将受控库中的新基线存入产品库。</p></div>',
+  },
   // {
   //   tag: TAGS,
   //   title: '',
