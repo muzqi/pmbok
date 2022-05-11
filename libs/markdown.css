@@ -7,7 +7,7 @@ font-size:12px;
 line-height:1.5em;
 padding:1em;
 margin:auto;
-max-width:42em;
+max-width:50em;
 background:#fefefe;
 }
 
@@ -74,11 +74,33 @@ dd { margin: 0 0 0 2em; }
 img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
 
 table {
-border-collapse: collapse;
-border-spacing: 0;
-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
 }
-th { border-bottom: 1px solid black; }
+th {
+  position: relative;
+  min-width: 100px;
+  padding: 16px;
+  background-color: #fafafa;
+  border-bottom: 1px solid rgba(0,0,0,.06);;
+}
+th:not(:last-child)::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 1.6em;
+  background-color: #0000000f;
+  transform: translateY(-50%);
+  content: "";
+}
+
+tbody>tr>td {
+  padding: 16px;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
 td { vertical-align: top; }
 
 @media only screen and (min-width: 480px) {
