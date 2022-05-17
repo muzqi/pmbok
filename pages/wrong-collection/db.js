@@ -733,6 +733,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '中间件有多种类型，IBM 的 MQSeries 属于（ ）中间件。',
     options: [
       '面向消息',
@@ -1257,7 +1258,12 @@ const dataSource = [
       '确认每项工作是否有明确的质量标准',
     ],
     anwser: 1,
-    analysis: '参考《信息系统项目管理师教程》第3版5.6节。 A讨论项目范围说明书属于定义范围的工作。C活动属于确认范围的工作。 D活动属于确认范围的工作内容。',
+    analysis: `
+    参考《信息系统项目管理师教程》第3版5.6节。<br>
+    A讨论项目范围说明书属于定义范围的工作。<br>
+    C活动属于确认范围的工作。<br>
+    D活动属于确认范围的工作内容。
+    `,
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
@@ -1355,6 +1361,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '研究软件架构的根本目的是解决软件的复用、质量和维护问题，软件架构设计是软件开发过程中关键的一步，因此需要对其进行评估，在这一活动中，评估人员关注的是系统的（）属性。',
     options: [
       '功能',
@@ -1572,6 +1579,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
+    isFocus: true,
     title: '组织结构可以比喻成一条连续的频谱，其一端为职能式，另一端为项目式，中间是形形色色的矩阵式。以下关于组织结构的说法中，不正确的是（）',
     options: [
       '组织结构是一种组织过程资产，它可能影响资源的可用性和项目的执行方式。',
@@ -1616,7 +1624,13 @@ const dataSource = [
       '质量反馈',
     ],
     anwser: 0,
-    analysis: '在项目管理中，实施质量保证是审计质量要求和质量控制测量结果，确保采用合理的质量标准和操作性定义的过程。本过程的主要作用是，促进质量过程改进。题干中强调了未能满足验收标准，所以采用质量保证有助于阻止问题的再次发生。选项B，通常用于在提交给客户验收前的内部测试。选项C，质量规划是为在整个项目期间如何管理和核实质量提供指南和方向。',
+    analysis: `
+    在项目管理中，实施质量保证是审计质量要求和质量控制测量结果，确保采用合理的质量标准和操作性定义的过程。<br>
+    本过程的主要作用是，促进质量过程改进。<br>
+    题干中强调了未能满足验收标准，所以采用质量保证有助于阻止问题的再次发生。<br>
+    选项B，通常用于在提交给客户验收前的内部测试。<br>
+    选项C，质量规划是为在整个项目期间如何管理和核实质量提供指南和方向。
+    `,
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
@@ -1656,7 +1670,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    title: '下图是（ ）质量控制管理工具。<br><img src="./images/17.png" />',
+    title: '下图是（ ）质量控制管理工具。<br><img src="./images/17.jpeg" />',
     options: [
       '亲和图',
       '过程决策程序图',
@@ -2210,7 +2224,7 @@ const dataSource = [
     analysis: '<div id="detail_div" class="detail_div xe-removeblank"><p>（每条 1 分，满分 5 分）</p><p>采购管理包括编制采购计划、实施采购、控制采购、结束采购等 4 个过程。</p><p>具体细化步骤包括：</p><p>1）需求确定与采购计划的制订</p><p>2）供应商的搜寻与分析</p><p>3）定价</p><p>4）拟定并发出定单</p><p>5）定单的跟踪和跟催</p><p>6）验货和收货</p><p>7）开票和支付货款</p><p>8）记录管理</p></div>',
   },
   {
-    tag: TAGS.OPERATIONS_RESEARCH,
+    tag: TAGS.CASE_QUESTIONS,
     title: `
     一个信息系统集成项目有 A、B、C、D、E、F、G 共 7 个活动，各个活动的顺序关系、 计划进度和成本预算如下图所示，大写字母为活动名称，其后面括号中的第一个数字是该活 动计划进度持续的周数。第二个数字是该活动的成本预算，单位是万元。<br>
     该项目资金分三次 投入，分别在第 1 周初、第 10 周初和第 15 周初投入资金。<br>
@@ -2287,7 +2301,7 @@ const dataSource = [
     tag: TAGS.OPERATIONS_RESEARCH,
     title: `
     项目经理编制了项目资产负债表（单位：元），如下表所示。该项目的静态投资回收期为 （70） 年（保留1位小数位）。<br>
-    <img src="./images/19.png" />
+    <img style="width: 600px;" src="./images/19.png" />
     `,
     options: [
       '2',
@@ -2466,6 +2480,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '某100人的公司承接了一个大型项目，所有部门都参与了该项目，其中55人为全职参与。项目经理小A专职负责项目管理，公司配置管理人员小B兼职负责该项目的行政工作。则该公司的组织结构类型是（）',
     options: [
       '强矩阵型组织',
@@ -2710,6 +2725,178 @@ const dataSource = [
     tag: TAGS.CASE_QUESTIONS,
     title: '【进度管理】描述缩短活动工期可能采取的措施。',
     analysis: '<div id="detail_div" class="detail_div xe-removeblank"><p>1）赶工，投入更多的资源或增加工作时间，以缩短关键活动的工期；</p><p>2）快速跟进，并行施工，以缩短关键路径的长度；</p><p>3）使用高素质的资源或经验更丰富的人员；</p><p>4）减小活动范围或降低活动要求；</p><p>5）改进方法或技术，以提高生产效率；</p><p>6）加强质量管理，及时发现问题，减少返工，从而缩短工期。</p></div>',
+  },
+  {
+    tag: TAGS.ENGLISH,
+    title: `(    ) is a theory that explains the incentive process by examining the causal relationship between people's efforts and their final reward, and selects appropriate behaviors to achieve the ultimate reward goal.`,
+    options: [
+      `Maslow's hierarchy of needs`,
+      `Hertzberg's two-factor theory`,
+      `Theory X and Theory Y`,
+      `Expectation theory`,
+    ],
+    anwser: 3,
+    analysis: `
+    （）是通过考察人们的努力行为与其所获得的最终奖酬之间的因果关系来说明激励过程，并以选择合适的行为达到最终的奖酬目标的理论。<br>
+    A、马斯洛需求层次理论<br>
+    B、赫茨伯格双因素理论<br>
+    C、X理论与Y理论<br>
+    D、期望理论
+    `,
+  },
+  {
+    tag: TAGS.ENGLISH,
+    title: ' (   ) Used to analyze the influence of the project on the political system, policies, economic structure, legal ethics, etc.',
+    options: [
+      'Feasibility of organization',
+      'Economic feasibility',
+      'Necessity of investment',
+      'Social feasibility',
+    ],
+    anwser: 3,
+    analysis: `
+    解析：（）用于分析项目对政治体制、方针政策、经济结构、法律道德等的影响。<br>
+    A、组织可行性<br>
+    B、经济可行性<br>
+    C、投资必要性<br>
+    D、社会可行性
+    `,
+  },
+  {
+    tag: TAGS.ENGLISH,
+    title: '(   ) Ensures the effectiveness of project configuration management and reflects the most fundamental requirement of configuration management, that is, no confusion is allowed.',
+    options: [
+      'Configure audit',
+      'Configuration control',
+      'Configure identifiers',
+      'Configuration management',
+    ],
+    anwser: 0,
+    analysis: `
+    （）确保了项目配置管理的有效性，体现了配置管理的最根本要求，即不允许出现任何混乱现象。<br>
+    A、配置审计<br>
+    B、配置控制<br>
+    C、配置标识<br>
+    D、配置管理
+    `,
+  },
+  {
+    tag: TAGS.CASE_QUESTIONS,
+    title: '【范围管理】简述范围变更的原因。',
+    analysis: '<div id="detail_div" class="detail_div xe-removeblank"><p>造成项目范围变更的主要原因是项目外部环境发生了变化，例如∶</p><p>●政府政策的问题。</p><p>●项目范围的计划编制不周密详细，有一定的错误或遗漏。</p><p>●市场上出现了或是设计人员提出了新技术、新手段或新方案。</p><p>●项目执行组织本身发生变化。</p><p>●客户对项目、项目产品或服务的要求发生变化。</p></div>',
+  },
+  {
+    tag: TAGS.ENGLISH,
+    title: 'The （ ）can realize the seamless integration of various manufacturing devices equipped with sensing, identification, processing, communication actuation and networking capabilities.',
+    options: [
+      'Internet of things',
+      'cloud computing',
+      'big data',
+      'artificial intelligence',
+    ],
+    anwser: 0,
+    analysis: `
+    ( )可以实现把具有传感、识别、处理、通信和联网能力的各种制造设备进行无缝集成。<br>
+    A、物联网<br>
+    B、云计算<br>
+    C、大数据<br>
+    D、人工智能
+    `,
+  },
+  {
+    tag: TAGS.ENGLISH,
+    title: '（ ）is the process of formalizing acceptance of the completed project deliverables. The key benefit of this process is that it brings objectivity to the acceptance process and increases the probability of final product, service,',
+    options: [
+      'Validate scope',
+      'Define scope',
+      'Control scope',
+      'Collect requirement',
+    ],
+    anwser: 0,
+    analysis: `
+    （ ）是正式验收已完成项目交付物的过程。这个过程的主要好处是它使验收过程更加客观，并通过验证每个可交付成果来增加最终产品、服务或结果成功验收的概率。<br>
+    A、确认范围<br>
+    B、定义范围<br>
+    C、控制范围<br>
+    D、收集需求
+    `,
+  },
+  {
+    tag: TAGS.CASE_QUESTIONS,
+    title: '【范围管理】简述需求跟踪矩阵的内容。',
+    analysis: '<div id="detail_div" class="detail_div xe-removeblank"><p>1）业务需要、机会、目的和目标：</p><p>2）项目目标；</p><p>3）项目范围（或WBS可交付成果）</p><p>4）产品设计；</p><p>5）产品开发；</p><p>6）测试策略和测试场景；</p><p>7）高层级需求到详细需求。</p></div>',
+  },
+  {
+    tag: TAGS.PROJECT_MANAGEMENT,
+    title: '关于识别风险的工具与技术的描述，正确的是∶（）。',
+    options: [
+      '核对单简单易用且可以穷尽所有事项',
+      'SWOT分析可用于考察组织优势能够抵消威胁的程度',
+      '文档审查是对项目进行安全性、规范化审查',
+      '拥有类似项目或业务领域经验的专家不可以直接识别风险',
+    ],
+    anwser: 1,
+    analysis: '<div id="detail_div" class="detail_div xe-removeblank"><br>A选项：核对单简单易用但无法穷尽所有事项。<br>C选项：文档审查，对项目文档（包括各种计划、假设条件、以往的项目文档、协议和其他信息）进行结构化审查。<br>D选项：组织者使用调查问卷就重要的项目风险征询意见，然后对专家的答卷进行归纳，并把结果反馈给专家做进一步评论。这个过程反复几轮后，就可能达成一致意见。<br></div>',
+  },
+  {
+    tag: TAGS.PROJECT_MANAGEMENT,
+    title: '进行范围确认是项目中一项非常重要的工作，制定和执行确认程序时，第一项工作一般是（ ）。',
+    options: [
+      '确定需要进行确认范围的时间',
+      '识别确认范围需要哪些投入',
+      '确定确认范围正式接受的标准和要素',
+      '确定确认范围会议的组织步骤',
+    ],
+    anwser: 0,
+    analysis: '<div id="detail_div" class="detail_div xe-removeblank">确认范围的一般步骤：<br>1）确认需要进行确认范围的时间；<br>2）识别确认范围需要哪些投入；<br>3）确认范围正式被接受的标准和要素；<br>4）确定确认范围会议的组织步骤；<br>5）组织确认范围会议；<br></div>',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    title: '信息技术服务标准（ITSS）所定义的IT服务四个核心要素是：人员、流程、资源和（）',
+    options: [
+      '技术',
+      '工具',
+      '合作伙伴',
+      '持续改进',
+    ],
+    anwser: 0,
+    analysis: '<div id="detail_div" class="detail_div xe-removeblank">ITSS组成要素。IT服务由人员(People)、流程(Process)、技术(Technology)和资源(Resource)组成，简称PPTR。其中；<br>•人员：指提供IT服务所需的人员及其知识、经验和技能要求；<br>•流程：指提供IT服务时，合理利用必要的资源，将输入转化为输出的一组相互关联和结构化的活动：<br>•技术；指交付满足质量要求的IT服务应使用的技术或应具备的技术能力；<br>•资源：指提供IT服务所依存和产生的有形及无形资产。<br></div>',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    title: '信息技术服务标准（ITSS）的IT服务生命周期模型中（）是在规划设计基础上依据ITSS监理管理体系提供服务解决方案。',
+    options: [
+      '服务战略',
+      '部署实施',
+      '服务运营',
+      '监督管理',
+    ],
+    anwser: 1,
+    analysis: '<div id="detail_div" class="detail_div xe-removeblank"><p>IT服务生命周期由规划设计(Planning&amp;Design)、部署实施（Implementing）、服务运营（Operation）、持续改进(Improvemenit)和监督管理（Supervision）5个阶段组成，简称PIOIS。<br>其中：<br>规划设计：从客户业务战略出发，以需求为中心，参照ITSS对IT服务进行全面系统的战略规划和设计，为IT服务的部署实施做好准备，以确保提供满足客户需求的IT服务；<br>部署实施：在规划设计基础上，依据ITSS建立管理体系、部署专用工具及服务解决方案；<br>服务运营：根据服务部署情况，依据ITSS，采用过程方法，全面管理基础设施、服务流程、人员和业务连续性，实现业务运营与IT服务运营融合；<br>持续改进：根据服务运营的实际情况，定期评审IT服务满足业务运营的情况，以及IT服务本身存在的缺陷，提出改进策略和方案，并对IT服务进行重新规划设计和部署实施，以提高IT服务质量；<br>监督管理：本阶段主要依据ITSS对IT服务服务质量进行评价，并列服务供方的服务过程、交付结果实施监督和绩效评估。</p></div>',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    title: '在典型的软件架构模式中，（）模式是基于资源不对等，为实现共享而提出的。',
+    options: [
+      '管道/过滤器',
+      '事件驱动',
+      '分层',
+      '客户/服务器',
+    ],
+    anwser: 3,
+    analysis: '<div id="detail_div" class="detail_div xe-removeblank"> 客户／服务器模式（Client/Server， C/S）：基于资源不对等，为实现共享而提出的模式。C/S 模式将应用一分为二，服务器（后台）负责数据操作和事务处理，客户（前台）完成与用户的交互任务。<br></div>',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    title: '在分布式应用中，软件架构设计不需要考虑（）的问题。',
+    options: [
+      '数据库选择',
+      '性能',
+      '需求可扩展',
+      '人员',
+    ],
+    anwser: 2,
+    analysis: '<div id="detail_div" class="detail_div xe-removeblank">针对目前广泛使用的分布式应用，其软件架构设计需要考虑如下问题。<br>1）数据库的选择问题：目前主流的数据库系统是关系数据库。<br>2）用户界面选择问题：HTML/HTTP (S)协议是实现 Internet应用的重要技术。<br>3）灵活性和性能问题：权衡独立于厂商的抽象定义（标准）所提供的灵活性和特定厂商产品带来的性能。<br>4）技术选择的问题：选择成熟的技术可以规避项目风险。不仅需要了解技术的优势，还需要了解技术的适用范围和局限性。<br>5）人员的问题：聘请经验丰富的架构设计师，可以有效地保证项目的成功。<br></div>',
   },
   // {
   //   tag: TAGS,
