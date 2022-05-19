@@ -242,5 +242,5 @@ window.onload = () => {
   handleJumpPage('project-proposal');                                          // <td class="project-proposal">卖方建议书</td>
   handleJumpPage('expert-judgment');                                          // <td class="expert-judgment">专家判断</td>
   handleJumpPage('benchmarking');                                          // <td class="benchmarking">标杆对照</td>
-
+  handleJumpPage('bootstrapping-technology');                                          //                 <td class="bootstrapping-technology">引导技术</td>
 }

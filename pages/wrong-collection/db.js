@@ -373,6 +373,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: `
     <span>安全审计的手段主要包括（）</span>
     <ol>
@@ -2942,6 +2943,40 @@ const dataSource = [
 
     `,
   },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    title: '在 OSI 七层协议中，（ ）主要负责确保数据可靠、顺序、无错的从 A 点传输到 B点 。',
+    options: [
+      '数据链路层',
+      '网络层',
+      '传输层',
+      '会话层',
+    ],
+    anwser: 2,
+    analysis: `
+    传输层：主要负责确保数据可靠、顺序、无错地从Ａ点到传输到Ｂ点。如提供建立、维护和拆除传送连接的功能；<br>
+    选择网络层提供昀合适的服务；<br>
+    在系统之间提供可靠的透明的数据传送，提供端到端的错误恢复和流量控制。<br>
+    在 TCP/IP协议中，具体协议有 TCP、UDP、SPX。
+    `,
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    title: '对 MAC 地址进行变更属于（）。',
+    options: [
+      '链路层交换',
+      '物理层交换',
+      '网络层交换',
+      '传输层交换',
+    ],
+    anwser: 0,
+    analysis: '<div id="detail_div" class="detail_div xe-removeblank">在计算机网络中，按照交换层次的不同，网络交换可以分为物理层交换（如电话网）、链路层交换（二层交换，对 MAC 地址进行变更）、网络层交换（三层交换，对 1P 地址进行变更）、传输层交换（四层交换，对端口进行变更，比较少见）和应用层交换（似乎可以理解为 Web 网关等）。<br>网络中的数据交换可以分为电路交换、分组交换（数据包交换）、ATM 交换、全光交换和标记交换。其中电路交换有预留，且分配一定空间，提供专用的网络资源，提供有保证的服务，应用于电话网；而分组交换无预留，且不分配空间，存在网络资源争用，提供有无保证的服务。分组交换可用于数据报网络和虚电路网络。我们常用的 Internet 就是数据报网络，单位是 Bit， 而 ATM 则用的是虚电路网络，单位是码元。<br></div>',
+  },
+  {
+    tag: TAGS.CASE_QUESTIONS,
+    title: '【整体管理】引导技术可用于指导项目章程的制定，引导技术包含哪些？',
+    analysis: '头脑风暴、冲突处理、问题解决、会议管理。',
+  },
   // {
   //   tag: TAGS,
   //   title: '',
@@ -2959,4 +2994,5 @@ const dataSource = [
   //   title: '',
   //   analysis: '',
   // },
+
 ];
