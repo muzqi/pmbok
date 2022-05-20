@@ -131,7 +131,7 @@ const dataSource = [
     `,
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.INFORMATION_TECHNOLOGY,
     title: '信息系统安全保护等级的定级要素是（ ）。',
     options: [
       '等级保护对象和保护客体',
@@ -266,6 +266,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '在信息安全管理中，数字签名主要用于确保数据的（）。',
     options: [
       '完整性 ',
@@ -278,6 +279,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '以下关于项目验收的描述，不正确的是（）',
     options: [
       '验收测试是对信息系统进行全面的测试，依照双方合同约定的系统环境，以确保系统的功能和技术设计满足建设方的功能需求和非功能需求，并能正常运行。',
@@ -322,18 +324,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    title: '（ ）属于评估测试过程的指标。',
-    options: [
-      '缺陷分布',
-      '修复缺陷的时间',
-      '回归测试中发现的缺陷数据',
-      '测试进度',
-    ],
-    anwser: 3,
-    analysis: '教材p746-23.3.3测试监控管理。此题目考查测试执行中工作效率相关指标，测试进度是考核很重要的一步，如果没有进度保证，所有的测试都存在风险。',
-  },
-  {
-    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '信息必须依赖其存储、传输、处理及应用的载体媒介而存在信息系统设备的安全主要包括（）。',
     options: [
       '秘密性 可靠性 稳定性',
@@ -809,6 +800,7 @@ const dataSource = [
   },
   {
     tag: TAGS.SOFTWARE_STANDARDS,
+    isFocus: true,
     title: '关于配置管理的描述，正确的是 （ 51 ） 。',
     options: [
       '某个配置项的版本号为0.91，该配置项的状态为“正式”',
@@ -889,6 +881,7 @@ const dataSource = [
   },
   {
     tag: TAGS.POLITICS,
+    isFocus: true,
     title: '【时政题】2021年12月03日工业和信息化部关于印发《“十四五”工业绿色发展规划》。坚持把推动碳达峰碳中和目标如期实现作为产业结构调整、促进工业全面绿色低碳转型的总体导向，全面统领减污降碳和能源资源高效利用。其中，主要目标包括（ ）',
     options: [
       '明确工业降碳实施路径',
@@ -926,6 +919,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '（ ）不属于“互联网+”的特征。',
     options: [
       '创新驱动',
@@ -938,6 +932,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '关于项目和企业战略，不正确的是：（ ）。',
     options: [
       '项目管理通常需要将企业战略作为考虑因素',
@@ -1041,7 +1036,7 @@ const dataSource = [
       '52.5',
     ],
     anwser: 3,
-    analysis: '计算该项投资收益的数学期望值： 100x50％＋200x20％＋250x15％＋0x10％-500x5％＝50＋40＋37.5-25＝102.5万元。 投资回报为：102.5-50＝52.5。',
+    analysis: '计算该项投资收益的数学期望值：100x50％＋200x20％＋250x15％＋0x10％-500x5％＝50＋40＋37.5-25＝102.5万元。 投资回报为：102.5-50＝52.5。',
   },
   {
     tag: TAGS.POLITICS,
@@ -1206,6 +1201,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '智能具有感知、记忆、自适应等特点，能够存储感知到的外部信息及由思维产生的知识，同时能够利用己有的知识对信息进行分析、计算、比较、判断、联想和决策属于智能的（）能力。',
     options: [
       '感知',
@@ -1538,11 +1534,12 @@ const dataSource = [
   },
   {
     tag: TAGS.CASE_QUESTIONS,
+    isFocus: true,
     title: `
     <p>【2021年5月高项】<br>（25 分）阅读下列说明，回答问题 1 至问题 5，将解答填入答题纸的对应栏内。<br>【说明】某项目的网络图如下：<br><img alt="image.png" title=".png" src="./images/7.png"><br>其中，各活动正常完工时间、正常完工直接成本、最短完工时间、赶工增加直接成本（如下<br>表所示）。另外，项目的间接成本为 500 元/天。<br><img alt="image.png" title=".png" src="./images/8.png"><br>【问题1】（4分）<br>请确定项目的关键路径。<br>【问题2】（3分）<br>根据网络图确定项目正常完工的工期是多少天？ 所需的成本是多少？<br>【问题3】（3分）<br>讨论下列事件对计划项目进度有何影响：<br>1）活动D拖期2天；<br>2）活动B拖期2天；<br>3）活动F和G在规定进度之前1天完成。<br>【问题4】（7分）<br>项目想提前一天完工，基于成本最优原则，可以针对哪些活动赶工？赶工后的项目成本是多少？<br>【问题5】（8分）<br>基于项目整体成本最优原则，请列出需要赶工的活动及其工期。<br>基于以上结果，确定赶工后的项目工期及所需成本。</p>
     `,
     analysis: `
-    <div id="detail_div" class="detail_div xe-removeblank"><p>【问题1】</p><p>ADFH（2 分）、AEGH（2 分）</p><p>【问题2】</p><p>工期 25 天（1 分），</p><p>成本=直接成本+间接成本=14900+500*25=27400 元（2 分）</p><p>【问题3】</p><p>1）进度将延后2）没有影响3）进度将提前</p><p>【问题4】<img alt="image.png" title=".png" src="http://wechatapppro-1252524126.file.myqcloud.com/apphfuydJkU5721/image/ueditor/83991100_1646806814.png">方案1，A 赶工 1 天，增加成本 400 元（1 分），成本=27400+400-500=27300 元（1 分）方案2，H 赶工 1 天，增加成本 400 元（1 分），成本=27400+400-500=27300 元（1 分）方案3，G、D 各赶工 1 天，增加成本 100+300 元（1 分），成本=27400+400-500=27300元（1 分）</p><p>可对 A 或 H 或 G、D 赶工，赶工后成本为 27300 元。（1 分）</p><p>【问题5】</p><p>需赶工活动：</p><p>A 赶工 2 天（1 分），工期 8 天（1 分）；H 赶工 1 天（1 分），工期 4 天（1 分）；</p><p>G 赶工 1 天，工期 4 天（1 分），D 赶工 1 天，工期 3 天（1 分）。</p><p>项目工期=25-2-1-1=21 天（1 分）；</p><p>成本=27400+400*2+400+400-500*4=27000 元（1 分）。</p></div>
+    <div id="detail_div" class="detail_div xe-removeblank"><p>【问题1】</p><p>ADFH（2 分）、AEGH（2 分）</p><p>【问题2】</p><p>工期 25 天（1 分），</p><p>成本=直接成本+间接成本=14900+500*25=27400 元（2 分）</p><p>【问题3】</p><p>1）进度将延后2）没有影响3）进度将提前</p><p>【问题4】<br><img alt="image.png" title=".png" src="http://wechatapppro-1252524126.file.myqcloud.com/apphfuydJkU5721/image/ueditor/83991100_1646806814.png"><br>方案1，A 赶工 1 天，增加成本 400 元（1 分），成本=27400+400-500=27300 元（1 分）<br>方案2，H 赶工 1 天，增加成本 400 元（1 分），成本=27400+400-500=27300 元（1 分）<br>方案3 G、D 各赶工 1 天，增加成本 100+300 元（1 分），成本=27400+400-500=27300元（1 分）</p><p>可对 A 或 H 或 G、D 赶工，赶工后成本为 27300 元。（1 分）</p><p>【问题5】</p><p>需赶工活动：</p><p>A 赶工 2 天（1 分），工期 8 天（1 分）；H 赶工 1 天（1 分），工期 4 天（1 分）；</p><p>G 赶工 1 天，工期 4 天（1 分），D 赶工 1 天，工期 3 天（1 分）。</p><p>项目工期=25-2-1-1=21 天（1 分）；</p><p>成本=27400+400*2+400+400-500*4=27000 元（1 分）。</p></div>
     `,
   },
   {
@@ -1768,6 +1765,7 @@ const dataSource = [
   },
   {
     tag: TAGS.SOFTWARE_STANDARDS,
+    isFocus: true,
     title: '（）不是现行ISO9000系列标准提出的质量管理原则。',
     options: [
       '以产品为中心',
@@ -2330,6 +2328,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '关于电子商务的描述，正确的是（5）。',
     options: [
       '个人通过网站在苏宁电器购买电器属于B2C模式',
@@ -2350,6 +2349,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '关于项目管理的描述，不正确的是：（ 23 ）',
     options: [
       '项目管理的主要目的是实现企业管理目标',
@@ -2531,6 +2531,7 @@ const dataSource = [
   {
     tag: TAGS.SOFTWARE_STANDARDS,
     title: '关于项目建议书的描述不正确的是（）。',
+    isFocus: true,
     options: [
       '项目建议书是项目建设单位向上级主管部门提交的项目申请文件',
       '建议书是对拟建项目提出的框架性的总体设想',
@@ -2610,6 +2611,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '关于箭线图的描述不正确的是（ ）',
     options: [
       '流入同一节点的活动均有共同的紧前活动',
@@ -2977,6 +2979,28 @@ const dataSource = [
     title: '【整体管理】引导技术可用于指导项目章程的制定，引导技术包含哪些？',
     analysis: '头脑风暴、冲突处理、问题解决、会议管理。',
   },
+  {
+    tag: TAGS.PROJECT_MANAGEMENT,
+    title: '主要不关注网络路线的总时差，而是集中管理缓冲活动持续时间和用于计划活动资源的制定进度计划所采用的技术是（）。',
+    options: [
+      '关键路线法',
+      '资源平衡法',
+      '关键链法',
+      '进度压缩法',
+    ],
+    anwser: 2,
+    analysis: '关键链法（CCM）是一种进度规划方法，允许项目团队在任何项目进度路径上设置缓冲，以应对资源限制和项目不确定性。',
+  },
+  {
+    tag: TAGS.CASE_QUESTIONS,
+    title: '【整体管理】简述项目工作说明书包含的内容。',
+    analysis: `
+    项目工作说明书（Statement of Work，SOW）是对项目需交付的产品、服务或成果的叙述性说明。<br>
+    对于内部项目，项目启动者或发起人根据业务需要及对产品或服务的需求，来提供工作说明书。<br>
+    对于外部项目，工作说明书则由客户提供，可以是招标文件（如建议邀请书、信息邀请书、投标邀请书）的一部分，或合同的一部分。<br>
+    产品范围描述在高项说法为：产品范围说明书。
+    `,
+  },
   // {
   //   tag: TAGS,
   //   title: '',
@@ -2994,5 +3018,4 @@ const dataSource = [
   //   title: '',
   //   analysis: '',
   // },
-
 ];
