@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="../libs/markdown.css">
 </head>
 <body>
+  <p>大纲</p>
+  <div id="outline-container"></div>
   <h1>论文风险管理</h1>
   <p>摘要</p>
   <div id="summary-container"></div>
@@ -17,6 +19,32 @@
 <script src="../libs/marked.min.js"></script>
 <script>
   const doc = document;
+
+  const outline = `
+1.项目概述：
+
+1. 项目背景
+2. 公司的战略目标
+3. 立项项目介绍
+4. 项目预算、工期、人员简介
+
+2.风险理论知识
+
+1. 什么是风险，风险的目标
+2. 风险规划组的定义
+3. 风险控制组的定义
+
+3.风险管理实践
+
+1. 风险规划
+  - 如何制定风险管理计划
+  - 如何制定风险登记册
+  - 如何定性、定量分析，找出高优风险（疫情、AI技术）
+  - 如何解决高优风险（减轻、转移）
+2. 风险控制，案例：高并发（分布式部署、负载均衡、防抖节流）
+
+4.总结
+  `;
 
   const summary = `
 2020年6月，我司为巩固视频智能监控行业地位，立项开发《视频智能监控小微平台》系统。
@@ -109,6 +137,7 @@
 3. 牢记经验，吸取教训，相信通过不断的积累和不懈的努力，我的信息系统项目管理能力一定可以得到不断提高。
   `;
 
+  doc.getElementById('outline-container').innerHTML = marked.parse(outline);
   doc.getElementById('summary-container').innerHTML = marked.parse(summary) + `<p><code>${summary.trim().length}</code>个字</p>`;
   doc.getElementById('content-container').innerHTML = marked.parse(content) + `<p><code>${content.trim().length}</code>个字</p>`;
 </script>
