@@ -10,6 +10,8 @@
 </head>
 
 <body>
+  <p>大纲</p>
+  <div id="outline-container"></div>
   <h1>论文范围管理</h1>
   <p>摘要</p>
   <div id="summary-container"></div>
@@ -19,6 +21,33 @@
 <script src="../libs/marked.min.js"></script>
 <script>
   const doc = document;
+
+  const outline = `
+1.项目概述：
+
+1. 项目背景
+2. 公司的战略目标
+3. 立项项目介绍
+4. 项目预算、工期、人员简介
+
+2.范围理论知识
+
+1. 什么是项目范围管理
+2. 范围规划组的定义
+3. 范围控制组的定义
+
+3.范围管理实践
+
+1. 范围规划
+  - 如何制定范围管理计划
+  - 如何收集需求并定义范围（案例：64路）
+  - 如何创建WBS
+2. 范围控制
+  - 干系人确认可交付成果（用户画像数据分析）
+  - 科学的控制范围
+
+4.总结
+  `;
 
   const summary = `
 2020年6月，我司为巩固视频智能监控行业地位，立项开发《视频智能监控小微平台》系统。
@@ -111,6 +140,7 @@
 3. 牢记经验，吸取教训，相信通过不断的积累和不懈的努力，我的信息系统项目管理能力一定可以得到不断提高。
   `;
 
+  doc.getElementById('outline-container').innerHTML = marked.parse(outline);
   doc.getElementById('summary-container').innerHTML = marked.parse(summary) + `<p><code>${summary.trim().length}</code>个字</p>`;
   doc.getElementById('content-container').innerHTML = marked.parse(content) + `<p><code>${content.trim().length}</code>个字</p>`;
 </script>

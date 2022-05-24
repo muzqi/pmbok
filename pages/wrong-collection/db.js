@@ -2215,7 +2215,16 @@ const dataSource = [
     tag: TAGS.CASE_QUESTIONS,
     isFocus: true,
     title: '<div id="detail_div" class="detail_div xe-removeblank"><p>【项目采购管理】(7 分) 请将下面（1）~（7）处的答案填写在答题纸的对应栏内。<br>1）供应商选择的三大主要因素是供应商的（1）、（2）、和（3）。<br>2）经进货验证确定为不合格的产品，应采取的处理包括退货、（4）和（5）<br>3）采购需求通常包括标的物的配置，性能，数量，服务等，其中（6）和（7）最为关键。</p></div>',
-    analysis: '（每条 1 分，满分 7 分）（1）价格 （2）质量 （3）服务 （4）调换 （5）降级改作他用 （6）配置 （7）性能',
+    analysis: `
+    （每条 1 分，满分 7 分）<br>
+    （1）价格<br>
+    （2）质量<br>
+    （3）服务<br>
+    （4）调换<br>
+    （5）降级改作他用<br>
+    （6）配置<br>
+    （7）性能
+    `,
   },
   {
     tag: TAGS.CASE_QUESTIONS,
@@ -2867,6 +2876,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '信息技术服务标准（ITSS）的IT服务生命周期模型中（）是在规划设计基础上依据ITSS监理管理体系提供服务解决方案。',
     options: [
       '服务战略',
@@ -3128,20 +3138,155 @@ const dataSource = [
     anwser: 3,
     analysis: '<div id="detail_div" class="detail_div xe-removeblank">根据GB/T 12504-90《计算机软件质量保证计划规范》，为了确保软件的实现满足需求，至少需要下列基本文档：<br>1）软件需求规格说明书<br>2）软件设计说明书<br>3）软件验证与确认计划<br>4）软件验证和确认报告<br>5）用户文档<br></div>',
   },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: `
+    （）属于客户关系管理（CRM）应用设计特点。<br>
+    ①可扩展性<br>
+    ②可复用性<br>
+    ③可度量性<br>
+    ④可移植性
+    `,
+    options: [
+      '①②④',
+      '②③④',
+      '①③④',
+      '①②③',
+    ],
+    anwser: 0,
+    analysis: 'CRM应用设计特点包括可伸缩性（可拓展）、可移植性（复用和移植）。',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '商业智能的实现有三个层次∶数据报表、（）。',
+    options: [
+      '数据仓库、数据挖掘',
+      '数据ETL、多维数据分析',
+      '多维数据分析、数据挖掘',
+      '数据仓库、数据ETL',
+    ],
+    anwser: 2,
+    analysis: '本题考查BI 的相关内容。商业智能的实现有三个层次∶数据报表、多维数据分析、数据挖掘。',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '当前人工智能细分领域涌现出大批专业型深度学习架构，其中（）擅长自然语言处理。',
+    options: [
+      'ROS',
+      'OpenCV',
+      'NLTK',
+      'ARTOOLKit',
+    ],
+    anwser: 2,
+    analysis: '<div id="detail_div" class="detail_div xe-removeblank">NLTK，全称NaturalLanguageToolkit，自然语言处理工具包，在NLP领域中，最常使用的一个Python库。<br>Ros是机器人操作系统（RobotOperatingSystem）的英文缩写。ROS是用于编写机器人软件程序的一种具有高度灵活性的软件架构。<br>OpenCV是一个基于BSD许可（开源）发行的跨平台计算机视觉和机器学习软件库。<br>ARToolkit，是一个开源的AR（增强现实）SDK。<br></div>',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '数据分析师在数据治理（）阶段，对业务进行分析，并应用业务据点的方法，分析并获取所需要的数据。',
+    options: [
+      '数据存储与管理',
+      '数据应用',
+      '数据脱敏',
+      '数据规划',
+    ],
+    anwser: 3,
+    analysis: `
+    数据分析师的职责真的不止是分析，除了分析之外，数据分析师需要参与到数据规划、数据采集过程中，而在数据应用过程中也需要完成指标体系、报表体系的建设以及部分临时的数据查询需求。数据分析师要对业务进行分析，分析所需要的数据需要通过埋点来获取。分析师参与到数据规划、数据采集的过程中，可以更快地拿到数据，减少数据等待时长，有利于提高分析的效率。<br>
+    数据规划是确定信息系统支持组织的业务活动的各类数据及相互关系，识别组织中各业务领域的主题数据（或数据类）。主题数据是业务活动中产生或使用的、描述某项业务活动内容与特征的一类数据的总称。数据是组织的重要资源，是信息系统工作的基础。
+    `,
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '信息技术服务标准（ITSS）体系中定义的IT服务生命周期为（）。',
+    options: [
+      '启动过程一规划过程一执行过程一结束过程',
+      '规划设计一部署实施一服务运营一持续改进一监督管理',
+      '规划设计一部署实施一服务运营一持续改进',
+      '启动过程一规划过程一执行过程一监督过程一收尾过程',
+    ],
+    anwser: 1,
+    analysis: '本题考查 ITSS的相关内容。IT服务生命周期由规划设计、部署实施、服务运营、持续改进、监督管理5个阶段组成，简称PI0IS。',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: 'TCP/IP模型中，（ ）协议属于网络层的协议。',
+    options: [
+      'ARP',
+      'SNMP',
+      'TCP',
+      'FTP',
+    ],
+    anwser: 0,
+    analysis: '<div id="detail_div" class="detail_div xe-removeblank">1. 网络标准与网络协议<br>网络协议是为计算机网络中进行数据交换而建立的规则、标准或约定的集合。网络协议由三个要素组成，分别是语义、语法和时序。<br>OSI协议<br>1）物理层∶具体标准有RS232、V.35、RJ-45、FDDI。<br>2）数据链路层∶常见的协议有IEEE 802.3/.2、HDLC、PPP、ATM。<br>3）网络层∶在 TCP/IP 协议中，网络层具体协议有 IP、ICMP、IGMP、IPX、ARP等。<br>4）传输层∶在TCP/IP协议中，具体协议有TCP、UDP、SPX。<br>5）会话层∶常见的协议有RPC、SQL、NFS。<br>6）表示层∶常见的协议有JPEG、ASCII、GIF、DES、MPEG。<br>7）应用层∶在 TCP/IP协议中，常见的协议有HTTP、Telnet、FTP、SMTP。<br></div>',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '（）描述对操作规范的说明，其只说明操作应该做什么，并没有定义操作如何做。',
+    options: [
+      '接口',
+      '多态',
+      '封装',
+      '继承',
+    ],
+    anwser: 0,
+    analysis: '接口描述对操作规范的说明，其只说明操作应该做什么，并没有定义操作如何做。可以将接口理解成为类的一个特例，它规定了实现此接口的类的操作方法，把真正的实现细节交由实现该接口的类去完成。',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '关于数据库和数据仓库技术的描述，不正确的是（）。',
+    options: [
+      '操作型处理也称事务处理，强调对历史数据进行分析',
+      '大数据分析需依托云计算、云储存、虚拟化等技术',
+      '大数据在于对数据进行专业化处理、实现数据的"增值"',
+      '数据仓库是一个面向主题的、集成的、相对稳定的数据集合',
+    ],
+    anwser: 0,
+    analysis: '操作型处理也称事务处理，指的是对联机数据库的日常操作，通常是对数据库中记录的查询和修改，主要为企业的特定应用服务，强调处理的响应时间、数据的安全性和完整性等；分析型处理则用于管理人员的决策分析，经常要访问大量的历史数据。',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '在计算机网络中，按照交换层次的不同，网络交接可以分为物理层交换、链路层交换网络、传输层交换五层，其中"对IP地址进行变更"属于（）。',
+    options: [
+      '传输层交换',
+      '应用层交换',
+      '网络层交换',
+      '链路层交换',
+    ],
+    anwser: 2,
+    analysis: `
+    在计算机网络中，按照交换层次的不同，网络交换可以分为<br>
+    物理层交换（如电话网）<br>
+    链路层交换（二层交换，对MAC地址进行变更）<br>
+    网络层交换（三层交换，对IP地址进行变更）<br>
+    传输层交换（四层交换，对端口进行变更，比较少见）<br>
+    应用层交换（似乎可以理解为 Web 网关等）。
+    `,
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '在网络和信息安全产品中，（）独立地对网络行为和主机操作提供全面与忠实的记录，方便用户合作审查事故原因。',
+    options: [
+      '防火墙',
+      '防毒软件',
+      '扫描器',
+      '安全审计系统',
+    ],
+    anwser: 3,
+    analysis: '安全审计系统通过独立的、对网络行为和主机操作提供全面与忠实的记录，方便用户分析与审查事故原因，很像飞机上的黑匣子。',
+  },
   // {
   //   tag: TAGS,
-  //   title: '',
-  //   options: [
-  //     '',
-  //     '',
-  //     '',
-  //     '',
-  //   ],
-  //   anwser: 0,
-  //   analysis: '',
-  // },
-  // {
-  //   tag: TAGS,
+  //   isFocus: true,
   //   title: '',
   //   options: [
   //     '',
