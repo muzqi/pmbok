@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>匈牙利算法</title>
+  <link rel="stylesheet" href="../libs/markdown.css">
+</head>
+
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 匈牙利算法
+
+> 匈牙利算法是一种在多项式时间内求解任务分配问题的组合优化算法
+
+分配甲、乙、丙、丁四个人去完成五项任务。每人完成各项任务时间如表所示。由于任务多于人数，故规定其中有一个人可兼完成两项任务，其余三人每人完成一项。为了花费时间最少，（）应该完成两项任务。
+![](./wrong-collection/images/10.png)
+
+- 每行都减去该行的最小值
+  - ![](./wrong-collection/images/11.png)
+- 每列都减去该列的最小值
+  - ![](./wrong-collection/images/12.png)
+
+\`0\`就是表示可以做的工作。
+
+- 甲做1、2，丁做4，乙做3，丙做5，此时是\`130\`
+- 乙做3、4，丁做1，甲做2，丙做5，此时是\`125\`
+- 丙做2、3，甲做1，乙做4，丁做5，此时是\`144\`
+- 丙做2、5，甲做1，丁做4，乙做3，此时是\`132\`
+- 丙做3、5，乙做4，丁做1，甲做2，此时是\`135\`
+- 丁做1、4，甲做2，乙做3，丙做5，此时是\`145\`
+
+所以选择\`乙\`做两个任务。
+  `);
+</script>
+
+</html>

@@ -2664,6 +2664,7 @@ const dataSource = [
   {
     tag: TAGS.PROJECT_MANAGEMENT,
     title: '关于范围管理计划的描述，不正确的是（ ）。',
+    isFocus: true,
     options: [
       '用于规划，跟踪和报告各种需求活动',
       '作为制定项目管理计划过程的主要依据',
