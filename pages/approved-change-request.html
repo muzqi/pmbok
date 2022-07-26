@@ -5,14 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>批准的变更请求</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>批准的变更请求</h1>
-  <span class="mark">只有「批准的变更请求」，才能作为后续工作的依据</span>
-  <p>✓ 是实施整体变更控制过程的输出</p>
-  <p>✓ 可能是纠正措施、预防措施或缺陷补救</p>
-  <p>✓ 项目团队把批准的变更请求列入进度计划并付诸实施</p>
-  <p>✓ 可能导致修改政策、项目管理计划、程序、成本、预算或进度计划</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 批准的变更请求
+
+> 只有「批准的变更请求」，才能作为后续工作的依据
+
+- 是实施整体变更控制过程的输出
+- 可能是纠正措施、预防措施或缺陷补救
+- 项目团队把批准的变更请求列入进度计划并付诸实施
+- 可能导致修改政策、项目管理计划、程序、成本、预算或进度计划
+  `);
+</script>
 </html>

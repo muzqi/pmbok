@@ -5,12 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>变更日志</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>变更日志</h1>
-  <p>✓ 用来记录项目过程中出现的变更。</p>
-  <p>✓ 应该与相关的干系人沟通这些变更及其对项目时间、成本和风险的影响。</p>
-  <p>✓ 被否决的变更请求也应该记录在变更日志中。</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 变更日志
+
+- 用来记录项目过程中出现的变更。
+- 应该与相关的干系人沟通这些变更及其对项目时间、成本和风险的影响。
+- <u>被否决的变更请求</u>也应该记录在变更日志中。
+  `);
+</script>
 </html>

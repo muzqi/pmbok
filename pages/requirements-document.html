@@ -4,38 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>需求文件</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>需求文件</h1>
-  <table border="1">
-    <tbody>
-      <tr>
-        <th>业务需求</th>
-        <td>整个组织的高层级需要</td>
-      </tr>
-      <tr>
-        <th>干系人需求</th>
-        <td>干系人或干系人群体的需要</td>
-      </tr>
-      <tr>
-        <th>解决方案需求</th>
-        <td>功能需求 / 非功能需求</td>
-      </tr>
-      <tr>
-        <th>项目需求</th>
-        <td>项目需要满足的行动、过程或其他条件</td>
-      </tr>
-      <tr>
-        <th>过渡需求</th>
-        <td>从“当前状态”过渡到“将来状态”所需的临时能力</td>
-      </tr>
-      <tr>
-        <th>质量需求</th>
-        <td>用于确认项目可交付成果的成功完成或其他项目需求
-          的实现的任何条件或标准</td>
-      </tr>
-    </tbody>
-  </table>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 需求文件
+
+- \`业务需求\`-整个组织的高层级需要
+- \`干系人需求\`-干系人或干系人群体的需要
+- \`解决方案需求\`-功能需求 / 非功能需求
+- \`项目需求\`-项目需要满足的行动、过程或其他条件
+- \`过渡需求\`-从“当前状态”过渡到“将来状态”所需的临时能力
+- \`质量需求\`-用于确认项目可交付成果的成功完成或其他项目需求的实现的任何条件或标准
+  `);
+</script>
 </html>

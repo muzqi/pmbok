@@ -4,26 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>需求跟踪矩阵</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>需求跟踪矩阵</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 需求跟踪矩阵
 
-  <p>✓ 把产品需求从其来源连接到能满足需求的可交付成果的一种表格</p>
-  <p>✓ 提供了在整个项目生命周期中跟踪需求的一种方法</p>
-  <p>✓ 为管理产品范围变更提供了框架</p>
+- 把产品需求从其来源连接到能满足需求的可交付成果的一种表格
+- 提供了在整个项目生命周期中跟踪需求的一种方法
+- 为管理产品范围变更提供了框架
 
-  <img style="width: 600px" src="../images/requirement-tracking-matrix.png" alt="">
+![](../images/requirement-tracking-matrix.png)
 
-  <p>需求跟踪的内容包含以下几个方面：</p>
-  <ul>
-    <li>业务需求，机会，目的和目标</li>
-    <li>项目目标</li>
-    <li>项目范围（WBS可交付成果）</li>
-    <li>产品设计</li>
-    <li>产品开发</li>
-    <li>测试策略和测试场景</li>
-    <li>高层级需求到详细需求</li>
-  </ul>
-</body>
+需求跟踪的内容包含以下几个方面：
+
+- 业务需求，机会，目的和目标
+- 项目目标
+- 项目范围（WBS可交付成果）
+- 产品设计
+- 产品开发
+- 测试策略和测试场景
+- 高层级需求到详细需求
+  `);
+</script>
 </html>

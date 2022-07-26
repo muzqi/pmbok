@@ -5,43 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>三点估算</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>三点估算</h1>
-  <h2>公式</h2>
-  <table border="1">
-    <tr>
-      <th>Tm(Time Maybe)</th>
-      <td>最可能的时间</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>To(Time Optimistic)</th>
-      <td>最乐观的时间</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>Tp(Time Pessimistic)</th>
-      <td>最悲观的时间</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>σ</th>
-      <td>标准差</td>
-      <td>(Tp - To) / 6</td>
-    </tr>
-    <tr>
-      <th>μ</th>
-      <td>期望时间（预估时间）</td>
-      <td>
-        <p>β分布 = (To + 4Tm + Tp) / 6</p>
-        <p>三角分布 = (To + Tm + Tp) / 3</p>
-      </td>
-    </tr>
-  </table>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 三点估算
 
-  <h2>正态分布图</h2>
-  <img src="../images/three-estimates.png" style="width:800px;" alt="">
-</body>
+## 公式
+
+|变量|描述|公式|
+|---|---|---|
+|Tm(Time Maybe)|最可能的时间||
+|To(Time Optimistic)|最乐观的时间||
+|Tp(Time Pessimistic)	|最悲观的时间	||
+|σ|标准差|(Tp - To) / 6|
+|μ|期望时间（预估时间）|β分布 = (To + 4Tm + Tp) / 6<br>三角分布 = (To + Tm + Tp) / 3|
+
+## 正态分布图
+
+![](../images/three-estimates.png)
+  `)
+</script>
 </html>
