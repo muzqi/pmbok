@@ -1,17 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>会议</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>会议</h1>
-  <p>✓ 通常是指变更控制会议</p>
-  <p>✓ 根据项目需要，可以由变更控制委员会（CCB）开会审查变更请求，并做出批准、否决或其他决定</p>
-  <p>✓ 应该明确规定CCB的角色和职责，并经相关干系人一致同意后，记录在变更管理计划中</p>
-  <p>✓ CCB 的决定都应记录在案，并向干系人传达，以便其知晓并采取后续措施</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 会议
+
+- 通常是指变更控制会议
+- 根据项目需要，可以由变更控制委员会（CCB）开会审查变更请求，并做出批准、否决或其他决定
+- 应该明确规定CCB的角色和职责，并经相关干系人一致同意后，记录在变更管理计划中
+- CCB 的决定都应记录在案，并向干系人传达，以便其知晓并采取后续措施
+  `);
+</script>
 </html>

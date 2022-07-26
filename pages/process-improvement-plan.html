@@ -1,24 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>过程改进计划</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>过程改进计划</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 过程改进计划
 
-  <p>
-    详细说明对项目管理过程和产品开发过程进行分析的各个步骤，以识别增值活动。<span class="mark">根据过程改进来分析经验教训</span>
-  </p>
+详细说明对项目管理过程和产品开发过程进行分析的各个步骤，以识别增值活动。\`根据过程改进来分析经验教训\`。
 
-  <ul>
-    <li>边界过程</li>
-    <li>过程配置</li>
-    <li>过程绩效指标</li>
-    <li>绩效改进目标</li>
-  </ul>
-</body>
+- 边界过程
+- 过程配置
+- 过程绩效指标
+- 绩效改进目标
+  `);
+</script>
 </html>

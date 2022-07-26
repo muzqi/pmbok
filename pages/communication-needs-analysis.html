@@ -1,19 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>沟通需求分析</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>沟通需求分析</h1>
-  <p>确定项目干系人的信息需求（信息的类型/格式/价值）</p>
-  <p><span class="mark">2-2沟通渠道数：n(n-1)/2</span><br>干系人有10个，沟通渠道数 = 10 * (10 -1) / 2 = 45</p>
-  <p>用于识别和确定项目沟通需求的信息包括： 组织结构
-    图；组织与干系人之间的责任关系；项目涉及的学科、
-    部门和专业；有多少人在什么地点参与项目；内部/外
-    部信息需要；干系人登记册中干系人信息和沟通需求。</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 沟通需求分析
+
+> 确定项目干系人的信息需求（信息的类型/格式/价值）
+
+沟通渠道数公式：\`n(n-1)/2\`
+
+用于识别和确定项目沟通需求的信息包括：
+
+- 组织结构图；
+- 组织与干系人之间的责任关系；
+- 项目涉及的学科、部门和专业；
+- 有多少人在什么地点参与项目；
+- 内部/外部信息需要；
+- 干系人登记册中干系人信息和沟通需求。
+  `);
+</script>
 </html>

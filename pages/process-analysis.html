@@ -1,16 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>过程分析</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>过程分析</h1>
-  <p>✓ 是指按照 <span class="underline">过程改进计划</span> 中概括的步骤来识别所需的改进。</p>
-  <p>✓ 检查在过程运行期间遇到的问题、制约因素，以及发现的非增值活动</p>
-  <p>✓ 过程分析包括 <span class="mark">根本原因分析</span> ——用于识别问题、探究根本原因，并制定预防措施的一种具体技术</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 过程分析
+
+- 是指按照\`过程改进计划\`中概括的步骤来识别所需的改进。
+- 检查在过程运行期间遇到的问题、制约因素，以及发现的非增值活动
+- 过程分析包括\`根本原因分析\`——用于识别问题、探究根本原因，并制定预防措施的一种具体技术
+  `);
+</script>
 </html>
