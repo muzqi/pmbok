@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>工作绩效信息</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>工作绩效信息</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 工作绩效信息
 
-  <p>
-    <a href="./job-performance-data.html">工作绩效信息</a>结合 计划组件，<a href="./article-of-project.html">项目文件</a> 其他变量，得到工作绩效信息
-  </p>
+![](../images/job-performance-report.png)
 
-  <img src="../images/job-performance-report.png" alt="" style="width:600px" />
+<br>
 
-</body>
+[工作绩效信息](./job-performance-data.html)结合计划组件，[项目文件](./article-of-project.html) 其他变量 ，得到工作绩效信息。
+  `);
+</script>
 </html>

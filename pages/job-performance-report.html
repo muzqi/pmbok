@@ -2,30 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>工作绩效报告</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>工作绩效报告</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 工作绩效报告
 
-  <p>✓ 汇集了项目绩效和状态信息，可用于促进讨论和建立沟通</p>
-  <p>✓ 要求：全面性、准确性、及时性</p>
+![](../images/job-performance-report.png)
 
-  <img src="../images/job-performance-report.png" alt="" style="width:600px" />
+<br>
 
-  <p>内容：</p>
+- 汇集了项目绩效和状态信息，可用于促进讨论和建立沟通
+- 要求：
+  - 全面性
+  - 准确性
+  - 及时性
+- 内容：
+  - 项目的进展和调整情况。
+  - 项目的完成情况。
+  - 项目总投入、资金到位情况。
+  - 项目资金实际支出情况。
+  - 项目主要效益情况。
+  - 财务制度执行情况。
+  - 项目团队各职能团队的绩效。
+  - 项目执行中存在的问题及改进措施。
+  - 预测--随着项目的进展，根据获得的工作绩效信息对以前的预测进行更新并重新签发。
+  - ）变更请求--对项目绩效进行分析后，通常需要对项目的某些方面进行变更。这些变更请求应按整体变更控制过程所描述的办法进行处理。
+  - ）其他需要说明的问题。
 
-  <p>（1）项目的进展和调整情况。</p>
-  <p>（2）项目的完成情况。</p>
-  <p>（3）项目总投入、资金到位情况。</p>
-  <p>（4）项目资金实际支出情况。</p>
-  <p>（5）项目主要效益情况。</p>
-  <p>（6）财务制度执行情况。</p>
-  <p>（7）项目团队各职能团队的绩效。</p>
-  <p>（8）项目执行中存在的问题及改进措施。</p>
-  <p>（9）预测--随着项目的进展，根据获得的工作绩效信息对以前的预测进行更新并重新签发。</p>
-  <p>（10）变更请求--对项目绩效进行分析后，通常需要对项目的某些方面进行变更。这些变更请求应按整体变更控制过程所描述的办法进行处理。</p>
-  <p>（11）其他需要说明的问题。</p>
-</body>
+  `);
+</script>
 </html>
