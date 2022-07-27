@@ -1,14 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>进度压缩</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:1200px;" src="../images/schedule-compression-1.png" alt="" />
-<img style="width:700px;" src="../images/schedule-compression-2.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 进度压缩
+
+> 进度压缩技术是指在\`不缩减项目范围的前提下\`，缩短进度工期，以满足进度制约因素、强制日期或其他进度目标
+
+![](../images/schedule-compression.png)
+
+## 赶工
+
+- 通过\`增加资源\`，以最小的成本增加来压缩进度工期
+- 赶工通常会导致\`成本增加\`
+
+## 快速跟进
+
+- 将正常情况下按顺序进行的活动改为至少部分\`并行\`开发
+- 快速跟进通常会\`增加风险\`
+  `);
+</script>
 </html>

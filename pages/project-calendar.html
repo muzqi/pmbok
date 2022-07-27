@@ -1,13 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>项目日历</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:1200px;" src="../images/project-calendar.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 项目日历
+
+- 在项目日历中规定可以开展进度活动的工作日和工作班次
+- 把\`可用\`于开展进度活动的时间段与\`不可用\`时间段区分开来*（比如周末双休，节假日等，即是不可用的。注意与[资源日历](./resource-calendar.html)区分）*
+
+![](../images/project-calendar.png)
+  `);
+</script>
 </html>
