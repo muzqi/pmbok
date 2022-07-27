@@ -1,15 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SWOT分析</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:800px;" src="../images/swot-analysis-1.png" alt="" />
-<img style="width:800px;" src="../images/swot-analysis-2.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# SWOT分析
+
+![](../images/swot-analysis-1.png)
+
+> 从项目的每个优势（Strength）、劣势（Weakness）、机会（Opportunity）和威胁（Threat）出发，把产生于内部的风险都包括在内，从而更全面地考虑风险<br>
+> 优势和劣势一般是基于团队内部的。机会和威胁一般指团队外部的。
+
+示例：
+
+![](../images/swot-analysis-2.png)
+
+  `);
+</script>
 </html>
-  

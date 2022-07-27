@@ -1,16 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>风险数量质量评估</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>风险数量质量评估</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 风险数量质量评估
 
-  <p>✓ 评估风险数据对风险管理的有用程度</p>
-  <p>✓ 考察人们对风险的理解程度，以及考察风险数据的准确性、质量、可靠性和完整性</p>
-</body>
+- 评估风险数据对风险管理的有用程度
+- 考察人们对风险的理解程度，以及考察风险数据的准确性、质量、可靠性和完整性
+  `);
+</script>
 </html>
