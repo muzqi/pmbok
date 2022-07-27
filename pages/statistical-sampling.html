@@ -1,14 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>统计抽样</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:800px;" src="../images/statistical-sampling.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 统计抽样
+
+- 是指从目标总体中选取部分样本用于检查*（如从75张工程图纸中随机抽取10张）*
+- \`抽样的频率和规模应在规划质量管理过程中确定\`*（抽样越多，成本越高）*，以便在质量成本中考虑测试数量和预期废料等。
+  `);
+</script>
 </html>
-  

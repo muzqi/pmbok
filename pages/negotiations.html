@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>谈判</title>
-    <link rel="stylesheet" href="../index.css" />
-  </head>
-  <body>
-    <h1>谈判</h1>
-    <p>许多项目中，通过谈判完成人员分派。</p>
-    <p>项目管理团队需要与下列各方谈判：</p>
-    <ul>
-      <li>职能经理</li>
-      <li>执行组织中的其他项目管理团队</li>
-      <li>外部组织、卖方、供应商、承包商等</li>
-    </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>谈判</title>
+  <link rel="stylesheet" href="../libs/markdown.css">
+</head>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 谈判
 
-    <div class="sub-area">
-      <p>甲方：必须王老师来上课</p>
-      <p>乙方：李老师行不行？</p>
-    </div>
-  </body>
+许多项目中，通过谈判完成人员分派。
+
+项目管理团队需要与下列各方谈判：
+
+- 职能经理
+- 执行组织中的其他项目管理团队
+- 外部组织、卖方、供应商、承包商等
+
+示例：
+
+甲方：必须王老师来上课
+
+乙方：李老师行不行？
+
+  `);
+</script>
 </html>

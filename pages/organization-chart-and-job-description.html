@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>组织图和职位描述</title>
-    <link rel="stylesheet" href="../index.css" />
-  </head>
-  <body>
-    <img
-      style="width: 800px"
-      src="../images/organization-chart-and-job-description-1.png"
-      alt=""
-    />
-    <img
-      style="width: 800px"
-      src="../images/organization-chart-and-job-description-2.png"
-      alt=""
-    />
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>组织图和职位描述</title>
+  <link rel="stylesheet" href="../libs/markdown.css">
+</head>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 组织图和职位描述
+
+> 记录团队成员的角色与职责
+
+![](../images/organization-chart-and-job-description.png)
+
+[责任分配矩阵](./tools-summary.html)
+  `);
+</script>
 </html>

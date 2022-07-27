@@ -1,34 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>质量管理和控制工具</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>新七种质量管理工具</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 新七种质量管理工具
 
-  <ul>
-    <li>亲和图</li>
-    <li>
-      <p>过程决策程序图（PDPC）</p>
-      <img style="width:800px;" src="../images/quality-management-and-control-tools-1.png" alt="" />
-      <img style="width:800px;" src="../images/quality-management-and-control-tools-2.png" alt="" />
-    </li>
-    <li>
-      <p>关联图</p>
-      <img style="width:800px;" src="../images/quality-management-and-control-tools-3.png" alt="" />
-    </li>
-    <li>树形图</li>
-    <li>
-      <p>优先矩阵</p>
-      <img style="width:800px;" src="../images/quality-management-and-control-tools-4.png" alt="" />
-    </li>
-    <li>活动网络图</li>
-    <li>矩阵图</li>
-  </ul>
+## 亲和图
 
-</body>
+- 对大量创意进行分组
+
+![](../images/quality-management-and-control-tools-4.png)
+
+---
+
+## 过程决策程序图（PDPC）
+
+- 用于理解一个\`目标与达成此目标的步骤之间的关系\`
+- PDPC有助于制定应急计划，因为它能帮助团队预测那些可能破坏目标实现的中间环节
+- <u>事先预测可能发生的障碍，从而设计一系列措施以最大可能引向最终目标</u>
+
+![](../images/quality-management-and-control-tools-1.png)
+
+---
+
+## 关联图
+
+- 有助于在包含相互交叉逻辑关系（可有多达 50 个相关项）的中等复杂情形中创新性地解决问题
+
+![](../images/quality-management-and-control-tools-2.png)
+
+---
+
+## 树形图
+
+---
+
+## 优先矩阵
+
+- 用来识别关键事项和合适的备选方案，并通过一系列决策，排列出备选方案的优先顺序
+- 先对标准排序和加权，再应用于所有备选方案，计算出数学得分，对备选方案排序
+
+![](../images/quality-management-and-control-tools-3.png)
+
+---
+
+## 活动网络图
+
+---
+
+## 矩阵图
+
+  `);
+</script>
 </html>

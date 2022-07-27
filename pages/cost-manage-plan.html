@@ -1,14 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>成本管理计划</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:700px;" src="../images/cost-manage-plan.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 成本管理计划
+
+> 项目管理计划的组成部分，描述将如何规划、安排和控制项目成本
+
+内容包括：
+
+- 精确等级；
+- 测量单位；
+- 组织程序链接；
+- 控制临界值；
+- 挣值规则；
+- 报告格式；
+- 过程说明；
+- 其他细节
+
+示例：
+
+1. 采用挣值分析方法
+2. 每2周提交成本报告
+3. 临界值：CPI偏差±10%
+4. ...
+  `);
+</script>
 </html>
-  

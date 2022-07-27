@@ -1,51 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>成本基准</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>成本基准</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 成本基准
 
-  <table border="1">
-    <tr>
-      <th>成本基准</th>
-      <td><span class="underline">经批准</span>的<span class="underline">按时间安排</span>的成本支出计划，并随时反映了经批准的项目成本变更，被用于度量和监督项目的实际执行成本</td>
-    </tr>
-    <tr>
-      <th>应急储备</th>
-      <td>
-        <ul>
-          <li><span class="mark">包含在成本基准内</span>的一部分预算。</li>
-          <li>应对已经接受的或已经制订应急/减轻措施的已识别风险（“已知-未知”风险）</li>
-          <li>项目经理有权直接动用</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <th>管理储备</th>
-      <td>
-        <ul>
-          <li><span class="mark">不包括在成本基准中</span>，但属于项目总预算</li>
-          <li>应对项目范围中不可预见的风险（“未知-未知”风险）</li>
-          <li>高层批准后才能动用（变更控制）</li>
-        </ul>
-      </td>
-    </tr>
-  </table>
+<table border="1">
+  <tr>
+    <th>成本基准</th>
+    <td><u>经批准</u>的<u>按时间安排</u>的成本支出计划，并随时反映了经批准的项目成本变更，被用于度量和监督项目的实际执行成本</td>
+  </tr>
+  <tr>
+    <th>应急储备</th>
+    <td>
+      <ul>
+        <li><b>包含在成本基准内</b>的一部分预算。</li>
+        <li>应对已经接受的或已经制订应急/减轻措施的已识别风险（“已知-未知”风险）</li>
+        <li>项目经理有权直接动用</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <th>管理储备</th>
+    <td>
+      <ul>
+        <li><b>不包括在成本基准中</b>，但属于项目总预算</li>
+        <li>应对项目范围中不可预见的风险（“未知-未知”风险）</li>
+        <li>高层批准后才能动用（变更控制）</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-  <ul>
-    <li>大项目可能有多个成本基准</li>
-    <li>成本基准的变更需要通过变更控制程序</li>
-    <li>成本基准中既包括预计的支出，也包括预计的债务</li>
-    <li>项目预算（总资金需求）= 成本基准 + 管理储备</li>
-    <li>项目资金通常以<b>增量而非连续</b>的方式投入，并且可能是非均衡的，呈现出阶梯状</li>
-  </ul>
+- 大项目可能有多个成本基准
+- 成本基准的变更需要通过变更控制程序
+- 成本基准中既包括预计的支出，也包括预计的债务
+- 项目预算（总资金需求）= 成本基准 + 管理储备
+- 项目资金通常以<b>增量而非连续</b>的方式投入，并且可能是非均衡的，呈现出阶梯状
 
-  <img style="width:700px;" src="../images/cost-baseline.png" alt="" />
+![](../images/cost-baseline.png)
 
-</body>
+  `);
+</script>
 </html>

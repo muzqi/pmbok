@@ -1,14 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>历史关系</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:700px;" src="../images/history-relationship.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 历史关系
+
+- 用于 类比估算 / 参数估算
+- 准确性依赖于：
+  - 用来建立模型的历史信息准确
+  - 模型中的参数易于量化
+  - 模型可以调整，以便对大项目、小项目和各项目阶段都适用
+  `);
+</script>
 </html>
-  

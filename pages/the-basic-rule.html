@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>基本规则</title>
-    <link rel="stylesheet" href="../index.css" />
-  </head>
-  <body>
-    <h1>基本规则</h1>
-    <p>基本规则对项目团队成员的可接受行为做出明确规定</p>
-    <p>尽早制定并遵守明确的规则，有助于减少误解，提高生产力</p>
-    <p>
-      对诸如行为规范、沟通方式、协同工作、会议礼仪等的基本
-      规则进行讨论，有利于团队成员相互了解对方的价值观。规
-      则一旦建立，全体项目团队成员都必须遵守
-    </p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>基本规则</title>
+  <link rel="stylesheet" href="../libs/markdown.css">
+</head>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 基本规则
 
-    <div class="sub-area">
-      <p>如：</p>
-      <ol>
-        <li>开会时不能玩手机</li>
-        <li>代码合并必须2人以上审核</li>
-      </ol>
-      <p>...</p>
-      <p>并不是越多越好，不要用太多的 条框束缚团队创造力</p>
-    </div>
-  </body>
+- 基本规则对项目团队成员的可接受行为做出明确规定
+- 尽早制定并遵守明确的规则，有助于减少误解，提高生产力
+- 对诸如行为规范、沟通方式、协同工作、会议礼仪等的基本规则进行讨论，有利于团队成员相互了解对方的价值观。规则一旦建立，全体项目团队成员都必须遵守
+
+示例：
+
+1. 开会时不能玩手机
+2. 代码合并必须2人以上审核
+
+\`规则并不是越多越好，不要用太多的 条框束缚团队创造力\`
+  `);
+</script>
 </html>

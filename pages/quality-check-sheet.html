@@ -1,14 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>质量核对单</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:800px;" src="../images/quality-check-sheet.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 质量核对单
+
+- 是一种结构化工具，通常具体列出各项内容，用来核实所要求的一系列步骤是否已得到执行
+- 质量核对单应该涵盖在范围基准中定义的验收标准
+- 通常是外部人员，根据过程中的某些文件进行检查
+
+示例：
+
+|项目|是/否|
+|---|---|
+|进行回归测试？|是|
+|环境测试？|否|
+|同行评审？|是|
+|...||
+  `);
+</script>
 </html>
-  

@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>项目人员分派</title>
-    <link rel="stylesheet" href="../index.css" />
-  </head>
-  <body>
-    <h1>项目人员分派</h1>
-    <p class="mark">明确结果，什么样的人，干什么样的活</p>
-    <p>通过把合适的人员分派到团队，来为项目配备人员</p>
-    <p>
-      相关的文件包括：项目团队名录和致团队成员的备
-      忘录，还需要把人员姓名插入项目管理计划的其他 部分，如项目组织图和进度计划
-    </p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目人员分派</title>
+  <link rel="stylesheet" href="../libs/markdown.css">
+</head>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 项目人员分派
+
+> 明确结果，什么样的人，干什么样的活
+
+- 通过把合适的人员分派到团队，来为项目配备人员
+- 相关的文件包括：项目团队名录和致团队成员的备忘录，还需要把人员姓名插入项目管理计划的其他部分，如项目组织图和进度计划
+
+  `);
+</script>
 </html>

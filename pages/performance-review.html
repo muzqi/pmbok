@@ -1,14 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>绩效审查</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:700px;" src="../images/performance-review.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 绩效审查
+
+- \`趋势分析\`：检查绩效随时间的变化情况，以确定绩效是在改善还是在恶化
+- \`关键路径法\`：分析关键路径的进展情况来确定进度状态
+- \`关键链法\`：比较剩余缓冲时间与所需缓冲时间，判断是否需要纠偏
+- \`挣值管理\`：分析偏离进度基准的原因与程度，评估影响，确定是否需要采取措施
+  - ![](../images/performance-review.png)
+  `);
+</script>
 </html>
-  

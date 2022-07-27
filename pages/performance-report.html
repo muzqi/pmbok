@@ -1,23 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>报告绩效</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>报告绩效</h1>
-  <p>✓ 较为详尽的报告可能包括：</p>
-  <ul>
-    <li>对过去绩效的分析</li>
-    <li>项目预测分析，包括时间与成本</li>
-    <li>风险和问题的当前状态</li>
-    <li>本报告期完成的工作</li>
-    <li>下个报告期需要完成的工作</li>
-    <li>本报告期被批准的变更的汇总</li>
-    <li>需要审查和讨论的其他相关信息</li>
-  </ul>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 报告绩效
+
+较为详尽的报告可能包括：
+
+- 对过去绩效的分析
+- 项目预测分析，包括时间与成本
+- 风险和问题的当前状态
+- 本报告期完成的工作
+- 下个报告期需要完成的工作
+- 本报告期被批准的变更的汇总
+- 需要审查和讨论的其他相关信息
+  `);
+</script>
 </html>

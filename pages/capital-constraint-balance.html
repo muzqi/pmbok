@@ -1,19 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>资金限制平衡</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>资金限制平衡</h1>
-  <ul>
-    <li>资金支出计划 vs. 资金到位承诺</li>
-    <li>必要时调整工期、减少资源投入强度，避免资金链断裂。<span class="mark">资金越晚投入越好</span>。如：资金留存在手中仍能产生利息</li>
-    <li><span class="mark">资金到位承诺</span>一般是阶梯状。如：项目开始前，拨款10w，二期启动时，拨款20w，等等</li>
-  </ul>
-  <img style="width:700px;" src="../images/capital-constraint-balance.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 资金限制平衡
+
+- 资金支出计划 vs. 资金到位承诺
+- 必要时调整工期、减少资源投入强度，避免资金链断裂。\`资金越晚投入越好\`。*如：资金留存在手中仍能产生利息*
+- \`资金到位承诺\`一般是阶梯状。*如：项目开始前，拨款10w，二期启动时，拨款20w，等等*
+
+![](../images/capital-constraint-balance.png)
+  `);
+</script>
 </html>
