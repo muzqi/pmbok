@@ -1,15 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>独立估算</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>独立估算</h1>
-  <p>✓ 采购组织 自行/邀请外部专业估算师 编制独立估算，以此为标杆，与潜在卖方的应答做比较</p>
-  <p>✓ 如果两者之间存在明显差异，则可能表明采购工作说明书存在缺陷或不明确，或者潜在卖方误解了或未能完全响应采购工作说明书</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 独立估算
+
+- 采购组织 自行/邀请外部专业估算师 编制独立估算，以此为标杆，与潜在卖方的应答做比较
+- 如果两者之间存在明显差异，则可能表明采购工作说明书存在缺陷或不明确，或者潜在卖方误解了或未能完全响应采购工作说明书
+
+  `);
+</script>
 </html>

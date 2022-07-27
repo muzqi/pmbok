@@ -1,17 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>技术绩效测量</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>技术绩效测量</h1>
-  <span class="mark">从技术的角度来测量绩效（实际与计划的偏差）</span>
-  <p>✓ 把项目执行期间所取得的技术成果与关于取得技术成果的计划进行比较</p>
-  <p>✓ 测量指标可包括重量、处理时间、缺陷数量和存储容量</p>
-  <p>✓ 偏差值有助于预测项目范围方面的成功程度</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 技术绩效测量
+
+> 从技术的角度来测量绩效（实际与计划的偏差）
+
+- 把项目执行期间所取得的技术成果与关于取得技术成果的计划进行比较
+- 测量指标可包括重量、处理时间、缺陷数量和存储容量
+- 偏差值有助于预测项目范围方面的成功程度
+  `);
+</script>
 </html>

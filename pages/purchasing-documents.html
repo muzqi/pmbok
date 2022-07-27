@@ -1,26 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>采购文件</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>采购文件</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 采购文件
 
-  <p>✓ 用于征求潜在卖方的建议书</p>
-  <p>✓ 包括：</p>
-  <ul>
-    <li>信息邀请书（RFI） </li>
-    <li>投标邀标书（IFB） </li>
-    <li>建议邀请书（RFP） </li>
-    <li>报价邀请书（RFQ） </li>
-    <li>投标通知</li>
-    <li>谈判邀请书</li>
-    <li>卖方初始应答邀请书</li>
-    <li><a href="./supplier-selection-criteria.html" target="_blank">供方选择标准</a></li>
-  </ul>
-</body>
+> 用于征求潜在卖方的建议书
+
+内容包括：
+
+- 信息邀请书（RFI）
+- 投标邀标书（IFB）
+- 建议邀请书（RFP）
+- 报价邀请书（RFQ）
+- 投标通知
+- 谈判邀请书
+- 卖方初始应答邀请书
+- [供方选择标准](./supplier-selection-criteria.html)
+  `);
+</script>
 </html>
