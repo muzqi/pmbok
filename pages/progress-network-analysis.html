@@ -1,14 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>进度网络分析</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:700px;" src="../images/progress-network-analysis.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 进度网络分析
+
+- 综合利用：
+  - [关键路径法](./critical-path-method.html)
+  - 关键链法
+  - 假设情景分析
+  - [资源优化技术](./resource-optimization-technique.html)等方法
+- 是一个反复进行的过程，一直持续到创建出可行的进度模型
+
+![](../images/progress-network-analysis.png)
+  `);
+</script>
 </html>
-  

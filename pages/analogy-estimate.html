@@ -1,13 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>类比估算</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:700px;" src="../images/analogy-estimate.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 类比估算
+
+- 使用\`相似活动\`或项目的\`历史数据\`，来估算当前活动或项目的持续时间或成本
+- 通常\`成本较低、耗时较少，但准确性也较低\`。
+
+如：A户型已装修完毕，花费10W，耗时3个月，
+B户型与A户型类似，可完全照搬。
+
+但因为个人喜好不同，涉及到需求变更，所以
+花费和耗时都不准确。
+  `);
+</script>
 </html>

@@ -1,15 +1,27 @@
-
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>关键链法</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:700px;" src="../images/critical-chain-method-1.png" alt="" />
-<img style="width:700px;" src="../images/critical-chain-method-2.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 关键链法
+
+![](../images/critical-chain-method-1.png)
+
+- 在关键路径法基础上引入制约理论（TOC），\`在资源制约条件下制定进度计划\`
+- \`学生综合征\`——最后一天才写完作业*（拖，到最后实在不行了才做）*
+- \`帕金森定律\`——工作总会占满所有可用时间*（提前完成工作没有奖励，甚至受到惩罚，所以在给了多少时间，就会花费多少时间）*
+
+![](../images/critical-chain-method-2.png)
+
+
+  `);
+</script>
 </html>
-  

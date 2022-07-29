@@ -1,18 +1,56 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>紧前关系绘图法</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <div>
-    <img style="width: 700px" src="../images/compact-forward-relation-plotting-1.png" alt="">
-    <img style="width: 700px" src="../images/compact-forward-relation-plotting-2.png" alt="">
-    <img style="width: 700px" src="../images/compact-forward-relation-plotting-3.png" alt="">
-    <img style="width: 700px" src="../images/compact-forward-relation-plotting-4.png" alt="">
-  </div>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 紧前关系绘图法
+
+> 是创建进度模型的一种技术，用节点表示活动，用一种或多种逻辑关系连接活动，以显示活动的实施顺序<br>
+> 活动节点法（AON）是紧前绘图法的一种展示
+
+## 完成-开始（FS）关系
+
+- \`FS(Finsh Start)\` 结束开始关系。串联关系，同步方法；
+- 比赛结束后，才能根据比赛结果颁奖。
+
+![](../images/compact-forward-relation-plotting-1.png)
+
+---
+
+## 完成-完成（FF）关系
+
+- \`FF(Finish Finish)\`：第一个活动结束后，第二个活动才能结束；
+- B 依赖 A，A 不结束，B就不算结束（不能结束）。
+
+![](../images/compact-forward-relation-plotting-2.png)
+
+---
+
+## 开始-开始（SS）关系
+
+- \`SS(Start Start)\`：第一个开始后，第二个才能开始
+
+![](../images/compact-forward-relation-plotting-3.png)
+
+---
+
+## 开始-完成（SF）关系
+
+- \`SF(Start Finish)\`：第一个开始后，第二个才能结束。
+- 新旧系统上下线，保证新系统上线后，才能下线旧系统，
+- 两者会共存一段时间，避免中间空档期；
+- 典型的还有交接班关系。
+
+![](../images/compact-forward-relation-plotting-4.png)
+
+  `);
+</script>
 </html>

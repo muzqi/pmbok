@@ -1,13 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>发布的估算数据</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:700px;" src="../images/published-estimates.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 发布的估算数据
+
+> 组织定期发布\`最新的\`生产率信息与\`资源单位成本\`，涉及门类众多的劳务、材料和设备，覆盖许多国家
+
+例如：2020年口罩涨价，会影响某些活动的排期
+  `);
+</script>
 </html>

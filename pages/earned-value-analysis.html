@@ -1,131 +1,135 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>挣值分析</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>挣值分析公式</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 挣值分析
 
-  <table border="1">
-    <th>指标</th>
-    <th>描述</th>
-    <th>公式</th>
+<table>
+  <th>指标</th>
+  <th>描述</th>
+  <th>公式</th>
 
-    <tr>
-      <th>PV(Planned Value)</th>
-      <td>某段时间，<span class="mark">计划工作量</span>，的预算价值</td>
-      <td>
-        <i>PV = 用时 * 每个单位用时完成量 * 每个单位的预算</i>
-        <br>
-        <span class="sub">示例：10天 * 2个/天 * 10万/个</span>
-      </td>
-    </tr>
+  <tr>
+    <th>PV(Planned Value)</th>
+    <td>某段时间，<code>计划工作量</code>，的预算价值</td>
+    <td>
+      <i>PV = 用时 * 每个单位用时完成量 * 每个单位的预算</i>
+      <br>
+      <u>示例：10天 * 2个/天 * 10万/个</u>
+    </td>
+  </tr>
 
-    <tr>
-      <th>EV(Earned Value)</th>
-      <td>某段时间，<span class="mark">实际工作量</span>，的预算价值。也叫「挣值」</td>
-      <td>
-        <i>EV = 实际完成的单位 * 每个单位的预算</i>
-        <br>
-        <span class="sub">示例：50个 * 10万/个</span>
-      </td>
-    </tr>
+  <tr>
+    <th>EV(Earned Value)</th>
+    <td>某段时间，<code>实际工作量</code>，的预算价值。也叫「挣值」</td>
+    <td>
+      <i>EV = 实际完成的单位 * 每个单位的预算</i>
+      <br>
+      <u>示例：50个 * 10万/个</u>
+    </td>
+  </tr>
 
-    <tr>
-      <th>AC(Actual Cost)</th>
-      <td>某段时间，<span class="mark">实际工作量</span>，的<span class="mark">实际花费</span></td>
-      <td></td>
-    </tr>
+  <tr>
+    <th>AC(Actual Cost)</th>
+    <td>某段时间，<code>实际工作量</code>，的<code>实际花费</code></td>
+    <td></td>
+  </tr>
 
-    <tr>
-      <th>SV(Schedule Value)</th>
-      <td>
-        进度偏差。
-        <ul>
-          <li>SV > 0，进度超前；</li>
-          <li>SV < 0，进度落后；</li>
-          <li>SV === 0，进度持平。</li>
-        </ul>
-      </td>
-      <td><i>SV = EV - PV</i></td>
-    </tr>
+  <tr>
+    <th>SV(Schedule Value)</th>
+    <td>
+      进度偏差。
+      <ul>
+        <li>SV > 0，进度超前；</li>
+        <li>SV < 0，进度落后；</li>
+        <li>SV === 0，进度持平。</li>
+      </ul>
+    </td>
+    <td><i>SV = EV - PV</i></td>
+  </tr>
 
-    <tr>
-      <th>
-        SPI(Schedule Performance Index)
-      </th>
-      <td>进度偏差</td>
-      <td><i>SPI = EV / PV</i></td>
-    </tr>
+  <tr>
+    <th>
+      SPI(Schedule Performance Index)
+    </th>
+    <td>进度偏差</td>
+    <td><i>SPI = EV / PV</i></td>
+  </tr>
 
-    <tr>
-      <th>CV(Cost Value)</th>
-      <td>
-        成本偏差。
-        <ul>
-          <li>CV > 0，成本节约；</li>
-          <li>CV < 0，成本超支；</li>
-          <li>CV === 0，成本持平。</li>
-        </ul>
-      </td>
-      <td><i>CV = EV - AC</i></td>
-    </tr>
+  <tr>
+    <th>CV(Cost Value)</th>
+    <td>
+      成本偏差。
+      <ul>
+        <li>CV > 0，成本节约；</li>
+        <li>CV < 0，成本超支；</li>
+        <li>CV === 0，成本持平。</li>
+      </ul>
+    </td>
+    <td><i>CV = EV - AC</i></td>
+  </tr>
 
-    <tr>
-      <th>
-        CPI(Cost Performance Index)
-      </th>
-      <td>成本偏差</td>
-      <td><i>CPI = EV / AC</i></td>
-    </tr>
+  <tr>
+    <th>
+      CPI(Cost Performance Index)
+    </th>
+    <td>成本偏差</td>
+    <td><i>CPI = EV / AC</i></td>
+  </tr>
 
-    <tr>
-      <th>
-        TCPI(To Complete Performance Index)
-      </th>
-      <td>完工尚需绩效指数</td>
-      <td><i>TCPI = (BAC - EV) / (BAC - AC  )</i></td>
-    </tr>
+  <tr>
+    <th>
+      TCPI(To Complete Performance Index)
+    </th>
+    <td>完工尚需绩效指数</td>
+    <td><i>TCPI = (BAC - EV) / (BAC - AC  )</i></td>
+  </tr>
 
-    <tr>
-      <th>BAC</th>
-      <td>所有工作量，的预算价值。不包括管理储备</td>
-      <td></td>
-    </tr>
+  <tr>
+    <th>BAC</th>
+    <td>所有工作量，的预算价值。不包括管理储备</td>
+    <td></td>
+  </tr>
 
-    <tr>
-      <th rowspan="3">ETC</th>
-      <td>当前进度，距离完工的剩余估算价值</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>1. 按最初，非典型偏差。采取措施，按原计划</td>
-      <td><i>ETC = BAC - EV</i></td>
-    </tr>
-    <tr>
-      <td>2. 按当前，典型偏差。不采取措施，按当前情况</td>
-      <td><i>ETC = (BAC - EV) / CPI</i></td>
-    </tr>
+  <tr>
+    <th rowspan="3">ETC</th>
+    <td>当前进度，距离完工的剩余估算价值</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>1. 按最初，非典型偏差。采取措施，按原计划</td>
+    <td><i>ETC = BAC - EV</i></td>
+  </tr>
+  <tr>
+    <td>2. 按当前，典型偏差。不采取措施，按当前情况</td>
+    <td><i>ETC = (BAC - EV) / CPI</i></td>
+  </tr>
 
-    <tr>
-      <th rowspan="2">EAC</th>
-      <td>1. 按最初，非典型偏差。估计项目的总花费</td>
-      <td><i>EAC = BAC - EV + AC</i></td>
-    </tr>
-    <tr>
-      <td>2. 按当前，典型偏差。估计项目的总花费</td>
-      <td><i>EAC = (BAC - EV) / CPI + AC = <span class="mark">BAC / CPI</span></i></td>
-    </tr>
+  <tr>
+    <th rowspan="2">EAC</th>
+    <td>1. 按最初，非典型偏差。估计项目的总花费</td>
+    <td><i>EAC = BAC - EV + AC</i></td>
+  </tr>
+  <tr>
+    <td>2. 按当前，典型偏差。估计项目的总花费</td>
+    <td><i>EAC = (BAC - EV) / CPI + AC = <code>BAC / CPI</code></i></td>
+  </tr>
 
-    <tr>
-      <th>VAC</th>
-      <td>完工偏差</td>
-      <td><i>VAC = BAC - EAC</i></td>
-    </tr>
-  </table>
-</body>
+  <tr>
+    <th>VAC</th>
+    <td>完工偏差</td>
+    <td><i>VAC = BAC - EAC</i></td>
+  </tr>
+</table>
+  `);
+</script>
 </html>

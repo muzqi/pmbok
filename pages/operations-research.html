@@ -1,27 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>运筹学</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>运筹学</h1>
-  <h2>三点估算</h2>
-  <a href="./three-estimates.html">三点估算</a>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 运筹学
 
-  <hr>
+## 三点估算
 
-  <h2>决策树分析</h2>
-  <h3>步骤</h3>
-  <ol>
-    <li>分清“可选方案”和“风险事件”</li>
-    <li>
-      <p>计算每个可选方案的 EMV</p>
-      <textarea style="width: 800px;height: 600px;">
-// 1. 确认有哪些方案
+[三点估算](./three-estimates.html)
+
+<br>
+
+## 决策树分析
+
+### 分析步骤
+
+- 分清“可选方案”和“风险事件”
+- 计算每个可选方案的 EMV
+<textarea style="width: 800px;height: 600px">
+  // 1. 确认有哪些方案
 const plan = [
   {
     name: '北京',
@@ -70,149 +75,147 @@ plan.map((data) => {
 
 // 4. 根据具体场景，选择最优的 EMV
 Math.max(EMVs) || Math.min(EMVs);
-      </textarea>
-    </li>
-    <li>比较可选方案的EMV值，选最优</li>
-  </ol>
+</textarea>
+- 比较可选方案的EMV值，选最优
 
-  <hr>
+<br>
 
-  <h2>投资回收期</h2>
+## 投资回收期
 
-  <h3>静态投资回收期</h3>
-  <p>不考虑资金的时间价值</p>
+### 静态投资回收期
 
-  <p class="underline">
-    静态投资回收期 = 回本年的年份数 - 1 + (Math.abs(回本年上年累计净利润) / 回本年净现金流)
-  </p>
+> 不考虑资金的时间价值
 
-  <div class="sub-area">
-    <p>示例：</p>
-    <table border="1">
-      <th></th>
-      <th>第0年</th>
-      <th>第1年</th>
-      <th>第2年<span class="mark">回本年</span></th>
-      <th>第3年</th>
+\`静态投资回收期 = 回本年的年份数 - 1 + (Math.abs(回本年上年累计净利润) / 回本年净现金流)\`
 
-      <tr>
-        <td>现金流</td>
-        <td>-600</td>
-        <td>400</td>
-        <td>400</td>
-        <td>400</td>
-      </tr>
+示例：
 
-      <tr>
-        <td>净利润</td>
-        <td>-600</td>
-        <td>-200</td>
-        <td>200</td>
-        <td>600</td>
-      </tr>
-    </table>
+<table>
+  <th></th>
+  <th>第0年</th>
+  <th>第1年</th>
+  <th>第2年<code>回本年</code></th>
+  <th>第3年</th>
 
-    <p>静态投资回收期 = 2 - 1 + (Math.abs(-200) / 400) = 1.5</p>
-  </div>
+  <tr>
+    <td>现金流</td>
+    <td>-600</td>
+    <td>400</td>
+    <td>400</td>
+    <td>400</td>
+  </tr>
 
-  <h3>动态投资回收期</h3>
-  <p>考虑资金的时间价值</p>
+  <tr>
+    <td>净利润</td>
+    <td>-600</td>
+    <td>-200</td>
+    <td>200</td>
+    <td>600</td>
+  </tr>
+</table>
 
-  <table border="1">
-    <tr>
-      <td><b>公式</b></td>
-      <td><i>x = Math.ceil(y / Math.pow(1 + r, n))</i></td>
-    </tr>
-    <tr>
-      <td><b>x</b></td>
-      <td>现值，指 n 年之后的钱，折合到现在的价值</td>
-    </tr>
-    <tr>
-      <td><b>y</b></td>
-      <td>n 年后的钱</td>
-    </tr>
-    <tr>
-      <td><b>n</b></td>
-      <td>多少年</td>
-    </tr>
-    <tr>
-      <td><b>r</b></td>
-      <td>贴现率（利率或通货膨胀）</td>
-    </tr>
-  </table>
+静态投资回收期 = 2 - 1 + (Math.abs(-200) / 400) = 1.5
 
-  <p class="underline">动态投资回收期 = 回本年的年份数 - 1 + (Math.abs(回本年上年累计净现值) / 回本年现金流现值)</p>
+---
 
-  <div class="sub-area">
-    <p>示例：</p>
-    <p>假设 贴现率为 10%</p>
+### 动态投资回收期
 
-    <table border="1">
-      <th></th>
-      <th>第0年</th>
-      <th>第1年</th>
-      <th>第2年<span class="mark">回本年</span></th>
-      <th>第3年</th>
+> 考虑资金的时间价值
 
-      <tr>
-        <td>现金流</td>
-        <td>-600</td>
-        <td>400</td>
-        <td>400</td>
-        <td>400</td>
-      </tr>
+<table>
+  <tr>
+    <td><b>公式</b></td>
+    <td><i>x = Math.ceil(y / Math.pow(1 + r, n))</i></td>
+  </tr>
+  <tr>
+    <td><b>x</b></td>
+    <td>现值，指 n 年之后的钱，折合到现在的价值</td>
+  </tr>
+  <tr>
+    <td><b>y</b></td>
+    <td>n 年后的钱</td>
+  </tr>
+  <tr>
+    <td><b>n</b></td>
+    <td>多少年</td>
+  </tr>
+  <tr>
+    <td><b>r</b></td>
+    <td>贴现率（利率或通货膨胀）</td>
+  </tr>
+</table>
 
-      <tr>
-        <td>现值</td>
-        <td>Math.ceil(-600 / Math.pow(1 + 0.1, 0)) = -600</td>
-        <td>Math.ceil(400 / Math.pow(1 + 0.1, 1)) = 364</td>
-        <td>Math.ceil(400 / Math.pow(1 + 0.1, 2)) = 331</td>
-        <td>Math.ceil(400 / Math.pow(1 + 0.1, 3)) = 301</td>
-      </tr>
+\`动态投资回收期 = 回本年的年份数 - 1 + (Math.abs(回本年上年累计净现值) / 回本年现金流现值)\`
 
-      <tr>
-        <td>累计净现值</td>
-        <td>0 + -600 = -600</td>
-        <td>-600 + 364 = -236</td>
-        <td>-236 + 331 = 95</td>
-        <td>95 + 301 = 396</td>
-      </tr>
-    </table>
+示例：
 
-    <p>动态投资回收期 = 2 - 1 + (Math.abs(-236) / 331) = 1.72</p>
-  </div>
+假设 贴现率为 10%
 
-  <hr>
+<table>
+  <th></th>
+  <th>第0年</th>
+  <th>第1年</th>
+  <th>第2年<code>回本年</code></th>
+  <th>第3年</th>
 
-  <h2>投资回报率</h2>
+  <tr>
+    <td>现金流</td>
+    <td>-600</td>
+    <td>400</td>
+    <td>400</td>
+    <td>400</td>
+  </tr>
 
-  <p class="underline">销售收入 / 投资额 = 投资回报率</p>
+  <tr>
+    <td>现值</td>
+    <td>Math.ceil(-600 / Math.pow(1 + 0.1, 0)) = -600</td>
+    <td>Math.ceil(400 / Math.pow(1 + 0.1, 1)) = 364</td>
+    <td>Math.ceil(400 / Math.pow(1 + 0.1, 2)) = 331</td>
+    <td>Math.ceil(400 / Math.pow(1 + 0.1, 3)) = 301</td>
+  </tr>
 
-  <div class="sub-area">
-    <p>示例：按投资回报率，评估应该投资哪个项目：</p>
-    <table border="1">
-      <th>项目</th>
-      <th>投资额（万元）</th>
-      <th>销售收入（万元）</th>
+  <tr>
+    <td>累计净现值</td>
+    <td>0 + -600 = -600</td>
+    <td>-600 + 364 = -236</td>
+    <td>-236 + 331 = 95</td>
+    <td>95 + 301 = 396</td>
+  </tr>
+</table>
 
-      <tr>
-        <td>A</td>
-        <td>2000</td>
-        <td>2200</td>
-      </tr>
-      <tr>
-        <td>B</td>
-        <td>1500</td>
-        <td>1600</td>
-      </tr>
-      <tr>
-        <td>C</td>
-        <td>1000</td>
-        <td>1200</td>
-      </tr>
-    </table>
+动态投资回收期 = 2 - 1 + (Math.abs(-236) / 331) = 1.72
 
-    <p>销售收入 / 投资额 选择最大值，选择 C 项目</p>
-  </div>
-</body>
+<br>
+
+## 投资回报率
+
+\`销售收入 / 投资额 = 投资回报率\`
+
+示例：按投资回报率，评估应该投资哪个项目：
+
+<table>
+  <th>项目</th>
+  <th>投资额（万元）</th>
+  <th>销售收入（万元）</th>
+
+  <tr>
+    <td>A</td>
+    <td>2000</td>
+    <td>2200</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>1500</td>
+    <td>1600</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>1000</td>
+    <td>1200</td>
+  </tr>
+</table>
+
+销售收入 / 投资额 选择最大值，选择 C 项目
+  `);
+</script>
 </html>
