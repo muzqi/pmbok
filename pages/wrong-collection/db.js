@@ -2304,7 +2304,7 @@ const dataSource = [
       '1.17',
       '0.8',
     ],
-    anwser: 0,
+    anwser: 1,
     analysis: `
     TCPI = (BAC - EV) / (BAC - AC)<br>
     根据题意:BAC=1000元；PV=1000*8/10=800元；EV=1000*70%=700元；AC=600元；<br>

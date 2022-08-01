@@ -4,31 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>进度管理计划</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>进度管理计划</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 进度管理计划
 
-  <p>✓ 是项目管理计划的组成部分，为编制、监督和控制项目进度建立准则和明确活动</p>
-  <p>✓ 内容包括：</p>
-  <ul>
-    <li>项目进度模型制定；</li>
-    <li>准确度；</li>
-    <li>计量单位；</li>
-    <li>组织程序链接；</li>
-    <li>项目进度模型维护；</li>
-    <li>控制临界值；</li>
-    <li>绩效测量规则（百分比规则、控制账户、挣值规则、进度绩效指标定义）；</li>
-    <li>报告格式；</li>
-    <li>过程描述。</li>
-  </ul>
+- 是项目管理计划的组成部分，为编制、监督和控制项目进度建立准则和明确活动
+- 内容包括：
+  - 项目进度模型制定；
+  - 准确度；
+  - 计量单位；
+  - 组织程序链接；
+  - 项目进度模型维护；
+  - 控制临界值；
+  - 绩效测量规则（百分比规则、控制账户、挣值规则、进度绩效指标定义）；
+  - 报告格式；
+  - 过程描述。
 
-  <p>示例：</p>
-  <ol>
-    <li>采用挣值分析方法</li>
-    <li>每周提交进度报告</li>
-    <li>临界值：
-      SPI偏差±10%</li>
-  </ol>
-</body>
+**示例**：
+
+1. 采用挣值分析方法
+2. 每周提交进度报告
+3. 临界值：SPI偏差±10%
+  `);
+</script>
 </html>

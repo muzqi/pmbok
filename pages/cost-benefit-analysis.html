@@ -1,14 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>成本效益分析</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:700px;" src="../images/cost-benefit-analysis.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 成本效益分析
+
+> 不是所有项目都要求质量越高越好。<br>
+> 质量越高，相对成本就更高，在质量管理过程中，需要对此进行权衡。
+
+- 达到质量要求的主要效益包括减少返工、提高生产率、降低成本、提升干系人满意度及提升赢利能力
+- 对每个质量活动进行成本效益分析，就是要比较其可能成本与预期效益
+  `);
+</script>
 </html>
-  

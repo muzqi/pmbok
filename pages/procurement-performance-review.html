@@ -1,18 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>采购绩效审查</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>采购绩效审查</h1>
-  <ul>
-    <li>一种结构化审查，依据合同来审查卖方的情况</li>
-    <li>包括：对卖方文件的审查、检查、<a href="./quality-audit.html" target="_blank">质量审计</a></li>
-    <li>目标：发现履约情况的好坏、相对于SOW的进展、遵循合同的情况，以便买方量化评价卖方的能力</li>
-  </ul>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 采购绩效审查
+
+> 一种结构化审查，依据合同来审查卖方的情况
+
+包括对卖方文件的：
+
+- 审查
+- 检查
+- [质量审计](./quality-audit.html)
+
+目标：
+
+- 发现履约情况的好坏
+- 相对于SOW的进展
+- 遵循合同的情况
+- 以便买方量化评价卖方的能力
+  `);
+</script>
 </html>

@@ -1,13 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>提前量与滞后量</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width: 700px" src="../images/advance-and-lag.png" alt="">
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 提前量与滞后量
+
+- \`提前量\`是相对于紧前活动，紧后活动可以提前的时间量
+  - ![](../images/advance-and-lag-1.png)
+  - 「绿化施工」在「编制尾工清单」完成之前，提前2个单位开始。
+- \`滞后量\`是相对于紧前活动，紧后活动需要推迟的时间量
+  - ![](../images/advance-and-lag-2.png)
+  - 「编辑草案」在「编写草案」开始后，延迟10个单位开始。
+  `);
+</script>
 </html>

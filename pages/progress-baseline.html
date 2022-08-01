@@ -1,14 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>进度基准</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:700px;" src="../images/progress-baseline.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 进度基准
+
+- 经过批准的进度模型
+- 是项目管理计划的组成部分
+- 只有通过\`正式的变更控制程序\`才能进行变更
+- 包含基准开始日期和基准结束日期
+- 在监控过程中，将用实际开始和结束日期与批准的基准日期进行比较，以确定是否存在偏差
+  `);
+</script>
 </html>
-  

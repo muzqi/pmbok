@@ -1,15 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>结束的采购</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>结束的采购</h1>
-  <p>✓ 买方（通常是其授权的采购管理员）向卖方发出关于合同已经完成的正式书面通知</p>
-  <p>✓ 对正式结束采购的要求，通常已在合同条款和条件中定义，并包括在采购管理计划中</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 结束的采购
+
+- 买方（通常是其授权的采购管理员）向卖方发出关于\`合同已经完成的正式书面通知\`
+- 对正式结束采购的要求，通常已在合同条款和条件中定义，并包括在采购管理计划中
+  `);
+</script>
 </html>

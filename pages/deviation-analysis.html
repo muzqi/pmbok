@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>偏差分析</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>偏差分析</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 偏差分析
 
-  <p>✓ 一种确定实际绩效与基准的差异程度及原因的技术 <span class="mark">实际与计划的差</span></p>
-  <p>✓ 可利用项目绩效测量结果评估偏离范围基准的程度，并决定是否需要采取<span class="underline">纠正或预防措施</span><span class="mark">提出变更请求</span></p>
-</body>
+- 一种确定实际绩效与基准的差异程度及原因的技术 \`实际与计划的差\`
+- 可利用项目绩效测量结果评估偏离范围基准的程度，并决定是否需要采取<u>纠正或预防措施</u>\`提出变更请求\`
+  `);
+</script>
 </html>

@@ -1,21 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>七种基本质量工具</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:800px;" src="../images/seven-basic-quality-tools-1.png" alt="" />
-  <img style="width:1000px;" src="../images/seven-basic-quality-tools-2.png" alt="" />
-  <div class="sub-area">帕累托图，又称 Pareto 图</div>
-  <img style="width:1000px;" src="../images/seven-basic-quality-tools-3.png" alt="" />
-  <img style="width:1000px;" src="../images/seven-basic-quality-tools-4.png" alt="" />
-  <img style="width:1000px;" src="../images/seven-basic-quality-tools-5.png" alt="" />
-  <img style="width:1000px;" src="../images/seven-basic-quality-tools-6.png" alt="" />
-  <img style="width:1000px;" src="../images/seven-basic-quality-tools-7.png" alt="" />
-  <img style="width:1000px;" src="../images/seven-basic-quality-tools-8.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 七种基本质量工具
+
+## 因果图
+
+- 因果图，也称 石川图、鱼骨图
+- 问题陈述放在鱼骨的头部，<u>作为起点，用来追溯问题来源</u>，回推到可行动的根本原因。
+- 作用：找出问题的所有原因。
+
+![](../images/seven-basic-quality-tools-1.png)
+
+---
+
+## 帕累托图
+
+- 又名 \`Pareto图\`。用于识别造成大多数问题的少数重要原因
+- 把缺陷的数量，和导致缺陷的原因建立了联系后，从大到小排序。
+- 管理者有针对性按优先级解决问题。
+- 前提需要知道缺陷的种类，和统计的数据。
+- 一般先使用「因果图」，找到问题的所有原因。
+- 遵循\`80/20法则\`：80%的缺陷，是由于20%的少数原因导致
+
+![](../images/seven-basic-quality-tools-2.png)
+
+---
+
+## 控制图
+
+- 用来确定一个过程是否\`稳定\`，或者是否具有可预测的绩效
+  - 稳定性：如果有任何一点，超过「控制上/下限」，我们就说这个过程是不稳定的
+- \`失控\`：某个数据点超出控制界限；连续7个点落在均值上方或下方
+  - 失控：连续7个点落在均值上下方的概率极小，不是随机事件，考虑特殊原因导致。超出「控制上/下限」，自然是失控事件
+
+![](../images/seven-basic-quality-tools-3.png)
+
+---
+
+## 直方图
+
+- 一种特殊形式的条形图，用于描述\`集中趋势\`、\`分散程度\`和\`统计分布\`形状
+- 不考虑时间对分布内的变化的影响
+
+![](../images/seven-basic-quality-tools-4.png)
+
+---
+
+## 散点图
+
+- 标有许多坐标点（X,Y），解释因变量Y 相对于自变量X 的变化
+- 通过试验，记录检查 X轴数据与Y轴数据的关联关系
+
+![](../images/seven-basic-quality-tools-5.png)
+
+---
+
+## 流程图
+
+- 用来显示在一个或多个输入转化成一个或多个输出的过程中，所需要的步骤顺序和可能分支
+- 有助于了解和估算一个过程的质量成本
+- 把生产某产品的全流程（供应商到客户）画出，并对每个流程进行质量分析，找出可能会导致质量问题的点。
+
+![](../images/seven-basic-quality-tools-6.png)
+
+## 检查表
+
+- 又称计数表，是用于收集数据的查对清单
+- 有效收集关于潜在质量问题的有用数据
+- 用核查表收集的关于缺陷数量或后果的数据，又\`经常使用帕累托图来显示\`
+
+![](../images/seven-basic-quality-tools-7.png)
+
+  `);
+</script>
 </html>

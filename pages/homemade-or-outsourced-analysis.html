@@ -1,17 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>自制或外购分析</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>自制或外购分析</h1>
-  <p>✓ 确定某项工作最好由项目团队自行完成，还是从外部采购</p>
-  <p>✓ 如果决定购买，则应继续做出购买或租赁的决策</p>
-  <p>✓ 应考虑全部相关成本，包括直接成本与间接成本</p>
-  <p>✓ 采用何种合同类型，取决于如何在买卖双方间分担风险</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 自制或外购分析
+
+- 确定某项工作最好由项目团队\`自行完成\`，还是从\`外部采购\`
+- 如果决定购买，则应继续做出购买或租赁的决策
+- 应考虑全部相关成本，包括直接成本与间接成本
+- 采用何种合同类型，取决于如何在买卖双方间分担风险
+  `);
+</script>
 </html>

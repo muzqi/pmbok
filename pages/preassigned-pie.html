@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>预分派</title>
-    <link rel="stylesheet" href="../index.css" />
-  </head>
-  <body>
-    <h1>预分派</h1>
-    <p>项目团队成员是事先选定的</p>
-    <p>下列情况下发生：</p>
-    <ul>
-      <li>在竞标过程中承诺分派特定人员进行项目工作</li>
-      <li>项目取决于特定人员的专有技能</li>
-      <li>项目章程中指定了某些人员的工作分派</li>
-    </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>预分派</title>
+  <link rel="stylesheet" href="../libs/markdown.css">
+</head>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 预分派
 
-    <div class="sub-area">
-      <p>甲方：必须王老师来上课</p>
-      <p>乙方：没问题，写在合同里</p>
-    </div>
-  </body>
+项目团队成员是事先选定的
+
+下列情况下发生：
+
+- 在竞标过程中承诺分派特定人员进行项目工作
+- 项目取决于特定人员的专有技能
+- 项目章程中指定了某些人员的工作分派
+
+示例：
+
+甲方：必须王老师来上课
+
+乙方：没问题，写在合同里
+  `);
+</script>
 </html>

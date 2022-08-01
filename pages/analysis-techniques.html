@@ -1,35 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>分析技术</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>干系人管理-分析技术</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 干系人管理-分析技术
 
-  <div class="sub-area">在项目管理中，根据可能的项目或环境变量的变化以及它们与其他变量之间的关系，采用分析技术来预测潜在的后果。</div>
+> 在项目管理中，根据可能的项目或环境变量的变化以及它们与其他变量之间的关系，采用分析技术来预测潜在的后果。
 
-  <h2>定义</h2>
-  <p>✓ 干系人的参与程度可分为如下类别：</p>
-  <ul>
-    <li>不知晓：对项目和潜在影响不知晓</li>
-    <li>抵制：知晓项目和潜在影响，抵制变更</li>
-    <li>中立：知晓项目，既不支持，也不反对</li>
-    <li>支持：知晓项目和潜在影响，支持变更</li>
-    <li>领导：知晓项目和潜在影响，积极致力于保证项目成功</li>
-  </ul>
+## 定义
 
-  <span class="mark">支持相对被动，领导相对主动</span>
+干系人的参与程度可分为如下类别：
 
-  <h2>干系人参与评估矩阵</h2>
-  <img src="../images/analysis-techniques.png" alt="">
+- 不知晓：对项目和潜在影响不知晓
+- 抵制：知晓项目和潜在影响，抵制变更
+- 中立：知晓项目，既不支持，也不反对
+- 支持：知晓项目和潜在影响，支持变更
+- 领导：知晓项目和潜在影响，积极致力于保证项目成功
 
-  <ul>
-    <li>C：Current 代表该干系人当前的支持程度</li>
-    <li>D：表示你期望干系人应该是怎样的支持程度</li>
-  </ul>
-</body>
+\`支持\`相对被动，\`领导\`相对主动。
+
+## 干系人参与评估矩阵
+
+![](../images/analysis-techniques.png)
+
+- \`C\`：Current 代表该干系人当前的支持程度
+- \`D\`：表示你期望干系人应该是怎样的支持程度
+  `);
+</script>
 </html>

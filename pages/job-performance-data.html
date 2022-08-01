@@ -2,18 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>工作绩效数据</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>工作绩效数据</h1>
-  <span class="mark">工作绩效数据随着执行过程获得，有利于将来利用进行监控</span>
-  <p>✓ 从每个正在执行的活动中收集到的原始观察结果和测量值</p>
-  <p>✓ 包括：已完成的工作、关键绩效指标、技术绩效测量结果、进度活动的开始日期和结束日期、变更请求的数量、缺陷的数量、实际成本和实际持续时间等</p>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 工作绩效数据
 
-  <img src="../images/job-performance-data.png" alt="" style="width:600px" />
-  <br/>
-  <img src="../images/job-performance-report.png" alt="" style="width:600px" />
-</body>
+![](../images/job-performance-report.png)
+
+<br>
+
+> 工作绩效数据随着执行过程获得，有利于将来利用进行监控
+
+![](../images/job-performance-data.png)
+
+- 从每个正在执行的活动中收集到的原始观察结果和测量值
+- 包括：
+  - 已完成的工作
+  - 关键绩效指标
+  - 技术绩效测量结果
+  - 进度活动的开始日期和结束日期
+  - 变更请求的数量
+  - 缺陷的数量
+  - 实际成本
+  - 实际持续时间等
+  `);
+</script>
 </html>

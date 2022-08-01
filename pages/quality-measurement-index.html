@@ -1,13 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>质量测量指标</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:800px;" src="../images/quality-measurement-index.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 质量测量指标
+
+- 用于描述项目或产品属性，以及控制质量过程将如何对属性进行测量
+- 测量指标的可允许变动范围称为公差
+- 质量测量指标用于实施质量保证和控制质量过程。
+- 例子包括：准时性、成本控制、缺陷频率、故障率、可用性、可靠性和测试覆盖度等
+  `);
+</script>
 </html>

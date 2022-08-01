@@ -1,16 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>风险再评估</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>风险再评估</h1>
-  <p>✓ 识别新风险、对现有风险进行再评估、删去已过时风险</p>
-  <p>✓ 应该定期进行「风险再评估会议」</p>
-  <p>✓ 次数和详细程度，根据项目目标的项目进展情况而定</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 风险再评估
+
+- 识别新风险、对现有风险进行再评估、删去已过时风险
+- 应该定期进行「风险再评估会议」
+- 次数和详细程度，根据项目目标的项目进展情况而定
+  `);
+</script>
 </html>

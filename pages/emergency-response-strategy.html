@@ -1,17 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>应急应对策略</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>应急应对策略</h1>
-  <p>✓ 制定只有在某些预定条件发生时才能实施的应对计划</p>
-  <p>✓ <span class="underline">风险的发生会有充分的预警信号，就应该制定应急应对策略</span><span class="mark">一旦出现乌云（预警信号），就要去超市买伞（应对策略）</span></p>
-  <p>✓ 应该对触发应急策略的事件进行定义和跟踪， 例如，未实现阶段性里程碑，或者获得供应商更高程度的重视</p>
-  <p>✓ 通常称为应急计划或弹回计划</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 应急应对策略
+
+- 制定只有在某些预定条件发生时才能实施的应对计划
+- <u>风险的发生会有充分的预警信号，就应该制定应急应对策略</u> \`一旦出现乌云（预警信号），就要去超市买伞（应对策略）\`
+- 应该对触发应急策略的事件进行定义和跟踪， 例如，未实现阶段性里程碑，或者获得供应商更高程度的重视
+- 通常称为应急计划或弹回计划
+  `);
+</script>
 </html>

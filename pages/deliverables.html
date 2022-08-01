@@ -1,15 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>可交付成果</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>可交付成果</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 可交付成果
 
-  <img src="../images/deliverables.png" style="width: 1000px" alt="">
-</body>
+- 在某一过程、阶段或项目完成时，必须产出的任何\`独特并可核实的产品、成果或服务能力\`
+- 通常是为实现项目目标而完成的有形的组件，也可包括项目管理计划
+- 一旦完成了可交付成果的第一个版本，就应该执行变更控制
+  - 如完成了1.0.0 版本，有任何修改都应当在 1.0.0 版本上迭代 1.0.0->1.0.1
+  `);
+</script>
 </html>

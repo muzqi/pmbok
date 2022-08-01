@@ -1,13 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>活动持续时间估算</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:700px;" src="../images/activity-duration-estimates.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 活动持续时间估算
+
+- 是对完成某项活动所需的工作时段数的定量评估
+- 不包括任何滞后量
+- 可以指出一定的变动区间，例如：2周±2天
+
+![](../images/activity-duration-estimates.png)
+  `);
+</script>
 </html>

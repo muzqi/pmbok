@@ -4,13 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>里程碑清单</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>里程碑清单</h1>
-  <p>里程碑是项目中的重要时点或事件 <span class="mark">应该在某个时间点，完成或开始某项工作</span></p>
-  <p>里程碑清单列出了所有项目里程碑，并指明每个里程碑是 <span class="underline">强制性</span> 的（如合同要求的）还是 <span class="underline">选择性</span> 的（如根据历史信息确定的）</p>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 里程碑清单
 
-  <img style="width: 600px" src="../images/milestone-list.png" alt="">
-</body>
+里程碑是项目中的重要时点或事件。\`应该在某个时间点，完成或开始某项工作\`。
+
+里程碑清单列出了所有项目里程碑，并指明每个里程碑是<u>强制性</u>的（如合同要求的）还是<u>选择性</u>的（如根据历史信息确定的）
+
+![](../images/milestone-list.png)
+  `)
+</script>
 </html>

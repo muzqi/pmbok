@@ -1,13 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>自下而上估算</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:700px;" src="../images/bottom-up-estimation.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 自下而上估算
+
+> 通过从下到上逐层汇总 WBS 组件的估算而得到项目估算
+
+![](../images/bottom-up-estimation.png)
+
+- 从「综合处，业务处，财务处，总经办」自下而上
+- 估算项目需要的总人数；
+- 前提：必须有一个完整的层级分解
+  `);
+</script>
 </html>

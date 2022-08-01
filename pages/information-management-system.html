@@ -1,19 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>信息管理系统</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>信息管理系统</h1>
-  <p>✓ 纸质文件管理：信件、备忘录、报告和新闻稿；</p>
-  <p>✓ 电子通信管理：电子邮件、传真、语音信箱、电话、视频
-    和网络会议、网站和网络出版；</p>
-  <p>✓ 项目管理电子工具：基于网页界面的进度管理工具和项目
-    管理软件、会议和虚拟办公支持软件、门户网站和协同工
-    作管理工具。</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 信息管理系统
+
+- \`纸质文件管理\`：信件、备忘录、报告和新闻稿；
+- \`电子通信管理\`：电子邮件、传真、语音信箱、电话、视频和网络会议、网站和网络出版；
+- \`项目管理电子工具\`：基于网页界面的进度管理工具和项目管理软件、会议和虚拟办公支持软件、门户网站和协同工作管理工具。
+  `);
+</script>
 </html>

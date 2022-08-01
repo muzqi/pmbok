@@ -5,44 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>质量成本</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>质量成本</h1>
-  <p>在产品生命周期中，为预防不符合要求、为评价产品或服务是否符合要求，以及因未达到要求（反工），而发生的所有成本。</p>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 质量成本
 
-  <h2>一致性成本</h2>
-  <div class="sub-area">在项目期间，用于防止失败的费用。为了让质量达标花费的成本</div>
-  <h3>预防成本（生产合格产品）</h3>
-  <ul>
-    <li>培训</li>
-    <li>流程文档化</li>
-    <li>设备</li>
-    <li>选择正确的做事时间</li>
-  </ul>
+> 在产品生命周期中，为预防不符合要求、为评价产品或服务是否符合要求，以及因未达到要求（反工），而发生的所有成本。
 
-  <h3>评价成本（评定质量）</h3>
-  <ul>
-    <li>测试</li>
-    <li>破坏性测试导致的损失</li>
-    <li>检查</li>
-  </ul>
+## 一致性成本
 
-  <br />
+> 在项目期间，用于防止失败的费用。为了让质量达标花费的成本
 
-  <h2>非一致性成本</h2>
-  <div class="sub-area">项目期间和项目完成后，用于处理失败的费用。由于质量不达标花费的成本</div>
-  <h3>内部失败成本（项目内部发现）</h3>
-  <ul>
-    <li>返工</li>
-    <li>废品</li>
-  </ul>
+### 预防成本（生产合格产品）
 
-  <h3>外部失败成本（客户发现）</h3>
-  <ul>
-    <li>责任</li>
-    <li>保修</li>
-    <li>业务流失</li>
-  </ul>
-</body>
+- 培训
+- 流程文档化
+- 设备
+- 选择正确的做事时间
+
+### 评价成本（评定质量）
+
+- 测试
+- 破坏性测试导致的损失
+- 检查
+
+## 非一致性成本
+
+> 项目期间和项目完成后，用于处理失败的费用。由于质量不达标花费的成本
+
+### 内部失败成本（项目内部发现）
+
+- 返工
+- 废品
+
+### 外部失败成本（客户发现）
+
+- 责任
+- 保修
+- 业务流失
+  `);
+</script>
 </html>

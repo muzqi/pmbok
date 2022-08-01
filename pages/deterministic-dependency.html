@@ -5,9 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>确定依赖关系</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width: 700px" src="../images/deterministic-dependency.png" alt="">
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 确定依赖关系
+
+- \`强制性依赖关系\`
+  - 法律或合同要求的或工作的内在性质决定
+- \`选择性依赖关系\`
+  - 基于最佳实践或者项目的某些特殊性质*（根据自身经验，或专家建议）*
+- \`外部依赖关系\`
+  - 项目活动与非项目活动之间的依赖关系*（如：某项目需要一位专家评审，专家目前正在另一个项目。）*
+- \`内部依赖关系\`
+  - 项目活动之间的紧前关系
+  `);
+</script>
 </html>

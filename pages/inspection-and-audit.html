@@ -1,16 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>检查与审计</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>检查与审计</h1>
-  <p>✓ 根据合同，由买方开展相关检查与审计，卖方提供支持</p>
-  <p>✓ 验证卖方的工作过程或可交付成果对合同的遵守程度</p>
-  <p>✓ 检查与审计团队中可以包括买方的采购人员</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 检查与审计
+
+- 根据合同，由\`买方开展\`相关检查与审计，\`卖方提供支持\`
+- 验证\`卖方的工作过程\`或\`可交付成果\`对合同的遵守程度
+- 检查与审计团队中可以包括买方的采购人员
+  `);
+</script>
 </html>

@@ -4,11 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>活动属性</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>活动属性</h1>
-  <p>针对每项活动所具有的多重属性，<span class="underline">用来扩充对活动的描述。活动属性随时间演进</span><span class="mark">活动属性 包含各活动之间的逻辑关系。如：B活动之前需要进行A活动，等</span></p>
-  <img style="width: 600px" src="../images/activity-attribute.png" alt="">
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 活动属性
+
+针对每项活动所具有的多重属性，<u>用来扩充对活动的描述。活动属性随时间演进</u>
+
+\`活动属性-包含各活动之间的逻辑关系\`。如：B活动之前需要进行A活动，等。
+
+![](../images/activity-attribute.png)
+  `)
+</script>
 </html>

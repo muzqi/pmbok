@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>验收的可交付成果</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>验收的可交付成果</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 验收的可交付成果
 
-  <p>✓ 由<span class="underline">客户或发起人</span>正式签字批准的符合验收标准的可交付成果</p>
-  <p>✓ 应该从客户或发起人那里获得正式文件，<span class="underline">证明干系人对项目可交付成果的正式验收</span></p>
-</body>
+- 由<u>客户或发起人</u>正式签字批准的符合验收标准的可交付成果
+- 应该从客户或发起人那里获得正式文件，<u>证明干系人对项目可交付成果的正式验收</u>
+  `);
+</script>
 </html>

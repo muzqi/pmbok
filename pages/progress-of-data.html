@@ -1,14 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>进度数据</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:700px;" src="../images/progress-of-data.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 进度数据
+
+- 用以描述和控制进度计划的信息集合
+- 至少包括：
+  - 进度里程碑
+  - 进度活动
+  - 活动属性
+  - 以及已知的全部假设条件与制约因素
+- 支持细节的信息包括：
+  - 资源直方图表示
+  - 备选的进度计划
+  - 进度应急储备
+  `);
+</script>
 </html>
-  

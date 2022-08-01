@@ -1,24 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>干系人管理计划</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>干系人管理计划</h1>
-  <p>✓ 除了干系人登记册中的资料，干系人管理计划还包括：</p>
-  <ul>
-    <li>关键干系人的所需参与程度和当前参与程度</li>
-    <li>干系人变更的范围和影响</li>
-    <li>干系人之间的相互关系和潜在交叉</li>
-    <li>项目现阶段的干系人沟通需求</li>
-    <li>需要分发给干系人的信息，包括语言、格式、内容和详细程度</li>
-    <li>分发相关信息的理由，以及可能对干系人参与所产生的影响</li>
-    <li>向干系人分发所需信息的时限和频率</li>
-    <li>随着项目的进展，更新和优化干系人管理计划的方法</li>
-  </ul>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 干系人管理计划
+
+除了干系人登记册中的资料，干系人管理计划还包括：
+
+- \`参与程度\` 关键干系人的所需参与程度和当前参与程度
+- \`变更影响\` 干系人变更的范围和影响
+- \`相互关系\` 干系人之间的相互关系和潜在交叉
+- \`沟通需求\` 项目现阶段的干系人沟通需求
+- \`沟通格式\` 需要分发给干系人的信息，包括语言、格式、内容和详细程度
+- \`沟通时间\` 向干系人分发所需信息的时限和频率
+- 分发相关信息的理由，以及可能对干系人参与所产生的影响
+- 随着项目的进展，更新和优化干系人管理计划的方法
+  `);
+</script>
 </html>

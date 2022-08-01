@@ -3,15 +3,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>风险概率和影响评估</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>风险概率和影响评估</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 风险概率和影响评估
 
-  <p>✓ 风险概率评估：旨在调查每个具体风险发生的可能性</p>
-  <p>✓ 风险影响评估：旨在调查风险对项目目标（如进度、成本、质量或性能）的潜在影响（包括消极影响和积极影响）</p>
-  <p>✓ 具有低级别概率和影响的风险，将列入风险登记册中的观察清单，供将来监测</p>
-</body>
+- 风险概率评估：旨在调查每个具体风险发生的可能性
+- 风险影响评估：旨在调查风险对项目目标（如进度、成本、质量或性能）的潜在影响（包括消极影响和积极影响）
+- 具有低级别概率和影响的风险，将列入风险登记册中的观察清单，供将来监测
+  `);
+</script>
 </html>

@@ -2,12 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>滚动式规划</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width: 700px" src="../images/rolling-planning-1.png" alt="">
-  <img style="width: 700px" src="../images/rolling-planning-2.png" alt="">
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 滚动式规划
+
+> 滚动式规则，是一种迭代式规划技术，即详细规划近期要完成的工作，同时在较高层级上粗略规划远期工作
+
+![](../images/rolling-planning-1.png)
+
+- 对近期的工作做详细的规划；
+- 对远期的工作只做概要性规划。（保留在WBS的高层）；
+- 针对\`渐进明细\`特点。
+  `);
+</script>
 </html>

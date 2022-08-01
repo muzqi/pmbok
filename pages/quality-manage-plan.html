@@ -1,17 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>质量管理计划</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>质量管理计划</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 质量管理计划
 
-  <p>
-    项目管理计划的一部分，描述将如何实施组织的质量政策，以及项目管理团队准备如何达到项目的质量要求
-  </p>
-</body>
+项目管理计划的一部分，描述将如何实施组织的质量政策，以及项目管理团队准备如何达到项目的质量要求
+  `);
+</script>
 </html>

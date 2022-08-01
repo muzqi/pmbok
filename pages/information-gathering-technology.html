@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>信息收集技术</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 信息收集技术
 
-<body>
-  <h1>信息收集技术</h1>
-  <ul>
-    <li>头脑风暴</li>
-    <li><a href="./group-innovation-technology.html" target="_blank">德尔菲技术</a></li>
-    <li>访谈</li>
-    <li><b>根本原因分析</b>：指对项目<b>风险的根本原因</b>进行调查。通过识别根本原因来完善风险定义并按照成因对风险进行分类。通过考虑风险的根本原因，制订有效的风险应对措施。</li>
-  </ul>
-</body>
-
+- 头脑风暴
+- [德尔菲技术](./group-innovation-technology.html)
+- 访谈
+- **根本原因分析**
+  - 指对项目**风险的根本原因**进行调查。通过识别根本原因来完善风险定义并按照成因对风险进行分类。通过考虑风险的根本原因，制订有效的风险应对措施。
+  `);
+</script>
 </html>

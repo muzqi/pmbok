@@ -2,26 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>项目建议书</title>
-  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>项目建议书</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 项目建议书
 
-  <p>又称<b>立项申请</b></p>
+又称**立项申请**
 
-  <p>是<span class="mark">项目建设单位</span><i>（「项目建设单位」指甲方。乙方一般叫做「项目承建单位」）</i>向上级主管部门提交项目申请时所必须的文件</p>
+是\`项目建设单位\`*（「项目建设单位」指甲方。乙方一般叫做「项目承建单位」）*向上级主管部门提交项目申请时所必须的文件
 
-  <p>是对拟建项目提出的框架性的总体设想</p>
+是对拟建项目提出的框架性的总体设想
 
-  <p>核心内容如下：</p>
+核心内容如下：
 
-  <ol>
-    <li>项目的必要性</li>
-    <li>项目的市场预测</li>
-    <li>产品方案或服务的市场预测</li>
-    <li>项目建设必需的条件</li>
-  </ol>
-</body>
+1. 项目的必要性
+2. 项目的市场预测
+3. 产品方案或服务的市场预测
+4. 项目建设必需的条件
+  `);
+</script>
 </html>

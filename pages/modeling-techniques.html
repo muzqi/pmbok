@@ -1,14 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>建模技术</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:700px;" src="../images/modeling-techniques.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 建模技术
+
+- \`假设情景分析\`：
+  - 对各种情景进行评估，预测它们对项目目标的影响（如“假如许可证申请不顺利，对进度有什么影响？”）
+- \`模拟技术\`：
+  - 基于多种不同的活动假设计算出多种可能的项目工期，以应对不确定性（常用\`蒙特卡洛分析\`）
+  `);
+</script>
 </html>
-  

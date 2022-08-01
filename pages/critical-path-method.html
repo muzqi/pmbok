@@ -1,83 +1,90 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>关键路径法</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <p>估算项目最短工期，确定逻辑网络路径的进度灵活性大小</p>
-  <img style="width:700px;" src="../images/critical-path-method.png" alt="" />
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 关键路径法
 
-  <table border="1">
-    <tbody>
-      <tr>
-        <th style="font-weight: normal;">面向整体活动路径</th>
-        <td></td>
-      </tr>
-      <tr>
-        <th>关键路径</th>
-        <td>所有从开始到结束的路径中，单个活动工期（D）之和最大的路径 <br/> <span class="mark">可能有多条，关键路径上的活动有延误，会影响整个项目工期</span></td>
-      </tr>
-      <tr>
-        <th>总工期</th>
-        <td>关键路径的活动历时之和，与最后一个活动的 EF 相等</td>
-      </tr>
-      <tr>
-        <th style="font-weight: normal;">面向单个活动</th>
-        <td></td>
-      </tr>
-      <tr>
-        <th rowspan="2">ES(earliest start)</th>
-        <td>最早开始时间。所有开始条件都达成的<b>最早时刻</b></td>
-      </tr>
-      <tr>
-        <td><span class="mark">ES = max(...before.EFs) | 0</span></td>
-      </tr>
-      <tr>
-        <th rowspan="2">EF(earliest finish)</th>
-        <td>最早结束时间。最早正推，起点为0</td>
-      </tr>
-      <tr>
-        <td><span class="mark">EF = ES + D</span></td>
-      </tr>
-      <tr>
-        <th rowspan="2">LF(latest finish)</th>
-        <td>最晚结束时间。不影响总工期的最晚的结束时间 <span class="mark">也就是说，最后一个活动 LF = EF</span></td>
-      </tr>
-      <tr>
-        <td><span class="mark">LF = min(...after.LSs)</span></td>
-      </tr>
-      <tr>
-        <th rowspan="2">LS(latest start)</th>
-        <td>最晚开始时间。最晚反推，起点=总工期</td>
-      </tr>
-      <tr>
-        <td><span class="mark">LS = LF - D</span></td>
-      </tr>
-      <tr>
-        <th rowspan="3">TF(time diffrence)</th>
-        <td>活动的总时差（总浮动时间）。此活动最长可耽误的时间段，而不影响总工期 <span class="mark">关键路径上的总时差一定为0</span></td>
-      </tr>
-      <tr>
-        <td>意义：表示了该活动最多能耽误多长时间，并不会影响总工期</td>
-      </tr>
-      <tr>
-        <td><span class="mark">TF = LS-ES</span> | <span class="mark">TF = LF-EF</span></td>
-      </tr>
-      <tr>
-        <th rowspan="3">FF(free diffrence)</th>
-        <td>自由时差。此活动最长可耽误的时间段，而不影响任何紧后活动的最早开始时间ES</td>
-      </tr>
-      <tr>
-        <td>意义：该活动最多能耽误的时间，并不会影响后面的活动</td>
-      </tr>
-      <tr>
-        <td><span class="mark">FF = min(...after.ESs) - EF</span></td>
-      </tr>
-    </tbody>
-  </table>
-</body>
+> 估算项目最短工期，确定逻辑网络路径的进度灵活性大小
+
+![](../images/critical-path-method.png)
+
+<table>
+  <tbody>
+    <tr>
+      <th style="font-weight: normal;">面向整体活动路径</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>关键路径</th>
+      <td>所有从开始到结束的路径中，单个活动工期（D）之和最大的路径 <br/> <code>可能有多条，关键路径上的活动有延误，会影响整个项目工期</code></td>
+    </tr>
+    <tr>
+      <th>总工期</th>
+      <td>关键路径的活动历时之和，与最后一个活动的 EF 相等</td>
+    </tr>
+    <tr>
+      <th style="font-weight: normal;">面向单个活动</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2">ES(earliest start)</th>
+      <td>最早开始时间。所有开始条件都达成的<b>最早时刻</b></td>
+    </tr>
+    <tr>
+      <td><code>ES = max(...before.EFs) | 0</code></td>
+    </tr>
+    <tr>
+      <th rowspan="2">EF(earliest finish)</th>
+      <td>最早结束时间。最早正推，起点为0</td>
+    </tr>
+    <tr>
+      <td><code>EF = ES + D</code></td>
+    </tr>
+    <tr>
+      <th rowspan="2">LF(latest finish)</th>
+      <td>最晚结束时间。不影响总工期的最晚的结束时间 <code>也就是说，最后一个活动 LF = EF</code></td>
+    </tr>
+    <tr>
+      <td><code>LF = min(...after.LSs)</code></td>
+    </tr>
+    <tr>
+      <th rowspan="2">LS(latest start)</th>
+      <td>最晚开始时间。最晚反推，起点=总工期</td>
+    </tr>
+    <tr>
+      <td><code>LS = LF - D</code></td>
+    </tr>
+    <tr>
+      <th rowspan="3">TF(time diffrence)</th>
+      <td>活动的总时差（总浮动时间）。此活动最长可耽误的时间段，而不影响总工期 <code>关键路径上的总时差一定为0</code></td>
+    </tr>
+    <tr>
+      <td>意义：表示了该活动最多能耽误多长时间，并不会影响总工期</td>
+    </tr>
+    <tr>
+      <td><code>TF = LS-ES</code> | <code>TF = LF-EF</code></td>
+    </tr>
+    <tr>
+      <th rowspan="3">FF(free diffrence)</th>
+      <td>自由时差。此活动最长可耽误的时间段，而不影响任何紧后活动的最早开始时间ES</td>
+    </tr>
+    <tr>
+      <td>意义：该活动最多能耽误的时间，并不会影响后面的活动</td>
+    </tr>
+    <tr>
+      <td><code>FF = min(...after.ESs) - EF</code></td>
+    </tr>
+  </tbody>
+</table>
+  `);
+</script>
 </html>

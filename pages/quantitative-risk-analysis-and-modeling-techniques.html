@@ -1,24 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>定量风险分析和建模技术</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>定量风险分析和建模技术</h1>
-  <h2>敏感性分析</h2>
-  <img style="width:800px;" src="../images/quantitative-risk-analysis-and-modeling-techniques-1.png" alt="" />
-  <img style="width:800px;" src="../images/quantitative-risk-analysis-and-modeling-techniques-2.png" alt="" />
-  <hr>
-  <h2>预期货币价值分析(EMV)</h2>
-  <img style="width:800px;" src="../images/quantitative-risk-analysis-and-modeling-techniques-3.png" alt="" />
-  <img style="width:800px;" src="../images/quantitative-risk-analysis-and-modeling-techniques-4.png" alt="" />
-  <hr>
-  <h2>建模和模拟</h2>
-  <img style="width:800px;" src="../images/quantitative-risk-analysis-and-modeling-techniques-5.png" alt="" />
-  <img style="width:800px;" src="../images/quantitative-risk-analysis-and-modeling-techniques-6.png" alt="" />
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 定量风险分析和建模技术
+
+## 敏感性分析
+
+- 有助于确定哪些风险对项目具有最大的潜在影响
+- 有助于理解项目目标的变化与各种不确定因素的变化之间存在怎样的关联
+- 把所有其他不确定因素固定在基准值，考察每个因素的变化会对目标产生多大程度的影响
+- 敏感性分析的典型表现形式是龙卷风图
+
+![](../images/quantitative-risk-analysis-and-modeling-techniques-1.png)
+
+---
+
+## 预期货币价值分析(EMV)
+
+> Expected Monetary Value
+
+- 是当某些情况在未来可能发生或不发生时，计算平均结果的一种统计方法
+- 机会的EMV通常表示为正值，威胁的EMV则表示为负值
+- 建立在风险中立的假设之上的，既不避险，也不冒险
+- 把每个可能结果的数值与其发生的概率\`相乘\`，再把所有乘积\`相加\`，就可以计算出项目的EMV
+- 这种技术经常在\`决策树分析\`中使用
+
+![](../images/quantitative-risk-analysis-and-modeling-techniques-2.png)
+
+---
+
+## 建模和模拟
+
+> 大数规律（大力出奇迹）。需要保证：<br>
+> 模拟的数据足够随机；模拟的次数足够多；
+
+- 使用一个模型，计算项目各细节方面的不确定性对项目目标的潜在影响
+- 模拟通常采用\`蒙特卡洛技术\`
+- 在模拟中，要利用项目模型进行多次（反复）计算
+
+示例：
+
+\`m / 10 * 10000 = πr² / 4r²\`
+
+假设在正方形中，随机撒10w个点，
+
+其中有m个点，距离中心点的长度，小于正方形宽高的一般，也就是圆的半径。
+
+使用 m / 10 * 10000 就等于πr² / 4r²，我们可以得到π的结果。
+
+![](../images/quantitative-risk-analysis-and-modeling-techniques-3.png)
+
+  `);
+</script>
 </html>

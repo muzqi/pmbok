@@ -6,11 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>标杆对照</title>
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
 
-<body>
-  <h1>标杆对照</h1>
-  <p><b>标杆对照</b>是将实际或计划的项目实践与可比项目的实践进行对照，以便识别最佳实践， 形成改进意见，并为绩效考核提供依据。</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 标杆对照
 
+> **标杆对照**。是将实际或计划的项目实践与可比项目的实践进行对照，以便识别最佳实践， 形成改进意见，并为绩效考核提供依据。
+  `);
+</script>
 </html>

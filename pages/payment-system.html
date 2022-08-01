@@ -1,16 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>支付系统</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>支付系统</h1>
-  <p>1. 先由被授权的项目团队成员证明卖方的工作令人满意</p>
-  <p>2. 再通过买方的应付账款系统向卖方付款</p>
-  <p>3. 所有支付都必须严格按照合同条款进行并加以记录</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 支付系统
+
+1. 先由被授权的项目团队成员证明卖方的工作令人满意
+2. 再通过买方的应付账款系统向卖方付款
+3. 所有支付都必须严格按照合同条款进行并加以记录
+  `);
+</script>
 </html>

@@ -4,11 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>活动清单</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>活动清单</h1>
-  <p>一份包含项目所需的全部进度活动的综合清单。包括每个活动的标识及工作范围详述</p>
-  <img style="width: 600px" src="../images/activity-list.png" alt="">
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 活动清单
+
+一份包含项目所需的全部进度活动的综合清单。包括每个活动的标识及工作范围详述
+
+![](../images/activity-list.png)
+  `);
+</script>
 </html>
