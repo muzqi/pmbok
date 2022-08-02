@@ -3790,19 +3790,19 @@ const dataSource = [
     anwser: 2,
     analysis: '与控制图不同，直方图不考虑时间对分布内的变化的影响。',
   },
-  // {
-  //   tag: TAGS,
-  //   isFocus: true,
-  //   title: '',
-  //   options: [
-  //     '',
-  //     '',
-  //     '',
-  //     '',
-  //   ],
-  //   anwser: 0,
-  //   analysis: '',
-  // },
+  {
+    tag: TAGS.PROJECT_MANAGEMENT,
+    isFocus: true,
+    title: '项目目标要求遵守的SMART原则指（）。',
+    options: [
+      '独特的，可测量的，可以达到的，可以回顾的，有明确时限的',
+      '具体的，可测量的，有效的，有相关性的，有明确时限的',
+      '独特的，可测量的，可以达到的，有相关性的，有明确时限的',
+      '具体的，可测量的，可以达到的，有相关性的，有明确时限的',
+    ],
+    anwser: 3,
+    analysis: '项目的目标要求遵守 SMART 原则：既项目的目标要求具体的，可测量的，可以达到的，有相关性的，有明确时限的。',
+  },
   // {
   //   tag: TAGS,
   //   isFocus: true,
