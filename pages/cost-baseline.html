@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,22 @@
   <title>成本基准</title>
   <link rel="stylesheet" href="../libs/markdown.css">
 </head>
+
 <body></body>
 <script src="../libs/marked.min.js"></script>
 <script>
   document.body.innerHTML = marked.parse(`
 # 成本基准
 
-<table border="1">
+<table>
   <tr>
     <th>成本基准</th>
-    <td><u>经批准</u>的<u>按时间安排</u>的成本支出计划，并随时反映了经批准的项目成本变更，被用于度量和监督项目的实际执行成本</td>
+    <td>
+      <ul>
+        <li><code>经批准</code>的<code>按时间安排</code>的成本支出计划，并随时反映了经批准的项目成本变更，被用于度量和监督<code>成本绩效</code>的基准</li>
+        <li>通常以<code>S曲线</code>的形式表示</li>
+      </ul>
+    </td>
   </tr>
   <tr>
     <th>应急储备</th>
@@ -50,4 +57,5 @@
 
   `);
 </script>
+
 </html>
