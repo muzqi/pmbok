@@ -3933,6 +3933,19 @@ const dataSource = [
     从项目范围管理知识领域的各规划过程获得的输出（如需求文件或范围基准），以及从其他知识领域的各执行过程获得的工作绩效数据。
     `,
   },
+  {
+    tag: TAGS.PROJECT_MANAGEMENT,
+    isFocus: true,
+    title: '下表为某项目的 WBS，则此项目的最短工期为（）月。<br><img style="width: 296px;" src="./images/26.png" />',
+    options: [
+      '3',
+      '6',
+      '7',
+      '9',
+    ],
+    anwser: 1,
+    analysis: '考虑到逻辑关系。硬件采购、第三方软件、系统功能应该可以并行施工。这 3 个活动并行需要 4 个月。然后是系统接口和现场实施，共需要 6 个月。',
+  },
   // {
   //   tag: TAGS,
   //   isFocus: true,
