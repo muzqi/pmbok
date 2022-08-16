@@ -2,16 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>检查</title>
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>检查</h1>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 检查
 
-  <h2>确认范围-检查</h2>
-  <p>
-    管理层所关注的项目范围，是指范围对项目的进度、资金和资源的影响，这些因素是否超过了组织承受范围，是否在投入产出上具有合理性。
-  </p>
-  <p><b>在确认范围工作进行之后，管理层可能会取消该项目</b>，可能是因为项目范围太大，造成对时间、资金和资源的占有远远大于管理层的预计或者组织的承受能力。更多的情况是要求项目团队压缩范围以满足进度、资金和资源的限制。</p>
-</body>
+## 确认范围-检查
+
+\`管理层\`所关注的项目范围，是指范围对项目的进度、资金和资源的影响，这些因素是否超过了组织承受范围，是否在投入产出上具有合理性。
+
+\`在确认范围工作进行之后，管理层可能会取消该项目\`，可能是因为项目范围太大，造成对时间、资金和资源的占有远远大于管理层的预计或者组织的承受能力。更多的情况是要求项目团队压缩范围以满足进度、资金和资源的限制。
+  `);
+</script>
 </html>
