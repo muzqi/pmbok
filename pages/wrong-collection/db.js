@@ -4166,6 +4166,19 @@ const dataSource = [
     范围管理计划也应该包括对变化范围怎样确定，变化应归为哪一类等问题的清楚描述。
     `,
   },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '软件项目的质量，主要用（ ）和软件测试两种方法配合使用来保证。 ',
+    options: [
+      '技术评审',
+      '用户试用',
+      '流程外包',
+      '迭代开发',
+    ],
+    anwser: 0,
+    analysis: '软件项目的质量，主要用技术评审和软件测试两种方法配合使用来保证。',
+  },
   // {
   //   tag: TAGS,
   //   isFocus: true,
