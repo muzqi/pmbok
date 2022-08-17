@@ -1220,6 +1220,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '老于是某银行的系统架构师，他为银行投资管理系统设计的软件架构包括进程通信和事件驱动的系统，该软件架构风格属于（）。',
     options: [
       '数据流风格',
@@ -2089,6 +2090,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
+    isFocus: true,
     title: '关于项目评估及论证的描述，不正确的是（）。',
     options: [
       '“先论证，后决策”是现代项目管理的基本原则',
