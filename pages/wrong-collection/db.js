@@ -1478,6 +1478,7 @@ const dataSource = [
   },
   {
     tag: TAGS.OPERATIONS_RESEARCH,
+    isFocus: true,
     title: '同时抛掷3枚均匀的硬币，恰好有两枚正面向上的概率为（）。',
     options: [
       '1/4',
