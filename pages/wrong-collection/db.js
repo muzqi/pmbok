@@ -171,6 +171,7 @@ const dataSource = [
   },
   {
     tag: TAGS.SOFTWARE_STANDARDS,
+    isFocus: true,
     title: '在项目中经常会利用外包的手段，以提高项目的验收能力，对于工作规模或产品规定不是特别清楚的项目。外包时一般应采用（）',
     options: [
       '成本补偿合同',
