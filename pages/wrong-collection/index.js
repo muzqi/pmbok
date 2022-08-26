@@ -144,6 +144,7 @@ window.onload = () => {
   focusSubjectBtn.onclick = () => {
     modalWrapperEle.setAttribute('style', '');
     const _dataSource = JSON.parse(JSON.stringify(dataSource.filter(n => n.isFocus)));
+    _dataSource.sort(() => Math.random() - 0.5);
     renderSubject(_dataSource, modalEle);
   }
   modalEle.onclick = (e) => {
