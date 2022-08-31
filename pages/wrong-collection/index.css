@@ -97,6 +97,10 @@ main#subject-container {
   background-color: #1890ff;
 }
 
+#focus-subject {
+  width: 120px;
+}
+
 #modal-wrapper {
   position: fixed;
   display: flex;

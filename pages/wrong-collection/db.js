@@ -13,7 +13,7 @@ const TAGS = {
 const dataSource = [
   {
     tag: TAGS.SOFTWARE_STANDARDS,
-    isFocus: true,
+    isFocus: false,
     title: '关于项目招投标的描述，正确的是（）。',
     options: [
       '资格预审档或者招标档的发售期不得少于7天',
@@ -293,7 +293,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '（ ）不属于无线网络安全技术或协议。',
     options: [
       'WEP',
@@ -366,7 +366,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: `
     <span>安全审计的手段主要包括（）</span>
     <ol>
@@ -1576,7 +1576,7 @@ const dataSource = [
   },
   {
     tag: TAGS.OPERATIONS_RESEARCH,
-    isFocus: true,
+    isFocus: false,
     title: '<p>【其他】分配甲、乙、丙、丁四个人去完成五项任务。每人完成各项任务时间如表所示。由于任务多于人数，故规定其中有一个人可兼完成两项任务，其余三人每人完成一项。为了花费时间最少，（）应该完成两项任务。<br><img alt="image.png" title=".png" src="./images/10.png"></p>',
     options: [
       '甲',
@@ -1630,7 +1630,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '由于所需的验收标准未得到满足，客户停止了里程碑付款。项目经理采用以下（）质量管理过程可以阻止再次发生这个问题。',
     options: [
       '质量保证',
@@ -2510,7 +2510,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '某100人的公司承接了一个大型项目，所有部门都参与了该项目，其中55人为全职参与。项目经理小A专职负责项目管理，公司配置管理人员小B兼职负责该项目的行政工作。则该公司的组织结构类型是（）',
     options: [
       '强矩阵型组织',
@@ -3022,7 +3022,7 @@ const dataSource = [
   },
   {
     tag: TAGS.SOFTWARE_STANDARDS,
-    isFocus: true,
+    isFocus: false,
     title: `
     依据《中华人民共和国政府采购法（2014修订）》，采用竞争性谈判方式采购的，应当遵循下列程序（）<br>
     ①成立谈判小组<br>
@@ -3076,7 +3076,7 @@ const dataSource = [
   },
   {
     tag: TAGS.SOFTWARE_STANDARDS,
-    isFocus: true,
+    isFocus: false,
     title: '合同可以变更，但是当事人对合同变更的内容约定不明确的，推定为（ ）。',
     options: [
       '未变更',
@@ -3089,7 +3089,7 @@ const dataSource = [
   },
   {
     tag: TAGS.SOFTWARE_STANDARDS,
-    isFocus: true,
+    isFocus: false,
     title: '根据招投标法的相关规定，当两个以上法人或者其他组织组成联合体投标时，若招标文件对投标人资格条件有规定的，则联合体（ ）。',
     options: [
       '各方的加总条件应符合规定的资格条件',
@@ -3262,7 +3262,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '在计算机网络中，按照交换层次的不同，网络交接可以分为物理层交换、链路层交换网络、传输层交换五层，其中"对IP地址进行变更"属于（）。',
     options: [
       '传输层交换',
@@ -3424,7 +3424,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '关于项目范围控制描述，不正确的是（）。',
     options: [
       '项目的范围变更控制和管理是对项目中存在的或潜在的变化采用正确的签感和方法来降低项目的风险',
@@ -3443,7 +3443,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '（）使金融、贸易、投资、计划、通关、营销等组成一个信息大系统，使生产、流通、分配、消费等经济的四个环节通过信息进一步联成一个整体。',
     options: [
       '社会生活信息化',
@@ -3456,8 +3456,8 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
-    title: '在信息化发展与应的新特点中，（）是以行业应用为基础的综合领域应用模型、云计算、大数据分析、海量存储、信息安全、依托移动互联的信息技术的综合应用，是目前的发展趋势。',
+    isFocus: false,
+    title: '在信息化发展与应用的新特点中，（）是以行业应用为基础的综合领域应用模型、云计算、大数据分析、海量存储、信息安全、依托移动互联的信息技术的综合应用，是目前的发展趋势。',
     options: [
       '虚拟计算',
       '智能化',
@@ -3490,7 +3490,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '复用是指将已有的软件及其有效成分于构造新的软件或系统。（）技术是软件复用实现的关键。',
     options: [
       '组件',
@@ -3556,7 +3556,7 @@ const dataSource = [
   },
   {
     tag: TAGS.POLITICS,
-    isFocus: true,
+    isFocus: false,
     title: '十四五国家信息化规划中提到，建设物联数通的新型感知基础设施，统筹建设（ ）三位一体的新型域物联专网。',
     options: [
       '工业、农业、教育',
@@ -3569,7 +3569,7 @@ const dataSource = [
   },
   {
     tag: TAGS.POLITICS,
-    isFocus: true,
+    isFocus: false,
     title: '元宇宙本质上是对现实世界的虚拟化、数字化过程，需要对内容生产、经济系统、用户体验以及实体世界内容等进行大量改造。它基于扩展现实技术提供沉浸式体验，基于（ ）技术生成现实世界的镜像，基于区块链技术搭建经济体系，将虚拟世界与现实世界在经济系统、社交系统、身份系统上密切融合，并且允许每个用户进行内容生产和世界编辑。',
     options: [
       '5G、6G',
@@ -3666,7 +3666,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '关于识别风险的工具与技术的描述，正确的是：（）。',
     options: [
       '核对单简单易用且可以穷尽所有事项',
@@ -3696,7 +3696,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '关于项目经理的相关描述，不正确的是（）',
     options: [
       '项目经理需要足够的项目管理知识和经验',
@@ -3793,7 +3793,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '关于项目质量管理的技术方法，描述错误的是（）。',
     options: [
       '因果图，将问题陈述放在鱼骨头部作为起点，用来追溯问题来源，回推到可行动的根本原因。',
@@ -4125,7 +4125,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '项目质量是应顾客需求进行的，不同顾客有着不同的质量要求，（）是项目质量管理的主要依据。',
     options: [
       '项目目标',
@@ -4229,7 +4229,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '依据权利/利益方格，对单位内部生产核心部件应采取的干采人管理策略是（）。',
     options: [
       '重点管理 ',

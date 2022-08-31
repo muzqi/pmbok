@@ -130,6 +130,7 @@ window.onload = () => {
   // 随机模式
   const randomPracticeBtn = doc.getElementById('random-practice');
   const focusSubjectBtn = doc.getElementById('focus-subject');
+  const focusSubjectNumber = doc.getElementById('focus-subject-number');
   const modalWrapperEle = doc.getElementById('modal-wrapper');
   const modalEle = doc.getElementById('modal');
   const cancelModalBtn = doc.getElementById('cancel-modal');
@@ -141,6 +142,9 @@ window.onload = () => {
     _dataSource.splice(20);
     renderSubject(_dataSource, modalEle);
   }
+
+  // 关注题
+  focusSubjectNumber.innerHTML = JSON.parse(JSON.stringify(dataSource.filter(n => n.isFocus))).length;
   focusSubjectBtn.onclick = () => {
     modalWrapperEle.setAttribute('style', '');
     const _dataSource = JSON.parse(JSON.stringify(dataSource.filter(n => n.isFocus)));
