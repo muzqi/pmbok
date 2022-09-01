@@ -3,6 +3,7 @@ const TAGS = {
   INFORMATION_TECHNOLOGY: '信息技术',
   CHANGE_MANAGEMENT: '变更管理',
   POLITICS: '时政',
+  LAWS: '政策法规',
   OPERATIONS_RESEARCH: '运筹学',
   AUXILIARY_KNOWLEDGE: '辅助知识',
   ENGLISH: '英文',
@@ -12,7 +13,7 @@ const TAGS = {
 
 const dataSource = [
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     isFocus: false,
     title: '关于项目招投标的描述，正确的是（）。',
     options: [
@@ -29,7 +30,7 @@ const dataSource = [
     `,
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     title: '关于项目招投标的描述，不正确的是：（）。',
     options: [
       '任何单位和个人不得以任何方式为招标人指定招标代理机构',
@@ -41,7 +42,7 @@ const dataSource = [
     analysis: '如果以邮寄方式送达的，投标人必须留出邮寄时间，保证投标档能够在截止日期之前送达招标人指定的地点，而不是以“邮戳为准”',
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     title: '关于招投标的描述，不正确的是: ( ) 。',
     options: [
       '招标人采用邀请招标方式的，应当向三个以上具备承担项目的能力、资信良好的特定法人或者其他组织发出投标邀请书',
@@ -155,7 +156,7 @@ const dataSource = [
     analysis: '高级教程p851；',
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     title: '关于合同管理描述不正确（）。',
     options: [
       '合同签订前需做好市场调查',
@@ -170,7 +171,7 @@ const dataSource = [
     `,
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     isFocus: true,
     title: '在项目中经常会利用外包的手段，以提高项目的验收能力，对于工作规模或产品规定不是特别清楚的项目。外包时一般应采用（）',
     options: [
@@ -404,7 +405,7 @@ const dataSource = [
     analysis: '新华社北京2月5日电 2022年2月5日，中方向世界知识产权组织递交《关于为盲人、视力障碍者或其他印刷品阅读障碍者获得已出版作品提供便利的马拉喀什条约》批准书，按条约规定，条约将于三个月后对中国正式生效。该条约是世界上第一部、也是迄今为止唯一一部版权领域的人权条约，将进一步保障阅读障碍者平等获取文化和教育的权利。',
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     title: '关于招投标相关的描述，不正确的是（）。',
     options: [
       '合同的主要条款应与招标档和中标人的投标档内容一致',
@@ -542,7 +543,7 @@ const dataSource = [
   },
   {
     tag: TAGS.OPERATIONS_RESEARCH,
-    isFocus: true,
+    isFocus: false,
     title: `
     <span>[单选] 下图表示某项目各个活动关系及乐观、最可能、悲观完成时间，假设各活动的三种完成时间服从β分布，按照三点估算法该项目标准差为 3.2天，则项目在 () 完成的概率为 95%。</span>
     <img style="width: 800px;" src="./images/1.png" />
@@ -612,7 +613,7 @@ const dataSource = [
     analysis: '为把企业组织结构与企业过程联系起来，说明每个过程与组织的联系，指出过程决策人，可以采用建立过程/组织(Process/Organization，P/O)矩阵的方法。 p/o矩阵 建立过程/组织矩阵 r/d矩阵 资源/数据矩阵 ipo图 过程法 归纳出系统的数据类 cu矩阵 企业数据矩阵',
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     title: '[单选] 学生小李3月20日向某学术期刊投了一篇论文，自3月20日起（18）日内，如果未收到投稿期刊社决定刊登的通知，小李可以将该论文投稿给其他期刊社。',
     options: [
       '15',
@@ -641,7 +642,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: ' [单选] 关于项目干系人管理的描述，不正确的是（43）。',
     options: [
       '项目成员的家属也可能成为项目干系人',
@@ -807,7 +808,7 @@ const dataSource = [
   },
   {
     tag: TAGS.SOFTWARE_STANDARDS,
-    isFocus: true,
+    isFocus: false,
     title: '关于配置管理的描述，正确的是 （ 51 ） 。',
     options: [
       '某个配置项的版本号为0.91，该配置项的状态为“正式”',
@@ -833,7 +834,7 @@ const dataSource = [
     `,
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     title: '（ 55 ） 为卖方报销履行合同工作所发生的一切合法成本（即成本实报实销），买方再给卖方支付一笔利润，完全由买方根据自己对卖方绩效的主观判断来决定，并且卖方通常无权申诉。',
     options: [
       '总价加激励费用合同',
@@ -939,7 +940,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '关于项目和企业战略，不正确的是：（ ）。',
     options: [
       '项目管理通常需要将企业战略作为考虑因素',
@@ -1128,8 +1129,8 @@ const dataSource = [
     `,
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
-    isFocus: true,
+    tag: TAGS.AUXILIARY_KNOWLEDGE,
+    isFocus: false,
     title: '项目可行性研究阶段的经营成本不包括（30）。',
     options: [
       '财务费用',
@@ -1208,7 +1209,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '智能具有感知、记忆、自适应等特点，能够存储感知到的外部信息及由思维产生的知识，同时能够利用己有的知识对信息进行分析、计算、比较、判断、联想和决策属于智能的（）能力。',
     options: [
       '感知',
@@ -1221,7 +1222,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '老于是某银行的系统架构师，他为银行投资管理系统设计的软件架构包括进程通信和事件驱动的系统，该软件架构风格属于（）。',
     options: [
       '数据流风格',
@@ -1284,7 +1285,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: `
     做好变更管理可以使项目的质量、进度、成本管理更加有效。关于变更工作程序的描述，不正确的是：（）。<br>
     ①及时、正式的提出变更，且留下书面记录<br>
@@ -1316,7 +1317,7 @@ const dataSource = [
     `,
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     title: `
     关于合同管理的描述，不正确的是：（）。<br>
     ①合同管理包括：合同签订管理、合同履行管理、合同变更管理、合同档案管理、合同违约索赔管理。<br>
@@ -1381,7 +1382,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '以下关于质量保证的叙述中，不正确的是：（）。',
     options: [
       '实施质量保证是确保采用合理的质量标准和操作性定义的过程',
@@ -1450,7 +1451,7 @@ const dataSource = [
     analysis: '《软件工程 产品质量 第1部分 质量模型》GB／T 16260.1-2006根据外部和内部质 量的质量模型定义，将软件质量属性划分为六个特性：功能性、可靠性、易用性、效率、 维护性和可移植性。',
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     title: '甲公司因业务开展需要，拟购买10部手机，便向乙公司发出传真，要求以2000元/台的价格购买10部手机，并要求乙公司在一周内送货上门。根据《中华人民共和国合同法》甲公司向乙公司发出传真的行为属于（）。',
     options: [
       '邀请',
@@ -1697,7 +1698,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '某项目组的测试团队对项目的功能及性能进行全面测试，来保证项目的可交付成果及工作满足主要干系人的既定需求，项目组所采用的质量管理方式是（ ）。',
     options: [
       '规划质量',
@@ -1722,7 +1723,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '在创建工作分解结构时，描述生产一个产品所需要的实际部件、组件的分解层次表格称为（）',
     options: [
       '风险分解结构',
@@ -1982,7 +1983,7 @@ const dataSource = [
   {
     tag: TAGS.PROJECT_MANAGEMENT,
     title: '下列（ ）不属于组织过程资产。',
-    isFocus: true,
+    isFocus: false,
     options: [
       '组织对沟通的要求',
       '财务控制程序',
@@ -2061,7 +2062,7 @@ const dataSource = [
     analysis: '翻译：实施整体变更控制过程是从项目开始到项目结束并且是（ ）的最终责任。 A．变更控制委员会 B．项目管理办公室 C．项目经理 D．配置管理员',
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     title: '某采购人在履行采购金额为1000万元的政府采购合同中，需要追加与该合同标的相同的货物。根据相关法律，在不改变合同其他条款的前提下，下列说法中正确的是( )。',
     options: [
       '可以与供应商协商签订补充合同，但补充合同的采购金额不得超过100万元',
@@ -2104,7 +2105,7 @@ const dataSource = [
     analysis: '项目论证应该围绕着市场需求、开发技术、财务经济三个方面开展，市场需求是前提、技术是手段、财务经济是核心。',
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     title: '在处理索赔的过程，需要以合同为依据，合同解释非常重要。（）原则不属于合同解释的原则。',
     options: [
       '整体解释',
@@ -2233,7 +2234,7 @@ const dataSource = [
   },
   {
     tag: TAGS.CASE_QUESTIONS,
-    isFocus: true,
+    isFocus: false,
     title: '<div id="detail_div" class="detail_div xe-removeblank"><p>【项目采购管理】(7 分) 请将下面（1）~（7）处的答案填写在答题纸的对应栏内。<br>1）供应商选择的三大主要因素是供应商的（1）、（2）、和（3）。<br>2）经进货验证确定为不合格的产品，应采取的处理包括退货、（4）和（5）<br>3）采购需求通常包括标的物的配置，性能，数量，服务等，其中（6）和（7）最为关键。</p></div>',
     analysis: `
     （每条 1 分，满分 7 分）<br>
@@ -2558,7 +2559,7 @@ const dataSource = [
     `,
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.AUXILIARY_KNOWLEDGE,
     title: '关于项目建议书的描述不正确的是（）。',
     isFocus: true,
     options: [
@@ -2590,7 +2591,7 @@ const dataSource = [
     `,
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     title: '以下关于著作权的说法，正确的是（　　）。',
     options: [
       '作者的署名权、修改权、保护作品完整权的保护期为作者终身及其死后50年',
@@ -3021,7 +3022,7 @@ const dataSource = [
     `,
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     isFocus: false,
     title: `
     依据《中华人民共和国政府采购法（2014修订）》，采用竞争性谈判方式采购的，应当遵循下列程序（）<br>
@@ -3050,7 +3051,7 @@ const dataSource = [
   },
   {
     tag: TAGS.ENGLISH,
-    isFocus: true,
+    isFocus: false,
     title: 'The ( ) creates opportunities for more direct Integration of the physical world into computer-based systems, resulting in efficiently improvements , economic benefits, and reduced human exertions.',
     options: [
       'internet of things',
@@ -3062,7 +3063,7 @@ const dataSource = [
     analysis: '（ ）创造了将物理世界更直接地集成到计算机系统中的机会，从而有效地提升效率和 收益并减少人类劳动。 <br>A、物联网 B、云计算 C、大数据 D、移动互联网',
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     isFocus: true,
     title: '以下关于政府采购法的描述，正确的是（）。',
     options: [
@@ -3075,7 +3076,7 @@ const dataSource = [
     analysis: '<div id="detail_div" class="detail_div xe-removeblank">中华人民共和国政府采购法<br>第十三条：各级人民政府财政部门是负责政府采购监督管理的部门，依法履行对政府采购活动的监督管理职责。（A选项原文）<br>第十六条 集中采购机构为采购代理机构。设区的市、自治州以上人民政府根据本级政府采购项目组织集中采购的需要设立集中采购机构。集中采购机构是非营利事业法人，根据采购人的委托办理采购事宜。（B选项）<br>第二十四条 两个以上的自然人、法人或者其他组织可以组成一个联合体，以一个供应商的身份共同参加政府采购。以联合体形式进行政府采购的，参加联合体的供应商均应当具备本法第二十二条规定的条件，并应当向采购人提交联合协议，载明联合体各方承担的工作和义务。联合体各方应当共同与采购人签订采购合同，就采购合同约定的事项对采购人承担连带责任。（C选项）<br>第二十六条 政府采购采用以下方式：<br>（一）公开招标；<br>（二）邀请招标；<br>（三）竞争性谈判；<br>（四）单一来源采购；<br>（五）询价；<br>（六）国务院政府采购监督管理部门认定的其他采购方式。<br>公开招标应作为政府采购的主要采购方式。（D选项）<br></div>',
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     isFocus: false,
     title: '合同可以变更，但是当事人对合同变更的内容约定不明确的，推定为（ ）。',
     options: [
@@ -3088,7 +3089,7 @@ const dataSource = [
     analysis: '合同法第七十八条 当事人对合同变更的内容约定不明确的，推定为未变更。',
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.LAWS,
     isFocus: false,
     title: '根据招投标法的相关规定，当两个以上法人或者其他组织组成联合体投标时，若招标文件对投标人资格条件有规定的，则联合体（ ）。',
     options: [
@@ -3101,8 +3102,8 @@ const dataSource = [
     analysis: '<div id="detail_div" class="detail_div xe-removeblank">招投标法第三十一条 两个以上法人或者其他组织可以组成一个联合体，以一个投标人的身份共同投标。<br>联合体各方均应当具备承担招标项目的相应能力；国家有关规定或者招标文件对投标人资格条件有规定的，联合体各方均应当具备规定的相应资格条件。由同一专业的单位组成的联合体，按照资质等级较低的单位确定资质等级。<br>联合体各方应当签订共同投标协议，明确约定各方拟承担的工作和责任，并将共同投标协议连同投标文件一并提交招标人。联合体中标的，联合体各方应当共同与招标人签订合同，就中标项目向招标人承担连带责任。<br>招标人不得强制投标人组成联合体共同投标，不得限制投标人之间的竞争。<br></div>',
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
-    isFocus: true,
+    tag: TAGS.LAWS,
+    isFocus: false,
     title: '在我国境内进行的工程建设项目，可以不进行招标的环节是（ ）。',
     options: [
       '监理',
@@ -3114,8 +3115,8 @@ const dataSource = [
     analysis: '<div id="detail_div" class="detail_div xe-removeblank">招投标法 第三条<br>在中华人民共和国境内进行下列工程建设项目包括项目的勘察、设计、施工、监理以及与工程建设有关的重要设备、材料等的采购，必须进行招标：<br>（一）大型基础设施、公用事业等关系社会公共利益、公众安全的项目；<br>（二）全部或者部分使用国有资金投资或者国家融资的项目；<br>（三）使用国际组织或者外国政府贷款、援助资金的项目。<br>前款所列项目的具体范围和规模标准，由国务院发展计划部门会同国务院有关部门制订，报国务院批准。<br>法律或者国务院对必须进行招标的其他项目的范围有规定的，依照其规定。<br></div>',
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
-    isFocus: true,
+    tag: TAGS.LAWS,
+    isFocus: false,
     title: '根据《中华人民共和国著作权法》，（ ）是不正确的。',
     options: [
       '创作作品的公民是作者',
@@ -3236,7 +3237,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '（）描述对操作规范的说明，其只说明操作应该做什么，并没有定义操作如何做。',
     options: [
       '接口',
@@ -3328,7 +3329,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '项目可行性研究中，开发总成本一般不包括（ ）。',
     options: [
       '行政管理费',
@@ -3621,7 +3622,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '在配置项版本控制过程中，处于“正式发布”状态的配置项的版本号格式为( )(X、Y、Z均为1-9的数字)。',
     options: [
       '0.YZ',
@@ -3640,7 +3641,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '项目变更按照变更性质划分为重大变更，更要变更和一般变更，通过不同的（）来实现。',
     options: [
       '变更处理流程',
@@ -3653,7 +3654,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '规划质量管理的目的是（）。',
     options: [
       '准备对策，确保符合质量要求',
@@ -3683,7 +3684,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '在规划风险应对措施时，（）策略通常适用于高影响的、严重的消极风险。',
     options: [
       '规避和转移',
@@ -3806,7 +3807,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '项目执行过程中，需要确定一个负责重大决策或协调工作的组织机构，体现了项目管理的（）特点。',
     options: [
       '客户和用户参与',
@@ -3850,7 +3851,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '（）型PMO直接管理和控制项目，对项目的控制程度很高。',
     options: [
       '支持',
@@ -3881,7 +3882,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '（）是项目发起人或高级管理层给项目经理签发项目阶段结束或整体结束的书面确认。',
     options: [
       '合同收尾',
@@ -3897,7 +3898,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '编写范围管理计划和细化项目范围会分析一些信息，这些信息不包括（ ）。',
     options: [
       '项目章程',
@@ -3916,7 +3917,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '在项目验收过程中不宜采用（）方法确定可交付成果是否符合需求和验收标准。',
     options: [
       '群体决策技术',
@@ -3932,7 +3933,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '项目范围确认后应（）。',
     options: [
       '确定项目基准',
@@ -4004,7 +4005,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '（）过程合计各个活动或工作包的估算成本，以建立成本基线。',
     options: [
       '制定成本管理计划',
@@ -4036,7 +4037,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
-    isFocus: true,
+    isFocus: false,
     title: '配置项的状态有三种：草稿、正式发布和正在修改。以下叙述中，不正确的是（）',
     options: [
       '配置项刚建立时状态为“草稿”，通过评审后，状态变为“正式发布”	',
@@ -4112,7 +4113,7 @@ const dataSource = [
   },
   {
     tag: TAGS.SOFTWARE_STANDARDS,
-    isFocus: true,
+    isFocus: false,
     title: '根据软件生存周期标准，验证确认过程属于（）。',
     options: [
       '主要过程',
@@ -4211,7 +4212,7 @@ const dataSource = [
     analysis: '组织结构图和职位描述可使用多种形式描述项目的角色和职责，最常用的有三种：层次结构图、责任分配矩阵和文本格式。<br>资源日历是在项目日历上定义的工作时间和休息日是每个资源或资源组的默认工作时间。',
   },
   {
-    tag: TAGS,
+    tag: TAGS.PROJECT_MANAGEMENT,
     isFocus: true,
     title: '（ ）一起确定了每个项目团队成员的工作时间段。',
     options: [
@@ -4243,7 +4244,7 @@ const dataSource = [
   {
     tag: TAGS.PROJECT_MANAGEMENT,
     isFocus: true,
-    title: '（1）关于采购管理过程的描述，不正确的是（）。',
+    title: '关于采购管理过程的描述，不正确的是（）。',
     options: [
       '当订购物资规格和技术条件复杂时，采用协商选择法比较合适',
       '确定后的采购需求在履行中发生变更，需走变更控制流程',
@@ -4319,7 +4320,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '结束采购的成果不包括( )。 ',
     options: [
       '经验总结',
@@ -4332,7 +4333,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '关于风险的描述不正确的是（ ）。',
     options: [
       '具有不确定性的事件或活动也不一定是风险',
@@ -4349,7 +4350,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '（ ）可以从整体工作和每项工作层级识别和跟踪风险。',
     options: [
       'WBS',
@@ -4410,7 +4411,7 @@ const dataSource = [
     `,
   },
   {
-    tag: TAGS.POLITICS,
+    tag: TAGS.LAWS,
     isFocus: true,
     title: '开标时，由专业的负责人进行 ( )，其主要目的是公布投标报价，若有其他内容则看招标文件要求。',
     options: [
@@ -4423,7 +4424,7 @@ const dataSource = [
     analysis: '开标时，由专业的负责人进行唱标。唱标主要公布投标报价，其他内容看招标文件要求。投标人对开标有异议的，应当在开标现场提出，招标人应当当场做出答复，并进行记录。',
   },
   {
-    tag: TAGS.POLITICS,
+    tag: TAGS.LAWS,
     isFocus: true,
     title: `
     对技术复杂或者无法精确拟定技术规格的项目，招标人可以分两阶段进行招标，其中不属于第一阶段招标活动的是： (   ) <br>
@@ -4443,6 +4444,38 @@ const dataSource = [
     对技术复杂或者无法精确拟定技术规格的项目，招标人可以分两阶段进行招标。<br>
     第一阶段，投标人按照招标公告或者投标邀请书的要求提交不带报价的技术建议，招标人根据投标人提交的 技术建议确定技术标准和要求，编制招标文件。<br>
     第二阶段，招标人向在第一阶段提交技术建议的投标人提供招标文件，投标人按照招标文件的要求提交包括最终技术方案和投标报价的投标文件。招标人要求投标人提交投标保证金的，应当在第二阶段提出。
+    `,
+  },
+  {
+    tag: TAGS.LAWS,
+    isFocus: false,
+    title: '合同生效后，当事人就质量、价款或者报酬、履行地点等内容没有约定或者约定不明确的，可以协议补充，不能达成补充协议的事项，按照（）确定。',
+    options: [
+      '合同有关条款或者交易习惯',
+      '最佳实践',
+      '谈判',
+      '行业规则',
+    ],
+    anwser: 0,
+    analysis: `
+    当事人没有约定设备的交付时间或者约定不明确的，可以协议补充，不能达成协议的，依照合同有关条款或交易习惯确定。<br>
+    若仍不能确定，则供货方可以随时履行，采购方也可以随时要求履行，但应当给予对方必要的准备时间。
+    `,
+  },
+  {
+    tag: TAGS.LAWS,
+    isFocus: false,
+    title: '我国《民法典》四百六十五条规定；“依法成立的合同，仅对（）具有法律约束力，但是法律另有规定的除外”。',
+    options: [
+      '当事人',
+      '甲方和乙方',
+      '建设方与承建方',
+      '委托方与被委托方',
+    ],
+    anwser: 0,
+    analysis: `
+    我国《合同法》第八条规定：〃依法成立的合同，对当事人具有法律约束力。<br>
+    《民法典》第四百六十五条 依法成立的合同，受法律保护。依法成立的合同，仅对当事人具有法律约束力，但是法律另有规定的除外。
     `,
   },
   // {
