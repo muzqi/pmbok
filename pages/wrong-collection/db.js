@@ -268,7 +268,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '在信息安全管理中，数字签名主要用于确保数据的（）。',
     options: [
       '完整性 ',
@@ -327,7 +327,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '信息必须依赖其存储、传输、处理及应用的载体媒介而存在信息系统设备的安全主要包括（）。',
     options: [
       '秘密性 可靠性 稳定性',
@@ -421,7 +421,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '软件测试是（）。',
     options: [
       '质量保证过程的活动',
@@ -753,7 +753,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '企业应用集成中，（ ）超越了数据和系统，由一系列基于标准的、统一数据格式的工作流组成。',
     options: [
       '应用集成',
@@ -783,7 +783,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '在物联网架构中，物联网管理中心和物联网信息中心处于（）。',
     options: [
       '感知层',
@@ -876,7 +876,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '关于网络安全的描述，不正确的是（）。',
     options: [
       '网络安全工具的每一个单独组织只能完成其中部分功能，而不能完成全部功能',
@@ -927,7 +927,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '（ ）不属于“互联网+”的特征。',
     options: [
       '创新驱动',
@@ -1369,7 +1369,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '研究软件架构的根本目的是解决软件的复用、质量和维护问题，软件架构设计是软件开发过程中关键的一步，因此需要对其进行评估，在这一活动中，评估人员关注的是系统的（）属性。',
     options: [
       '功能',
@@ -1400,7 +1400,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
-    isFocus: true,
+    isFocus: false,
     title: `
     某软件企业为了及时、准确地获得某软件产品配置项的当前状态，了解软件开发活动的进展状况，要求项目组出具配置状态报告，该报告内容应包括：（）。 <br>
     ①各变更请求概要：变更请求号、申请日期、申请人、状态、发布版本、变更结束日期<br>
@@ -1480,7 +1480,7 @@ const dataSource = [
   },
   {
     tag: TAGS.OPERATIONS_RESEARCH,
-    isFocus: true,
+    isFocus: false,
     title: '同时抛掷3枚均匀的硬币，恰好有两枚正面向上的概率为（）。',
     options: [
       '1/4',
@@ -1529,7 +1529,7 @@ const dataSource = [
   },
   {
     tag: TAGS.OPERATIONS_RESEARCH,
-    isFocus: true,
+    isFocus: false,
     title: `
     <span>【线性规划】某电池厂生产甲、乙两种型号产品（单位：万个），这两种产品都需要设备和 A、B 两种原材料，利润与资源限制条件如表所示，为了获得最大的利润，该电池厂每天生产的甲 产品的数量应为（4）万个，此时该企业每天的利润为（5）万元。</span><br>
     <img src="./images/6.png" />
@@ -1595,7 +1595,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '组织结构可以比喻成一条连续的频谱，其一端为职能式，另一端为项目式，中间是形形色色的矩阵式。以下关于组织结构的说法中，不正确的是（）',
     options: [
       '组织结构是一种组织过程资产，它可能影响资源的可用性和项目的执行方式。',
@@ -2093,7 +2093,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
-    isFocus: true,
+    isFocus: false,
     title: '关于项目评估及论证的描述，不正确的是（）。',
     options: [
       '“先论证，后决策”是现代项目管理的基本原则',
@@ -2358,7 +2358,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '关于电子商务的描述，正确的是（5）。',
     options: [
       '个人通过网站在苏宁电器购买电器属于B2C模式',
@@ -2379,7 +2379,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '关于项目管理的描述，不正确的是：（ 23 ）',
     options: [
       '项目管理的主要目的是实现企业管理目标',
@@ -3182,7 +3182,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '当前人工智能细分领域涌现出大批专业型深度学习架构，其中（）擅长自然语言处理。',
     options: [
       'ROS',
@@ -3283,7 +3283,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '在网络和信息安全产品中，（）独立地对网络行为和主机操作提供全面与忠实的记录，方便用户合作审查事故原因。',
     options: [
       '防火墙',
@@ -3296,7 +3296,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '（）是"一致同意建立并由公认的机构批准的文体、具有可重复使用的规则、指南、活动或结果特征，目的是在特定的背景下达到最佳的秩序。"',
     options: [
       '标准',
@@ -3312,7 +3312,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
-    isFocus: true,
+    isFocus: false,
     title: '关于可行性研究的描述不正确的是（）。',
     options: [
       '初步可行性研究的目的是激发投资者的兴趣、寻找最佳投资机会',
@@ -3355,7 +3355,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '使用 Scrum 进行敏捷项目管理，其中，（）负责维护进程和任务。',
     options: [
       '产品负责人',
@@ -3373,7 +3373,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '关于项目章程的描述，不正确的（）。',
     options: [
       '项目章程通常由高级管理层签发',
@@ -3386,7 +3386,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '范围管理计划中不包括（）。',
     options: [
       '确定WBS满足项目和职能要求',
@@ -3412,7 +3412,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '关于项目范围确认的描述，不正确的是（）。',
     options: [
       '范围确认应贯穿项目的始终',
@@ -3470,7 +3470,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '以下哪项不是结构化开发方法的特点（）',
     options: [
       '遵循用户至上原则',
@@ -3507,7 +3507,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '常见的典型架构模式中，（）每个组件都有输入输出，典型应用包括批处理系统。',
     options: [
       '分层模式',
@@ -3544,7 +3544,7 @@ const dataSource = [
   },
   {
     tag: TAGS.POLITICS,
-    isFocus: true,
+    isFocus: false,
     title: '我国 2035 远景目标中关于加强关键数字技术创新应用中提到，加快推进基础理论、基础算法、装备材料等研发突破与迭代应用；加强通用处理器、（） 系统和软件核心技术一体化研发。加快布局量子计算、量子通信、神经芯片、DNA存储等前沿技术，加强信息科学与生命科学、材料等基础学科的交叉创新。',
     options: [
       '大数据',
@@ -3592,7 +3592,13 @@ const dataSource = [
       '领导层',
     ],
     anwser: 3,
-    analysis: '从历史唯物主义的视角观察，企业信息化是劳动工具的技术进步。企业信息化结构包括：（1）产品（服务）层；（2）作业层；（3）管理层；（5）决策层。选项D不包括在此范围。',
+    analysis: `
+    从历史唯物主义的视角观察，企业信息化是劳动工具的技术进步。企业信息化结构包括：<br>
+    （1）产品（服务）层；<br>
+    （2）作业层；<br>
+    （3）管理层；<br>
+    （4）决策层。选项D不包括在此范围。
+    `,
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
@@ -3710,7 +3716,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
-    isFocus: true,
+    isFocus: false,
     title: '以下关于项目建议书的叙述中，不正确的是：（ ）。',
     options: [
       '项目建议书是针对拟建项目提出的总体性设想。',
@@ -3736,7 +3742,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '以下关于定义活动过程的描述，不正确的是（ ）。',
     options: [
       '定义活动主要作用是将工作包分解为活动，作为对项目工作进行估算、进度规划、执行、监督和控制的基础。',
@@ -3762,26 +3768,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
-    title: '以下关于成本管理的描述，不正确的是（ ）。',
-    options: [
-      '成本是指项目活动或其组成部分的货币价值或价格，包括为实施、完成或创造该活动或其组成部分所需资源的货币价值。',
-      '项目成本管理就是要确保在批准的预算内完成项目。',
-      '对项目相关信息了解不深，项目规划不够完善，属于对工程项目认识不足，导致项目失控。',
-      '成本控制是发现实际与计划的差异，以便采取纠正措施，降低风险。',
-    ],
-    anwser: 2,
-    analysis: `
-    【拓展知识】工程项目认识不足包括：<br>
-    1 对信息系统工程成本控制的特点认识不足，对难度估计不足。<br>
-    2 工程项目的规模不合理，一个大而全的项目往往导致工期很长。而且导致工程实施的技术难度太高，导致技术人员的投入方面跟不上工程建设的需要，并且建设单位各部门对信息系统工程的接受能力和观念的转变跟不上信息系统建设的需要。<br>
-    3 工程项目的设计人员和实施人员缺乏成本意识，导致项目的设计不满足成本控制的要求。<br>
-    4 对项目成本的使用缺乏责任感，随意开支，铺张浪费。
-    `,
-  },
-  {
-    tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '成本管理计划中不包括（ ）',
     options: [
       '控制临界值',
@@ -3820,7 +3807,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '项目目标要求遵守的SMART原则指（）。',
     options: [
       '独特的，可测量的，可以达到的，可以回顾的，有明确时限的',
@@ -3833,7 +3820,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '关于项目整体管理的描述，不正确的是: (   ) ',
     options: [
       '应由公司管理者担任整体管理的整合者角色，便于协调资源',
@@ -3950,7 +3937,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '下表为某项目的 WBS，则此项目的最短工期为（）月。<br><img style="width: 296px;" src="./images/26.png" />',
     options: [
       '3',
@@ -3985,7 +3972,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '以下关于成本管理的描述，不正确的是（ ）。',
     options: [
       '成本是指项目活动或其组成部分的货币价值或价格，包括为实施、完成或创造该活动或其组成部分所需资源的货币价值。 ',
@@ -4073,7 +4060,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '在项目成本估算技术中，自下而上估算的准确性及其本身所需的成本，通常取决于（）',
     options: [
       '估算专家',
@@ -4157,7 +4144,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '项目小组正在对项目需求变化数量、变化频率以及变化方式等进行评估，该工作属于（）的管理范畴。',
     options: [
       '配置管理计划',
@@ -4187,7 +4174,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '某公司人员流动性强，最近频频发生人员的变更。作为公司项目经理，此时需要处理的事项不包含（ ）。 ',
     options: [
       '变更项目管理计划',
@@ -4200,7 +4187,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '（ ）不能反映团队成员个人与其承担工作之间的联系。',
     options: [
       '层次结构图',
@@ -4243,7 +4230,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '关于采购管理过程的描述，不正确的是（）。',
     options: [
       '当订购物资规格和技术条件复杂时，采用协商选择法比较合适',
@@ -4379,7 +4366,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
-    isFocus: true,
+    isFocus: false,
     title: '项目建议书报送项目审批部门后，项目审批部门征求相关部门意见，并委托有资格的（）评估后审核批复，或报国务院审批后下达批复。',
     options: [
       '咨询机构',
@@ -4412,7 +4399,7 @@ const dataSource = [
   },
   {
     tag: TAGS.LAWS,
-    isFocus: true,
+    isFocus: false,
     title: '开标时，由专业的负责人进行 ( )，其主要目的是公布投标报价，若有其他内容则看招标文件要求。',
     options: [
       '唱标',
