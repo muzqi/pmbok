@@ -4563,6 +4563,52 @@ const dataSource = [
     如变更造成交付期的调整，应在变更确认时发布，而非在交付前公布。 所以D 错误；
     `,
   },
+  {
+    tag: TAGS.PROJECT_MANAGEMENT,
+    isFocus: true,
+    title: '项目行政收尾产生的结果，不包括（） ',
+    options: [
+      '对项目产品的正式接受',
+      '完整的项目档案',
+      '验收的可交付成果',
+      '资源释放',
+    ],
+    anwser: 2,
+    analysis: `
+    验收的可交付成果是结束项目或阶段的输出。<br>
+    项目行政收尾产生的结果如下∶<br>
+    1）对项目产品的正式接受。<br>
+    2）完整的项目档案。<br>
+    3）组织过程资产更新（经验教训总结）。<br>
+    4）资源释放（包括人力和非人力资源）。
+    `,
+  },
+  {
+    tag: TAGS.PROJECT_MANAGEMENT,
+    isFocus: true,
+    title: '结束项目或阶段的输入包括（）',
+    options: [
+      '项目或阶段收尾指南或要求',
+      '项目或阶段收尾文件',
+      '项目档案',
+      '最终产品、服务或成果移交',
+    ],
+    anwser: 0,
+    analysis: 'BCD都属于结束项目或阶段的输出',
+  },
+  {
+    tag: TAGS.PROJECT_MANAGEMENT,
+    isFocus: true,
+    title: '结束项目或阶段的工具不包括（）',
+    options: [
+      '专家判断',
+      '分析技术',
+      '会议',
+      '检查',
+    ],
+    anwser: 3,
+    analysis: 'D选项为确认范围的工具与技术。',
+  },
   // {
   //   tag: TAGS,
   //   isFocus: true,
