@@ -728,7 +728,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '中间件有多种类型，IBM 的 MQSeries 属于（ ）中间件。',
     options: [
       '面向消息',
@@ -914,7 +914,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '在某科研企业信息办工作的小王将储存在内网上的涉密数据，偷偷拷贝到个人笔记本电脑上，这属于（ ）事件。',
     options: [
       '设备安全',
@@ -1552,7 +1552,7 @@ const dataSource = [
   },
   {
     tag: TAGS.CASE_QUESTIONS,
-    isFocus: true,
+    isFocus: false,
     title: `
     <p>【2021年5月高项】<br>（25 分）阅读下列说明，回答问题 1 至问题 5，将解答填入答题纸的对应栏内。<br>【说明】某项目的网络图如下：<br><img alt="image.png" title=".png" src="./images/7.png"><br>其中，各活动正常完工时间、正常完工直接成本、最短完工时间、赶工增加直接成本（如下<br>表所示）。另外，项目的间接成本为 500 元/天。<br><img alt="image.png" title=".png" src="./images/8.png"><br>【问题1】（4分）<br>请确定项目的关键路径。<br>【问题2】（3分）<br>根据网络图确定项目正常完工的工期是多少天？ 所需的成本是多少？<br>【问题3】（3分）<br>讨论下列事件对计划项目进度有何影响：<br>1）活动D拖期2天；<br>2）活动B拖期2天；<br>3）活动F和G在规定进度之前1天完成。<br>【问题4】（7分）<br>项目想提前一天完工，基于成本最优原则，可以针对哪些活动赶工？赶工后的项目成本是多少？<br>【问题5】（8分）<br>基于项目整体成本最优原则，请列出需要赶工的活动及其工期。<br>基于以上结果，确定赶工后的项目工期及所需成本。</p>
     `,
@@ -1822,7 +1822,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '小王作为项目经理正在带领项目团队实施一个新的信息系统集成项目。项目团队已经共同工作了相当一段时间，正处于项目团队建设的发挥阶段，此时一个新成员加入了该团队，此时（）。',
     options: [
       '团队建设将从震荡阶段重新开始',
@@ -2191,7 +2191,7 @@ const dataSource = [
   },
   {
     tag: TAGS.CASE_QUESTIONS,
-    isFocus: true,
+    isFocus: false,
     title: '【项目范围管理】（5分）请写出范围说明书的内容和作用。',
     analysis: '<div id="detail_div" class="detail_div xe-removeblank"><p>范围说明书的内容：</p><p>项目目标；</p><p>产品范围描述；</p><p>项目需求；</p><p>项目边界；</p><p>项目的可交付成果；</p><p>项目的制约因素；</p><p>假设条件。 &nbsp;</p><p>（每条1分，满分3分）</p><p>作用：</p><p>确定项目范围；</p><p>是后续制定计划的前提；</p><p>是控制工作的依据；</p><p>是沟通工作的依据；</p><p>是变更控制的重要依据。</p></div>',
   },
@@ -2561,7 +2561,7 @@ const dataSource = [
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
     title: '关于项目建议书的描述不正确的是（）。',
-    isFocus: true,
+    isFocus: false,
     options: [
       '项目建议书是项目建设单位向上级主管部门提交的项目申请文件',
       '建议书是对拟建项目提出的框架性的总体设想',
@@ -2679,7 +2679,7 @@ const dataSource = [
   {
     tag: TAGS.PROJECT_MANAGEMENT,
     title: '关于范围管理计划的描述，不正确的是（ ）。',
-    isFocus: true,
+    isFocus: false,
     options: [
       '用于规划，跟踪和报告各种需求活动',
       '作为制定项目管理计划过程的主要依据',
@@ -3224,7 +3224,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: 'TCP/IP模型中，（ ）协议属于网络层的协议。',
     options: [
       'ARP',
@@ -3250,7 +3250,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '关于数据库和数据仓库技术的描述，不正确的是（）。',
     options: [
       '操作型处理也称事务处理，强调对历史数据进行分析',
@@ -3527,7 +3527,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '通过控制网络上的其他机器，对目标主机所在网络服务不断进行干扰，改变其正常的作业流程，执行无关程序使系统响应减慢甚至瘫痪，影响正常用户的使用，这种叫（）。',
     options: [
       '拒绝服务攻击',
@@ -3583,7 +3583,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '企业信息化结构不包括（ ）。',
     options: [
       '产品层',
@@ -3755,7 +3755,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '使用（ ），通过风险监控，对各种不同的情景进行审查，使进度模型与项目管理计划和批准的基准保持一致。',
     options: [
       '趋势分析',
@@ -3856,7 +3856,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '项目章程用来体现 (   ) 对项目的原则性要求，是项目经理寻求( )支持的依据。 ',
     options: [
       '高级管理层，已识别干系人',
@@ -3950,7 +3950,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '在项目成本控制过程中，采用的成本估算方法不恰当引发成本失控，是由于（）。',
     options: [
       '组织制度不健全',
@@ -4126,7 +4126,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '在软件项目中，（ ）是确保需求不在开发过程中“丢失”的一个有效措施。',
     options: [
       '做好需求变更管理',
@@ -4353,7 +4353,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
-    isFocus: true,
+    isFocus: false,
     title: '关于可行性研究的描述，不正确的是：（ ）。 ',
     options: [
       '技术可行性决定了项目方向，技术路线估计错误会影响项目最终成败提供信息系统项目',
@@ -4379,7 +4379,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
-    isFocus: true,
+    isFocus: false,
     title: '关于项目评估的描述，不正确的是（ ）。',
     options: [
       '项目评估是在项目意向确定后，对项目的初步评估',
@@ -4487,7 +4487,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
-    isFocus: true,
+    isFocus: false,
     title: '（ ）可以确保存储配置项的完整性。',
     options: [
       '确保发布用的介质不含无关项',
@@ -4506,7 +4506,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
-    isFocus: true,
+    isFocus: false,
     title: '关于配置审计的描述，不正确的是：（）。',
     options: [
       '配置审计的实施是为了确保项目配置管理的有效性',
@@ -4540,7 +4540,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '关于变更工作程序的描述，正确的是（ ）。 ',
     options: [
       '项目中变更申请应由项目团队成员提出',
@@ -4585,7 +4585,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '结束项目或阶段的输入包括（）',
     options: [
       '项目或阶段收尾指南或要求',
@@ -4598,7 +4598,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '结束项目或阶段的工具不包括（）',
     options: [
       '专家判断',
@@ -4608,6 +4608,49 @@ const dataSource = [
     ],
     anwser: 3,
     analysis: 'D选项为确认范围的工具与技术。',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '（ ）为证书的持有者提供了对一个资源实体所具有的权限。 ',
+    options: [
+      '公钥',
+      '属性证书',
+      '数字签名',
+      '私钥',
+    ],
+    anwser: 1,
+    analysis: `
+    认证通过数字证书进行，而访问控制通过属性证书或访问控制列表（ACL）完成。<br>
+    AC 即属性证书，表示证书的持有者（主体）对于一个资源实体（客体）所具有的权限，它是由一个做了数字签名的数据结构来提供的，这种数据结构称为属性证书，由属性证书管理中心AA 签发并管理。
+    `,
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '关于信息安全系统工程的描述，不正确的是：（ ）。',
+    options: [
+      '是信息系统工程的一部分，符合系统工程的一般原则和规律',
+      '应吸纳安全管理的成熟规范',
+      '信息安全系统工程成熟度模型用于信息安全系统实施的风险评估',
+      '安全工程活动与硬件工程、软件工程、系统工程、测试工程相关',
+    ],
+    anwser: 2,
+    analysis: `
+    信息安全系统工程就是要建造一个信息安全系统，它是整个信息系统工程的一部分，而且最好是与业务应用信息系统工程同步进行；A 正确<br><br>
+    信息安全系统工程应该吸纳安全管理的成熟规范部分；B 正确 <br><br>
+    信息安全系统工程能力成熟度模型是一种衡量信息安全系统工程实施能力的方法，是使用面向工程过程的一种方法。所以 C 错误<br><br>
+    信息安全系统的建设是在 OSI 网络参考模型的各个层面进行的，因此信息安全系统工程活动离不开以下相关工程：<br>
+    （1）硬件工程。<br>
+    （2）软件工程。<br>
+    （3）通信及网络工程。<br>
+    （4）数据存储和灾备工程。<br>
+    （5）系统工程。<br>
+    （6）测试工程。<br>
+    （7）密码工程。<br>
+    （8）企业信息化工程。<br>
+     所以 D 正确。
+    `,
   },
   // {
   //   tag: TAGS,
