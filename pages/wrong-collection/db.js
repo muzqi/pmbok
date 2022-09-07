@@ -355,6 +355,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '信息安全管理系统通过应用（）保护信息的机密性、完整性和可用性。',
     options: [
       '技术管理过程',
@@ -367,7 +368,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: false,
+    isFocus: true,
     title: `
     <span>安全审计的手段主要包括（）</span>
     <ol>
@@ -4650,6 +4651,43 @@ const dataSource = [
     （7）密码工程。<br>
     （8）企业信息化工程。<br>
      所以 D 正确。
+    `,
+  },
+  {
+    tag: TAGS.SOFTWARE_STANDARDS,
+    isFocus: true,
+    title: `
+    GB/T 22080-2016《信息技术安全技术 信息安全管理体系要求》标准规定的内容包括（）。<br>
+    ①信息安全方针与策略<br>
+    ②人力资源安全<br>
+    ③等级保护<br>
+    ④访问控制<br>
+    ⑤业务连续性管理
+    `,
+    options: [
+      '①②③④',
+      '①②④⑤',
+      '①③④⑤',
+      '②③④⑤',
+    ],
+    anwser: 1,
+    analysis: `
+    解析：本题考查信息安全管理的内容，出自中项官方教程第17章信息系统安全管理17.1.2 信息安全管理的内容。<br>
+    在ISO/TEC 27000 系列标准中，它将信息安全管理的内容主要概括为如下 14个方面。<br>
+    1.信息安全方针与策略；①<br>
+    2.组织信息安全；<br>
+    3.人力资源安全；②<br>
+    4.资产管理；<br>
+    5.访问控制；④<br>
+    6.密码；<br>
+    7.物理和环境安全；<br>
+    8.运行安全；<br>
+    9.通信安全；<br>
+    10.信息系统的获取、开发和保持；<br>
+    11.供应商关系；<br>
+    12.信息安全事件管理；<br>
+    13.业务持续性管理；⑤<br>
+    14.符合性。
     `,
   },
   // {
