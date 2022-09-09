@@ -355,7 +355,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '信息安全管理系统通过应用（）保护信息的机密性、完整性和可用性。',
     options: [
       '技术管理过程',
@@ -368,7 +368,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: `
     <span>安全审计的手段主要包括（）</span>
     <ol>
@@ -890,7 +890,7 @@ const dataSource = [
   },
   {
     tag: TAGS.POLITICS,
-    isFocus: true,
+    isFocus: false,
     title: '【时政题】2021年12月03日工业和信息化部关于印发《“十四五”工业绿色发展规划》。坚持把推动碳达峰碳中和目标如期实现作为产业结构调整、促进工业全面绿色低碳转型的总体导向，全面统领减污降碳和能源资源高效利用。其中，主要目标包括（ ）',
     options: [
       '明确工业降碳实施路径',
@@ -1098,7 +1098,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: `
     企业系统规划（BSP）是通过全面调查分析企业信息需求，制定信息系统总体方案的一种方法，其活动步骤顺序是：（24）。<br>
     ①准备工作<br>
@@ -3065,7 +3065,7 @@ const dataSource = [
   },
   {
     tag: TAGS.LAWS,
-    isFocus: true,
+    isFocus: false,
     title: '以下关于政府采购法的描述，正确的是（）。',
     options: [
       '各级人民政府财政部门是负责政府采购监督管理的部门，依法履行对政府采购活动的监督管理职责。',
@@ -3170,7 +3170,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '商业智能的实现有三个层次∶数据报表、（）。',
     options: [
       '数据仓库、数据挖掘',
@@ -3212,7 +3212,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '信息技术服务标准（ITSS）体系中定义的IT服务生命周期为（）。',
     options: [
       '启动过程一规划过程一执行过程一结束过程',
@@ -3603,7 +3603,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
-    isFocus: true,
+    isFocus: false,
     title: '对项目内容、技术经济指标未确定的项目适宜采用（）。',
     options: [
       '总价合同',
@@ -3617,7 +3617,7 @@ const dataSource = [
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
     isFocus: true,
-    title: '）确保了项目配置管理的有效性，体现了配置管理的最根本要求，即不允许出现任何混乱现象。',
+    title: '确保了项目配置管理的有效性，体现了配置管理的最根本要求，即不允许出现任何混乱现象。',
     options: [
       '配置审计',
       '配置控制',
@@ -4006,7 +4006,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '关于制定预算的描述，不正确的是（  ）。',
     options: [
       '成本基准是经过批准且按时间段分配的项目预算',
@@ -4201,7 +4201,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '（ ）一起确定了每个项目团队成员的工作时间段。',
     options: [
       '人员配备管理计划和项目进度计划',
@@ -4260,7 +4260,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '关于采购询价比价环节相关的描述，不正确的是（ ）。 ',
     options: [
       '非专利专有技术，可替代性强的产品一般采用询价比价方式采购 ',
@@ -4612,7 +4612,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '（ ）为证书的持有者提供了对一个资源实体所具有的权限。 ',
     options: [
       '公钥',
@@ -4691,8 +4691,8 @@ const dataSource = [
     `,
   },
   {
-    tag: TAGS.POLITICS,
-    isFocus: true,
+    tag: TAGS.LAWS,
+    isFocus: false,
     title: '某公司法人王某花费 3000 余元从网上购买个人信息计 3646 条，并将购得的信息分发给员工用以推销业务。当地警方依据（ ）规定，对王某予以罚款 10 万元。 ',
     options: [
       '著作权法',
@@ -4731,6 +4731,23 @@ const dataSource = [
     ],
     anwser: 3,
     analysis: '国家标准的制定有一套正常程序，每一个过程都要按部就班地完成，这个过程分为前期准备、立项、起草、征求意见、审查、批准、出版、复审和废止9个阶段。',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '主流的软件开发工具(IDE)均提供一些插件，用来进行代码的静态检查，帮助开发人员做出质量高的软件，这种插件所进行的测试不属于（）。',
+    options: [
+      '静态测试',
+      '白盒测试',
+      '代码走查',
+      '功能测试',
+    ],
+    anwser: 3,
+    analysis: `
+    在静态结构分析中，测试人员通过工具分析程序源代码的系统结构、数据结构、数据接口、内部控制逻辑等内部结构，生成函数调用关系图、模块控制流图、部分文件调用图、子程序表、宏、函数参数表等各类图表，可以清晰地标识整个软件系统的组成结构，然后通过分析这些图表，检查软件是否存在缺陷或错误。<br>
+    功能测试主要采用黑盒测试方法，它是通过测试来检测每个功能是否都能正常使用。
+
+    `,
   },
   // {
   //   tag: TAGS,
