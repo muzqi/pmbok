@@ -55,6 +55,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '（）不属于信息系统规划工具。',
     options: [
       'CU矩阵',
@@ -172,7 +173,7 @@ const dataSource = [
   },
   {
     tag: TAGS.LAWS,
-    isFocus: true,
+    isFocus: false,
     title: '在项目中经常会利用外包的手段，以提高项目的验收能力，对于工作规模或产品规定不是特别清楚的项目。外包时一般应采用（）',
     options: [
       '成本补偿合同',
@@ -281,7 +282,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '以下关于项目验收的描述，不正确的是（）',
     options: [
       '验收测试是对信息系统进行全面的测试，依照双方合同约定的系统环境，以确保系统的功能和技术设计满足建设方的功能需求和非功能需求，并能正常运行。',
@@ -674,6 +675,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
+    isFocus: true,
     title: '关于可行性研究的描述，正确的是（21）。',
     options: [
       '详细可行性研究由项目经理负责',
@@ -1015,6 +1017,7 @@ const dataSource = [
   },
   {
     tag: TAGS.OPERATIONS_RESEARCH,
+    isFocus: true,
     title: `
     <span>项目经理制定了项目资产负债表（单位：元)，如表所示。该项目的静态投资回收期为（ ）年。动态投资回收期为（ ）年</span>
     <img src="./images/3.png" />
@@ -1469,6 +1472,7 @@ const dataSource = [
   },
   {
     tag: TAGS.OPERATIONS_RESEARCH,
+    isFocus: true,
     title: '假设某项目风险列表中，风险分为一、二、三级占10%、30%、60%，项目经理小李随机抽查一个风险等级情况，结果不是一级风险，则本次抽查到三级风险的概率是（）。',
     options: [
       '2/3',
@@ -1477,7 +1481,7 @@ const dataSource = [
       '2/5',
     ],
     anwser: 0,
-    analysis: '一级风险概率＝60％／（30％＋60％）=2／3',
+    analysis: '三级风险概率＝60％／（30％＋60％）=2／3',
   },
   {
     tag: TAGS.OPERATIONS_RESEARCH,
@@ -1785,7 +1789,7 @@ const dataSource = [
   },
   {
     tag: TAGS.SOFTWARE_STANDARDS,
-    isFocus: true,
+    isFocus: false,
     title: '（）不是现行ISO9000系列标准提出的质量管理原则。',
     options: [
       '以产品为中心',
@@ -1984,7 +1988,7 @@ const dataSource = [
   {
     tag: TAGS.PROJECT_MANAGEMENT,
     title: '下列（ ）不属于组织过程资产。',
-    isFocus: false,
+    isFocus: true,
     options: [
       '组织对沟通的要求',
       '财务控制程序',
@@ -2887,7 +2891,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '信息技术服务标准（ITSS）的IT服务生命周期模型中（）是在规划设计基础上依据ITSS监理管理体系提供服务解决方案。',
     options: [
       '服务战略',
@@ -3439,7 +3443,7 @@ const dataSource = [
   },
   {
     tag: TAGS.CASE_QUESTIONS,
-    isFocus: true,
+    isFocus: false,
     title: '【合同管理】在解决合同争议的方法中，其优先顺序为（）（）（）（）',
     analysis: '谈判（协商）、调解、仲裁、诉讼。',
   },
@@ -3730,7 +3734,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
-    isFocus: true,
+    isFocus: false,
     title: '关于项目可行性研究的描述中，不正确的是（ ）。',
     options: [
       '机会可行性研究的目的是激发投资者的兴趣，寻找投资机会。',
@@ -4292,7 +4296,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '关于采购谈判的描述，不正确的是：（）。',
     options: [
       '采购谈判过程以买卖双方签署文件为结束标志',
@@ -4468,7 +4472,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '在配置控制中，（ ）不属于 CCB 变更。 ',
     options: [
       '变更实施方案可行性',
@@ -4528,7 +4532,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '项目变更管理的实质是（ ）。 ',
     options: [
       '满足甲方管理者的要求',
@@ -4566,7 +4570,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '项目行政收尾产生的结果，不包括（） ',
     options: [
       '对项目产品的正式接受',
@@ -4708,7 +4712,7 @@ const dataSource = [
   },
   {
     tag: TAGS.SOFTWARE_STANDARDS,
-    isFocus: true,
+    isFocus: false,
     title: '我国信息技术相关的国家标准由（）归口。',
     options: [
       '金标委',
@@ -4734,7 +4738,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '主流的软件开发工具(IDE)均提供一些插件，用来进行代码的静态检查，帮助开发人员做出质量高的软件，这种插件所进行的测试不属于（）。',
     options: [
       '静态测试',
@@ -4747,6 +4751,51 @@ const dataSource = [
     在静态结构分析中，测试人员通过工具分析程序源代码的系统结构、数据结构、数据接口、内部控制逻辑等内部结构，生成函数调用关系图、模块控制流图、部分文件调用图、子程序表、宏、函数参数表等各类图表，可以清晰地标识整个软件系统的组成结构，然后通过分析这些图表，检查软件是否存在缺陷或错误。<br>
     功能测试主要采用黑盒测试方法，它是通过测试来检测每个功能是否都能正常使用。
 
+    `,
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '为了表达一只小狗的信息，可以用汉字“小狗”，也可以通过一只小狗的彩色图片，还可以通过声音文件“汪汪”来表示。同一个信息可以借助不同的信息媒体表现出来。这体现了信息的（ ）。 ',
+    options: [
+      '传递性',
+      '依附性',
+      '及时性',
+      '动态性',
+    ],
+    anwser: 1,
+    analysis: `
+    信息的特征：（包括但不限于以下内容）<br>
+    （1）动态性：信息是随着时间的变化而变化的。 <br>
+    （2）依附性：信息的依附性可以从两个方面来理解，一方面，信息是客观世界的反映，任何信息必然由客观事物所产生，不存在无源的信息；另一方面，任何信息都要依附于一定的载体而存在，需要有物质的承担者，信息不能完全脱离物质而独立存在。 <br>
+    （3）传递性：信息在时间上的传递就是存储，在空间上的传递就是转移或扩散。 <br>
+    （4）及时性：指获得信息的时刻与事件发生时刻的间隔长短。
+    `,
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: `
+    企业信息结构包含（）。<br>
+    ①产品（服务）层<br>
+    ②作业层<br>
+    ③决策层<br>
+    ④客户层<br>
+    ⑤管理层
+    `,
+    options: [
+      '①②③④',
+      '①②③⑤',
+      '②④⑤⑥',
+      '③④⑤⑥',
+    ],
+    anwser: 1,
+    analysis: `
+    企业信息化结构：<br>
+    （1）产品（服务）层；<br>
+    （2）作业层；<br>
+    （3）管理层；<br>
+    （4）决策层
     `,
   },
   // {
