@@ -1188,7 +1188,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '在面向对象的基本概念中，（）体现对象间的交互，通过它向目标对象发送操作请求。',
     options: [
       '继承',
@@ -1360,7 +1360,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: ' 商业智能将企业中现有的数据转化为知识，帮助企业做出明智的业务经营决策，包括数据预处理、建立数据模型、数据分析及数据展现4个阶段：其主要应用的3个关键技术是（）。',
     options: [
       '数据仓库/OLAP/数据挖掘',
@@ -1988,7 +1988,7 @@ const dataSource = [
   {
     tag: TAGS.PROJECT_MANAGEMENT,
     title: '下列（ ）不属于组织过程资产。',
-    isFocus: true,
+    isFocus: false,
     options: [
       '组织对沟通的要求',
       '财务控制程序',
@@ -3404,7 +3404,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '关于工作分解结构的描述，正确的是（）。',
     options: [
       '工作分解结构的编制应由项目管理人员完成，因为不同项目干系人立场不同，对干工作分解结构的理解差异较大',
@@ -4166,7 +4166,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '软件项目的质量，主要用（ ）和软件测试两种方法配合使用来保证。 ',
     options: [
       '技术评审',
@@ -4725,7 +4725,7 @@ const dataSource = [
   },
   {
     tag: TAGS.SOFTWARE_STANDARDS,
-    isFocus: true,
+    isFocus: false,
     title: '关于标准的描述，不正确的是∶（）',
     options: [
       '标准分为国际标准、国家标准、行业标准、区域/地方标准和企业标准',
@@ -4755,7 +4755,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '为了表达一只小狗的信息，可以用汉字“小狗”，也可以通过一只小狗的彩色图片，还可以通过声音文件“汪汪”来表示。同一个信息可以借助不同的信息媒体表现出来。这体现了信息的（ ）。 ',
     options: [
       '传递性',
@@ -4774,7 +4774,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: `
     企业信息结构包含（）。<br>
     ①产品（服务）层<br>
@@ -4796,6 +4796,77 @@ const dataSource = [
     （2）作业层；<br>
     （3）管理层；<br>
     （4）决策层
+    `,
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '（）供应链是供应链网状结构中最基础的结构，例如化工、造纸、纺织等生产中间产品的企业，其客户往往要多于其供应商，呈发散状。',
+    options: [
+      'V型',
+      'A型',
+      'T型',
+      '中心型',
+    ],
+    anwser: 0,
+    analysis: `
+    根据供应链其网状结构分为∶ 有发散型的供应链网（V型供应链）、会聚型的供应链网（A 型供应链）和介于上述两种模式之间的供应链网（T型供应链）。<br><br>
+    ①"V"型供应链<br>
+    "V"型供应链是供应链网状结构中最基础的结构。<br>
+    物料以大批量的方式存在，经过企业加工转换为中间产品，如石油、化工、造纸和纺织企业，提供给其他企业作为它们的原材料。<br>
+    客户多于供应商，成发散状。<br>
+    "V"型供应链的成功计划和调度主要依赖于对关键性的内部瓶颈能力的合理安排。它需要供应链成员制订统一详细的高层计划。<br><br>
+    ②回了满足相对少数的客户需求和客户订单时，需要从大量的供应商手中采购大量的物料——典型会聚型供应链网，即"A"型供应链。像航空工业，汽车工业，重工业等企业。<br>
+    关键在于精确计划和分配满足该订单生产所需的物料和能力，考虑自身真实能力，辨别关键性路径与时间。——供应链成员紧密联系与合作。
+    `,
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '关于电子商务的描述，正确的是（）。',
+    options: [
+      '团购网站、电话购物、网上书店属于现代电子商务概念',
+      '某网站通过推广最新影讯信息及团购折扣活动促进影票销售。这种方式属于O2O模式',
+      '某农产品在线交易网站与某地区农产品公司和本地销售商提供线上交易和信息咨询等服务，这种方式属于C2C模式',
+      '消费者之间通过个人二手物品在线交易平台进行交易，这种商务模式属于B2C模式',
+    ],
+    anwser: 1,
+    analysis: 'D选项属于C2C',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '电子商务系统架构中，报文和信息传播的基础设施包括：（）、在线交流系统、基于HTTP或HTTPS的信息传输系统、流媒体系统等。',
+    options: [
+      '电子邮件系统',
+      '电子付款系统',
+      '安全认证系统',
+      '目录服务系统',
+    ],
+    anwser: 0,
+    analysis: `
+    报文和信息传播的基础设施负责提供传播信息的工具和方式，包括：<br>
+    1. 电子邮件系统<br>
+    2. 在线交流系统<br>
+    3. 基于HTTP或HTTPS的信息传输系统<br>
+    4. 流媒体播放系统等。
+    `,
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '【时政题】2022年6月23日，国务院签发了“关于加强数字政府建设的指导意见”中指出：强化政府部门数据管理职责，明确数据归集、共享、开放、应用、（）等责任，形成推动数据开放共享的高效运行机制。',
+    options: [
+      '安全、存储、归档',
+      '安全、存储、转移',
+      '保护、存储、归档',
+      '保护、存储、转移',
+    ],
+    anwser: 0,
+    analysis: `
+    （一）创新数据管理机制。<br>
+    强化政府部门数据管理职责，明确数据归集、共享、开放、应用、安全、存储、归档等责任，形成推动数据开放共享的高效运行机制。优化完善各类基础数据库、业务资源数据库和相关专题库，加快构建标准统一、布局合理、管理协同、安全可靠的全国一体化政务大数据体系。加强对政务数据、公共数据和社会数据的统筹管理，全面提升数据共享服务、资源汇聚、安全保障等一体化水平。加强数据治理和全生命周期质量管理，确保政务数据真实、准确、完整。建立健全数据质量管理机制，完善数据治理标准规范，制定数据分类分级标准，提升数据治理水平和管理能力。<br>
+    原文链接：http://www.gov.cn/zhengce/content/2022-06/23/content_5697299.htm
     `,
   },
   // {
