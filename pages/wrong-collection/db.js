@@ -55,7 +55,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '（）不属于信息系统规划工具。',
     options: [
       'CU矩阵',
@@ -675,7 +675,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
-    isFocus: true,
+    isFocus: false,
     title: '关于可行性研究的描述，正确的是（21）。',
     options: [
       '详细可行性研究由项目经理负责',
@@ -1472,7 +1472,7 @@ const dataSource = [
   },
   {
     tag: TAGS.OPERATIONS_RESEARCH,
-    isFocus: true,
+    isFocus: false,
     title: '假设某项目风险列表中，风险分为一、二、三级占10%、30%、60%，项目经理小李随机抽查一个风险等级情况，结果不是一级风险，则本次抽查到三级风险的概率是（）。',
     options: [
       '2/3',
@@ -2928,7 +2928,7 @@ const dataSource = [
   },
   {
     tag: TAGS.CASE_QUESTIONS,
-    isFocus: true,
+    isFocus: false,
     title: `
     【说明】某项目的任务计划表如表1所示，资金计划和资金使用情况表如表2<br>
     <img style="width: 700px;" src="./images/22.png" /><br>
@@ -3200,7 +3200,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '数据分析师在数据治理（）阶段，对业务进行分析，并应用业务据点的方法，分析并获取所需要的数据。',
     options: [
       '数据存储与管理',
@@ -3620,7 +3620,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '确保了项目配置管理的有效性，体现了配置管理的最根本要求，即不允许出现任何混乱现象。',
     options: [
       '配置审计',
@@ -4049,7 +4049,7 @@ const dataSource = [
   },
   {
     tag: TAGS.AUXILIARY_KNOWLEDGE,
-    isFocus: true,
+    isFocus: false,
     title: '（）不属于管理文档',
     options: [
       '变更控制记录',
@@ -4800,7 +4800,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '（）供应链是供应链网状结构中最基础的结构，例如化工、造纸、纺织等生产中间产品的企业，其客户往往要多于其供应商，呈发散状。',
     options: [
       'V型',
@@ -4822,7 +4822,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '关于电子商务的描述，正确的是（）。',
     options: [
       '团购网站、电话购物、网上书店属于现代电子商务概念',
@@ -4835,7 +4835,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '电子商务系统架构中，报文和信息传播的基础设施包括：（）、在线交流系统、基于HTTP或HTTPS的信息传输系统、流媒体系统等。',
     options: [
       '电子邮件系统',
@@ -4853,8 +4853,8 @@ const dataSource = [
     `,
   },
   {
-    tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    tag: TAGS.POLITICS,
+    isFocus: false,
     title: '【时政题】2022年6月23日，国务院签发了“关于加强数字政府建设的指导意见”中指出：强化政府部门数据管理职责，明确数据归集、共享、开放、应用、（）等责任，形成推动数据开放共享的高效运行机制。',
     options: [
       '安全、存储、归档',
@@ -4867,6 +4867,48 @@ const dataSource = [
     （一）创新数据管理机制。<br>
     强化政府部门数据管理职责，明确数据归集、共享、开放、应用、安全、存储、归档等责任，形成推动数据开放共享的高效运行机制。优化完善各类基础数据库、业务资源数据库和相关专题库，加快构建标准统一、布局合理、管理协同、安全可靠的全国一体化政务大数据体系。加强对政务数据、公共数据和社会数据的统筹管理，全面提升数据共享服务、资源汇聚、安全保障等一体化水平。加强数据治理和全生命周期质量管理，确保政务数据真实、准确、完整。建立健全数据质量管理机制，完善数据治理标准规范，制定数据分类分级标准，提升数据治理水平和管理能力。<br>
     原文链接：http://www.gov.cn/zhengce/content/2022-06/23/content_5697299.htm
+    `,
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: false,
+    title: '面向对象的方法构建在类和对象之上，通过建模技术将相关对象按照（ ）进行分组，形成（ ）。 ',
+    options: [
+      '管理 接口',
+      '流程 用例',
+      '活动 系统',
+      '业务 构件',
+    ],
+    anwser: 3,
+    analysis: `
+    面向服务的方法<br>
+    OO的应用构建在类和对象之上，随后发展起来的建模技术将相关对象按照业务功能进行分组，就形成了构件（Component）的概念。<br>
+    对于跨构件的功能调用，则采用接口的形式暴露出来。<br>
+    进一步将接口的定义与实现进行解耦，则催生了服务和面向服务（Service-Oriented，SO）的开发方法。
+
+    `,
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: false,
+    title: `
+    面向对象系统设计是基于面向对象系统分析得出的问题与模型进行设计，其主要内容包括（）。<br>
+    1、对象行为设计<br>
+    2、用例设计<br>
+    3、类设计<br>
+    4、义务模型建议<br>
+    5、子系统设计
+    `,
+    options: [
+      '123',
+      '234',
+      '235',
+      '145',
+    ],
+    anwser: 2,
+    analysis: `
+    面向对象系统设计基于系统分析得出的问题域模型，用面向对象的方法设计出软件基础架构（概要设计）和完整的类结构（详细设计），以实现业务功能。<br>
+    面向对象系统设计主要包括用例设计、类设计和子系统设计等。
     `,
   },
   // {
