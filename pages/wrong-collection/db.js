@@ -956,6 +956,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
+    isFocus: true,
     title: '（ ）不属于组织过程资产。',
     options: [
       '行业风险数据库',
@@ -968,7 +969,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '（ ）不属于评估开发过程质量的指标',
     options: [
       '缺陷分布',
@@ -1017,7 +1018,7 @@ const dataSource = [
   },
   {
     tag: TAGS.OPERATIONS_RESEARCH,
-    isFocus: true,
+    isFocus: false,
     title: `
     <span>项目经理制定了项目资产负债表（单位：元)，如表所示。该项目的静态投资回收期为（ ）年。动态投资回收期为（ ）年</span>
     <img src="./images/3.png" />
@@ -1894,7 +1895,8 @@ const dataSource = [
     analysis: '',
   },
   {
-    tag: TAGS.SOFTWARE_STANDARDS,
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '[单选] 软件设计中下列说法错误的是（ ）。',
     options: [
       '结构化设计需要遵循一个基本的原则：高内聚，低耦合。',
@@ -1907,6 +1909,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '在信息系统规划中  （  ）它利用所识别的企业过程，分析每个过程的输入数据类和输出数据类，与RD矩阵进行比较并调整，最后归纳出系统的数据类。',
     options: [
       'P/O矩阵',
@@ -1967,6 +1970,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
+    isFocus: true,
     title: `
     需求管理计划至少包括如下哪些内容： （ ） <br>
     ①如何规划、跟踪和报告各种需求活动<br>
@@ -1983,7 +1987,7 @@ const dataSource = [
       '②③④⑤⑥',
     ],
     anwser: 0,
-    analysis: '',
+    analysis: '参考《需求管理计划》描述',
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
@@ -2202,11 +2206,13 @@ const dataSource = [
   },
   {
     tag: TAGS.CASE_QUESTIONS,
+    isFocus: true,
     title: '项目范围是否完成要以（1）来衡量，包括（2）（3）（4）',
     analysis: '（1）范围基准；（2）项目范围说明书；（3）WBS；（4）WBS词典',
   },
   {
     tag: TAGS.CASE_QUESTIONS,
+    isFocus: true,
     title: '<div id="detail_div" class="detail_div xe-removeblank"><p>【项目质量管理】（3分）请将下面①~③处的答案填写在答题纸的对应栏内<br>1）（ ）用于描述项目或产品的质量属性，用于实施质量保证和控制质量过程。其常见的有：缺陷频率、可用性、可靠性等。<br>2）小张使用的质量核对单属于（ ）的输出。<br>3）实际技术性能、实际进度、实际成本，这些都被称为（ ）。</p></div>',
     analysis: '（1）质量检测指标；（2）规划质量管理；（3）工作绩效数据',
   },
@@ -2254,6 +2260,7 @@ const dataSource = [
   },
   {
     tag: TAGS.CASE_QUESTIONS,
+    isFocus: true,
     title: '【项目采购管理】（5 分） 请说明采购管理的主要步骤。',
     analysis: '<div id="detail_div" class="detail_div xe-removeblank"><p>（每条 1 分，满分 5 分）</p><p>采购管理包括编制采购计划、实施采购、控制采购、结束采购等 4 个过程。</p><p>具体细化步骤包括：</p><p>1）需求确定与采购计划的制订</p><p>2）供应商的搜寻与分析</p><p>3）定价</p><p>4）拟定并发出定单</p><p>5）定单的跟踪和跟催</p><p>6）验货和收货</p><p>7）开票和支付货款</p><p>8）记录管理</p></div>',
   },
@@ -2312,11 +2319,13 @@ const dataSource = [
   },
   {
     tag: TAGS.CASE_QUESTIONS,
+    isFocus: true,
     title: '【配置管理】(8 分) 简述配置库变更控制流程。',
     analysis: '<div id="detail_div" class="detail_div xe-removeblank"><p>1）将要升级的基线从产品库取出，放入受控库；</p><p>2）程序员将经修改的代码段从受控库检出，放入自己的开发库中进行修改；</p><p>3）程序员将开发库中修改好的代码段检入受控库；</p><p>4）软件产品的升级修改工作全部完成后将受控库中的新基线存入产品库。</p></div>',
   },
   {
     tag: TAGS.OPERATIONS_RESEARCH,
+    isFocus: true,
     title: '某项目中活动A的成本估算为1000元，总工期为10天，项目经理在施工第8天晚上查看工作进度，发现任务只完成70%，成本消耗了600元。为了不影响项目整按时完工，活动A需要按时完工，项目经理计划在现有成本条件下进行赶工，请计算活动A完工尚需绩效指数（TCPI） 为  （35） 。',
     options: [
       '1.5',
@@ -2867,6 +2876,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
+    isFocus: true,
     title: '进行范围确认是项目中一项非常重要的工作，制定和执行确认程序时，第一项工作一般是（ ）。',
     options: [
       '确定需要进行确认范围的时间',
@@ -3001,6 +3011,7 @@ const dataSource = [
   },
   {
     tag: TAGS.CASE_QUESTIONS,
+    isFocus: true,
     title: '【整体管理】引导技术可用于指导项目章程的制定，引导技术包含哪些？',
     analysis: '头脑风暴、冲突处理、问题解决、会议管理。',
   },
@@ -3449,7 +3460,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: false,
+    isFocus: true,
     title: '（）使金融、贸易、投资、计划、通关、营销等组成一个信息大系统，使生产、流通、分配、消费等经济的四个环节通过信息进一步联成一个整体。',
     options: [
       '社会生活信息化',
@@ -4417,7 +4428,7 @@ const dataSource = [
   },
   {
     tag: TAGS.LAWS,
-    isFocus: true,
+    isFocus: false,
     title: `
     对技术复杂或者无法精确拟定技术规格的项目，招标人可以分两阶段进行招标，其中不属于第一阶段招标活动的是： (   ) <br>
     ①投标人提交不带报价的技术建议<br>
@@ -4909,6 +4920,84 @@ const dataSource = [
     analysis: `
     面向对象系统设计基于系统分析得出的问题域模型，用面向对象的方法设计出软件基础架构（概要设计）和完整的类结构（详细设计），以实现业务功能。<br>
     面向对象系统设计主要包括用例设计、类设计和子系统设计等。
+    `,
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: 'ODBC和JDBC是典型的（）。',
+    options: [
+      '分布式对象中间件',
+      '事务中间件',
+      '面向消息中间件',
+      '数据库访问中间件',
+    ],
+    anwser: 3,
+    analysis: '数据库访问中间件：通过一个抽象层访问数据库，从而允许使用相同或相似的代码访问不同的数据库资源。典型技术如Windows平台的ODBC和Java平台的JDBC等。',
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '关于中间件的描述，不正确的是（）。',
+    options: [
+      '中间件是一种通用服务，解决了分布系统的异构问题',
+      '中间件具有标准的程序接口和协议，可实现应用与平台的无关',
+      '中间件可以在多种操作系统上运行',
+      '面向消息中间件是建立对象之间客户机/服务器关系的中间件',
+    ],
+    anwser: 3,
+    analysis: `
+    （3）面向消息中间件（Message-Oriented Middleware，MOM）∶利用高效可靠的消息传递机制进行平台无关的数据传递，并可基于数据通信进行分布系统的集成。通过提供消息传递和消息队列模型，可在分布环境下扩展进程间的通信，并支持多种通讯协议、语言、应用程序、硬件和软件平台。典型产品如IBM的 MOSeries。<br>
+    （4）分布式对象中间件∶是建立对象之间客户/服务器关系的中间件，结合了对象技术与分布式计算技术。D选项<br>
+    `,
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '物联网应用已经走进了我们的日常生活，（）不属于物联网的感知层。',
+    options: [
+      '心率传感器',
+      '北斗定位系统',
+      '网络总线',
+      '条码和二维码',
+    ],
+    anwser: 1,
+    analysis: `
+    物联网<br>
+    （1）感知层：负责信息采集和物物之间的信息传输，信息采集的技术包括传感器、条码和二维码、RFID 射频技术、音视频等多媒体信息。<br>
+    B 选项北斗定位系统属于物联网的应用层。
+    `,
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: 'OSI 七层协议中，RPC、NFS 协议属于（ ）。',
+    options: [
+      '网络层',
+      '传输层',
+      '会话层',
+      '表示层',
+    ],
+    anwser: 2,
+    analysis: `
+    会话层：负责在网络中的两节点之间建立和维持通信，以及提供交互会话的管理功能。 <br>
+    如三种数据流方向的控制，即一路交互、两路交替和两路同时会话模式。常见的协议有 RPC、 SQL、NFS。
+    `,
+  },
+  {
+    tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
+    title: '小张家已经接入了CATV（线缆电视），为了不重新布线，小张选择使用该线路的网络服务，那么小张家的网络接入方式属于（）。',
+    options: [
+      '无线接入',
+      '光纤接入',
+      '铜线接入',
+      '同轴接入',
+    ],
+    anwser: 3,
+    analysis: `
+    同轴电缆也是传输带宽比较大的一种传输介质，目前的CATV网就是一种混合光纤同轴网络，主干部分采用光纤，用同轴电缆经分支器接入各家各户。<br>
+    混合光纤/同轴（HFC）接入技术的一大优点是可以利用现有的CATV网，从而降低网络接入成本。
     `,
   },
   // {

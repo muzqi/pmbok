@@ -27,6 +27,7 @@
     <td rowspan="3">应用层</td>
     <td>
       <ul>
+        <li>HTTP</li>
         <li>
           <code>TFTP</code><br>
           用来在客户机与服务器之间进行<code>简单文件</code>的传输的协议，提供不复杂，开销不大的文件传输服务。<br>
@@ -36,7 +37,6 @@
           <code>FTP</code><br>
           FTP 使用<code>TCP</code>协议传输
         </li>
-        <li>NFS</li>
         <li>WAIS</li>
       </ul>
     </td>
@@ -57,11 +57,17 @@
   </tr>
   <tr>
     <th>会话层</th>
-    <td></td>
+    <td>负责在网络中的两节点之间建立和维持通信，以及提供交互会话的管理功能。</td>
     <td>
       <ul>
         <li>SMTP</li>
-        <li>DNS</li>
+        <li>
+          <code>DNS</code>：<br>
+          根据主机名称（域名）查找对应的IP地址
+        </li>
+        <li>RPC</li>
+        <li>NFS</li>
+        <li>SQL</li>
       </ul>
     </td>
   </tr>
