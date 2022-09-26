@@ -1278,6 +1278,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
+    isFocus: true,
     title: 'A公司承接了某银行网上银行系统的建设项目，包括应用软件开发、软硬件集成适配、系统运维等多项工作内容。针对该项目，不正确的是：（）。',
     options: [
       '该项目的干系人包括客户、公司高层领导、项目成员及网上银行用户。',
@@ -1692,6 +1693,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
+    isFocus: true,
     title: '下图是（ ）质量控制管理工具。<br><img src="./images/17.jpeg" />',
     options: [
       '亲和图',
@@ -2495,6 +2497,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: '在系统安全策略“七定”中，以下 （ 63 ） 不属于“七定”。',
     options: [
       '定员',
