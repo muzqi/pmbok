@@ -5040,6 +5040,38 @@ const dataSource = [
     平衡计分卡是一种绩效评价体系，其本来的目的主要是找出超越传统及财务量度为主的组织绩效评价模式，它从财务、客户、内部运营、学习和成长四个角度，为每一方面设计适当的评价指标，赋予不同的权重。
     `,
   },
+  {
+    tag: TAGS.OPERATIONS_RESEARCH,
+    isFocus: true,
+    title: `
+      假设计算机系统中有三类互斥资源 R1、 R2 和 R3  ,可用资源数分别为9、5和3，若在T0时刻系统中有P1，P2，P3，P4，和P5五个进程，这些进程对资源的最大需求量和已分配资源数如下表所示。在 T0时刻系统剩余的可用资源数分别为（1）。如果进程按（2）序列执行，那么系统状态是安全的。<br>
+      <img src="./images/28.png" style="width: 710px;" />
+    `,
+    options: [
+      '1-0-1 P1→P2→P4→P5→P3',
+      '2-0-2 P4→P2→P1→P5→P3',
+      '2-0-1 P5→P2→P4→P3→P1',
+      '2-1-1 P5→P1→P4→P2→P3',
+    ],
+    anwser: 2,
+    analysis: '<div id="detail_div" class="detail_div xe-removeblank">本题考银行家算法。<br>T0时刻，系统剩余的可用资源数分别为：<br>R1：9-(2+2+1+1+1)=2<br>R2：5-(1+1+1+1+1)=0<br>R3：3-(1+1)=1<br>以目前的资源，只能先执行P5，P5执行完，系统剩余资源为：3，1，1，此时可执行P2，但不能执行P1，所以应选C。</div>',
+  },
+  {
+    tag: TAGS.OPERATIONS_RESEARCH,
+    isFocus: true,
+    title: `
+    四个项目甲、乙、丙、丁的工期均是四年，在第一年末时，各项目进度数据如表所示，则最有可能在按时完工的同时并能更好控制成本的项目是（）。<br>
+    <img src="./images/29.png" style="width: 650px;" />
+    `,
+    options: [
+      '甲',
+      '乙',
+      '丙',
+      '丁',
+    ],
+    anwser: 1,
+    analysis: '<div id="detail_div" class="detail_div xe-removeblank"><br>甲项目SPI=230/200=1.15，甲项目CPI=230/220=1.045。<br>乙项目SPI=210/200=1.05，乙项目CPI=210/200=1.05。<br>丙项目SPI=190/200=0.95，丙项目CPI=190/160=1.187。<br>丁项目SPI=200/200=1，丁项目CPI=200/200=1。<br>综合比较，乙项目能按时完工且能更好的控制成本。<br></div>',
+  },
   // {
   //   tag: TAGS,
   //   isFocus: true,
