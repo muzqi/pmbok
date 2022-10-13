@@ -956,7 +956,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '（ ）不属于组织过程资产。',
     options: [
       '行业风险数据库',
@@ -1278,7 +1278,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: 'A公司承接了某银行网上银行系统的建设项目，包括应用软件开发、软硬件集成适配、系统运维等多项工作内容。针对该项目，不正确的是：（）。',
     options: [
       '该项目的干系人包括客户、公司高层领导、项目成员及网上银行用户。',
@@ -1693,7 +1693,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '下图是（ ）质量控制管理工具。<br><img src="./images/17.jpeg" />',
     options: [
       '亲和图',
@@ -2208,13 +2208,13 @@ const dataSource = [
   },
   {
     tag: TAGS.CASE_QUESTIONS,
-    isFocus: true,
+    isFocus: false,
     title: '项目范围是否完成要以（1）来衡量，包括（2）（3）（4）',
     analysis: '（1）范围基准；（2）项目范围说明书；（3）WBS；（4）WBS词典',
   },
   {
     tag: TAGS.CASE_QUESTIONS,
-    isFocus: true,
+    isFocus: false,
     title: '<div id="detail_div" class="detail_div xe-removeblank"><p>【项目质量管理】（3分）请将下面①~③处的答案填写在答题纸的对应栏内<br>1）（ ）用于描述项目或产品的质量属性，用于实施质量保证和控制质量过程。其常见的有：缺陷频率、可用性、可靠性等。<br>2）小张使用的质量核对单属于（ ）的输出。<br>3）实际技术性能、实际进度、实际成本，这些都被称为（ ）。</p></div>',
     analysis: '（1）质量检测指标；（2）规划质量管理；（3）工作绩效数据',
   },
@@ -2321,13 +2321,13 @@ const dataSource = [
   },
   {
     tag: TAGS.CASE_QUESTIONS,
-    isFocus: true,
+    isFocus: false,
     title: '【配置管理】(8 分) 简述配置库变更控制流程。',
     analysis: '<div id="detail_div" class="detail_div xe-removeblank"><p>1）将要升级的基线从产品库取出，放入受控库；</p><p>2）程序员将经修改的代码段从受控库检出，放入自己的开发库中进行修改；</p><p>3）程序员将开发库中修改好的代码段检入受控库；</p><p>4）软件产品的升级修改工作全部完成后将受控库中的新基线存入产品库。</p></div>',
   },
   {
     tag: TAGS.OPERATIONS_RESEARCH,
-    isFocus: true,
+    isFocus: false,
     title: '某项目中活动A的成本估算为1000元，总工期为10天，项目经理在施工第8天晚上查看工作进度，发现任务只完成70%，成本消耗了600元。为了不影响项目整按时完工，活动A需要按时完工，项目经理计划在现有成本条件下进行赶工，请计算活动A完工尚需绩效指数（TCPI） 为  （35） 。',
     options: [
       '1.5',
@@ -2497,7 +2497,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '在系统安全策略“七定”中，以下 （ 63 ） 不属于“七定”。',
     options: [
       '定员',
@@ -3463,7 +3463,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '（）使金融、贸易、投资、计划、通关、营销等组成一个信息大系统，使生产、流通、分配、消费等经济的四个环节通过信息进一步联成一个整体。',
     options: [
       '社会生活信息化',
@@ -5058,7 +5058,7 @@ const dataSource = [
   },
   {
     tag: TAGS.OPERATIONS_RESEARCH,
-    isFocus: true,
+    isFocus: false,
     title: `
     四个项目甲、乙、丙、丁的工期均是四年，在第一年末时，各项目进度数据如表所示，则最有可能在按时完工的同时并能更好控制成本的项目是（）。<br>
     <img src="./images/29.png" style="width: 650px;" />
@@ -5071,6 +5071,44 @@ const dataSource = [
     ],
     anwser: 1,
     analysis: '<div id="detail_div" class="detail_div xe-removeblank"><br>甲项目SPI=230/200=1.15，甲项目CPI=230/220=1.045。<br>乙项目SPI=210/200=1.05，乙项目CPI=210/200=1.05。<br>丙项目SPI=190/200=0.95，丙项目CPI=190/160=1.187。<br>丁项目SPI=200/200=1，丁项目CPI=200/200=1。<br>综合比较，乙项目能按时完工且能更好的控制成本。<br></div>',
+  },
+  {
+    tag: TAGS.OPERATIONS_RESEARCH,
+    isFocus: false,
+    title: `
+    投资回收期】某软件企业2006年初计划投资2000万人民币开发某产品，预计从2007年开始盈利，各年产品销售额如表所示。根据表中的数据，该产品的静态投资回收期是(69)年（提示：设贴现率为0.1）<br>
+    <img src="./images/30.png" style="width: 635px" />
+    `,
+    options: [
+      '1.8',
+      '1.9',
+      '2',
+      '2.2',
+    ],
+    anwser: 1,
+    analysis: `
+    静态投资回报期=2-1+（1010/1210）=1.83=1.9（只入不舍）<br>
+    <img src="./images/31.png" style="width: 732px" />
+    `,
+  },
+  {
+    tag: TAGS.OPERATIONS_RESEARCH,
+    isFocus: true,
+    title: `
+    【净现值】某软件公司项目A的利润分析如下表所示。设贴现率为10%，第二年的利润净现值为（）<br>
+    <img src="./images/32.png" style="width: 540px" />
+    `,
+    options: [
+      '1345000',
+      '1222727',
+      '1111570',
+      '1010518',
+    ],
+    anwser: 2,
+    analysis: `
+    净现值=净现金/（1+折现率）N次方<br>
+    第二年NPV：1345000/（1+0.1）2次方=1111570
+    `,
   },
   // {
   //   tag: TAGS,
