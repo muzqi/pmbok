@@ -101,6 +101,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
+    isFocus: true,
     title: 'UML 2.0中共包括14种图，其中（）属于交互图。',
     options: [
       '类图',
