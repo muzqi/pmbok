@@ -19,6 +19,7 @@
   <div id="content-container"></div>
 </body>
 <script src="../libs/marked.min.js"></script>
+<script src="../libs/helpers.js"></script>
 <script>
   const doc = document;
 
@@ -141,8 +142,8 @@
   `;
 
   doc.getElementById('outline-container').innerHTML = marked.parse(outline);
-  doc.getElementById('summary-container').innerHTML = marked.parse(summary) + `<p><code>${summary.trim().length}</code>个字</p>`;
-  doc.getElementById('content-container').innerHTML = marked.parse(content) + `<p><code>${content.trim().length}</code>个字</p>`;
+  doc.getElementById('summary-container').innerHTML = marked.parse(summary) + `<p><code>${countingCharacters(summary)}</code>个字</p>`;
+  doc.getElementById('content-container').innerHTML = marked.parse(content) + `<p><code>${countingCharacters(content)}</code>个字</p>`;
 </script>
 
 </html>
