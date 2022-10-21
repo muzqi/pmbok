@@ -2,11 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>其他过程的输出</title>
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>其他过程的输出</h1>
-  <p>其他过程的输出结果。编制项目管理计划需要整合诸多过程的输出。其他规划过程所输出的任何基准和子管理计划，都是本过程的输入。此外，对这些文件的变更都可能导致对项目管理计划的相应更新。</p>
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 其他过程的输出
+
+编制项目管理计划需要整合诸多过程的输出。
+
+其他规划过程所输出的任何基准和子管理计划，都是本过程的输入。
+
+此外，对这些文件的变更都可能导致对项目管理计划的相应更新。
+  `);
+</script>
 </html>
