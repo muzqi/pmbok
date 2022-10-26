@@ -6,55 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>论文人力资源管理</title>
-  <link rel="stylesheet" href="../libs/markdown.css">
+  <link rel="stylesheet" href="../../libs/markdown.css">
 </head>
 
 <body>
   <p>大纲</p>
   <div id="outline-container"></div>
-  <h1>论文人力资源管理</h1>
-
   <p>摘要</p>
   <div id="summary-container"></div>
+  <h1>论文人力资源管理</h1>
   <p>正文</p>
+  <div id="project-background-container"></div>
   <div id="content-container"></div>
+  <div id="conclusion-container"></div>
+  <div id="count-container"></div>
 </body>
-<script src="../libs/marked.min.js"></script>
-<script src="../libs/helpers.js"></script>
+<script src="../../libs/marked.min.js"></script>
+<script src="../../libs/helpers.js"></script>
+<script src="./helpers.js"></script>
 <script>
   const doc = document;
 
   const outline = `
   `;
 
-  const summary = `
-2020年6月，我司为巩固视频智能监控行业地位，立项开发《视频智能监控小微平台》系统。
-系统旨在针对小微企业细分领域安全监控、客流监控需求，并提供客流大数据分析、用户画像、门店铺货方案定制等能力开发。
-该项目需求复杂，涉及智能摄像机，以及流媒体、AI人脸算法等技术领域，技术实现难度大，并且集团公司对质量的要求很高，项目难度比较大。
-
-项目总投资3000万，工期21个月（2020/6～2022/3）。
-我被任命为项目经理，负责该项目的管理和实施。
-项目组成员：需求分析师4人，系统设计师4人，系统工程师18人，系统质量审核人员5人，系统运维人员2人，共计33人。
-
-我将结合实践，阐述对人力资源管理过程的认识，并总结本次项目的心得体会。
-  `;
-
   const content = `
-一、项目概述
-
-随着4G/5G网络技术、云计算、物联卡的发展，监控视频行业解决了网络、存储、通信桥梁的问题，从而滋生出的2C家庭市场业务（儿童、宠物、安防监控）和2B政企市场业务（农业、交通、智慧城市）。
-我司以政企市场为发展重点，在该系统中打造智慧城市云端一体化监控平台。
-为提高行业竞争力，企业影响力，细分领域用户体验，我司决定进军2B小微企业细分领域，主要受众群体为商圈门店个体户或连锁店。
-2020年6月，我司立项开发《视频智能监控小微平台》系统。
-该系统为用户提供视频监控、云存储回放、语音对讲、视频剪辑等基础视频能力；
-针对小微企业提供门店客流统计、人脸识别用户画像、大数据分析、方案定制等个性化软件功能；
-区别于2C用户，为小微企业提供800万像素，具备GPS、夜视等功能等抓拍枪机，并提供国标GB28181协议接入的硬件服务。
-该项目需求复杂，涉及智能摄像机，以及流媒体、AI人脸算法等技术领域，技术实现难度大，质量要求高；
-
-项目总投资3000万，工期21个月，高层要求该项目在2022年3月完成正式版发布。
-我被任命为项目经理，负责该项目的管理和实施。
-项目组织结构采用项目型组织，其中需求分析师4人，系统设计师4人，系统开发工程师18人，系统测试人员5人，系统运维人员2人，共计33人。
-
 二、制定人力资源管理计划
 
 作为一名合格的项目经理，事前应当未雨绸缪，做好计划，好的计划是项目成功的基石。
@@ -98,20 +74,17 @@
 1. 后端提供转码算法，将H265转码输出RGB；
 2. 前端利用WebAssembly嵌入算法；
 3. 前端利用WebGL将RGB输出到浏览器Canvas视图，完成播放。
-
-六、总结
-
-项目于2022年3月，正式通过我司高层验收，开始商用。期间运行良好，受到公司和用户的一致好评，并陆续接到多家大型零售商定制化需求，以及分省公司媒体节点私有化部署订单。
-
-经过项目实践，我总结了以下心得：
-1. 人力资源管理计划不能盲目制定，要根据项目的实际情况出发，科学有效的人力资源管理是项目成功的关键；
-2. 团队建设是项目成功的关键，打造优秀的团队是项目经理的重点工作；
-3. 牢记经验，吸取教训，相信通过不断的积累和不懈的努力，我的信息系统项目管理能力一定可以得到不断提高。
   `;
 
   doc.getElementById('outline-container').innerHTML = marked.parse(outline);
-  doc.getElementById('summary-container').innerHTML = marked.parse(summary) + `<p><code>${countingCharacters(summary)}</code>个字</p>`;
-  doc.getElementById('content-container').innerHTML = marked.parse(content) + `<p><code>${countingCharacters(content)}</code>个字</p>`;
+  summaryRender('人力资源管理过程')
+
+  // 正文
+  const len1 = projectBackgroundRender('人力资源管理过程');
+  const len2 = contentRender(content);
+  const len3 = conclusionRender('六', '人力资源管理');
+
+  doc.getElementById('count-container').innerHTML = `<p><code>共${len1 + len2 + len3}个字</code></p>`;
 </script>
 
 </html>

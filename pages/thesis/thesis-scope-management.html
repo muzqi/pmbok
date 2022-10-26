@@ -6,20 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>论文范围管理</title>
-  <link rel="stylesheet" href="../libs/markdown.css">
+  <link rel="stylesheet" href="../../libs/markdown.css">
 </head>
 
 <body>
   <p>大纲</p>
   <div id="outline-container"></div>
-  <h1>论文范围管理</h1>
   <p>摘要</p>
   <div id="summary-container"></div>
+  <h1>论文范围管理</h1>
   <p>正文</p>
+  <div id="project-background-container"></div>
   <div id="content-container"></div>
+  <div id="conclusion-container"></div>
+  <div id="count-container"></div>
 </body>
-<script src="../libs/marked.min.js"></script>
-<script src="../libs/helpers.js"></script>
+<script src="../../libs/marked.min.js"></script>
+<script src="../../libs/helpers.js"></script>
+<script src="./helpers.js"></script>
 <script>
   const doc = document;
 
@@ -50,36 +54,7 @@
 4.总结
   `;
 
-  const summary = `
-2020年6月，我司为巩固视频智能监控行业地位，立项开发《视频智能监控小微平台》系统。
-系统旨在针对小微企业细分领域安全监控、客流监控需求，并提供客流大数据分析、用户画像、门店铺货方案定制等能力开发。
-信息系统项目在初期目标往往不明确，需求变化频发，项目范围难以明确。
-
-项目总投资3000万，工期21个月（2020/6～2022/3）。
-项目组成员：需求分析师4人，系统设计师4人，系统工程师18人，系统质量审核人员5人，系统运维人员2人。
-
-我将结合实践，阐述对范围管理过程的认识，并总结本次项目的心得体会。
-  `;
-
   const content = `
-  1.项目概述
-
-随着4G/5G网络技术、云计算、物联卡的发展，监控视频行业解决了网络、存储、通信桥梁的问题，从而滋生出的2C家庭市场业务（儿童、宠物、安防监控）和2B政企市场业务（农业、交通、智慧城市）。
-
-我司以政企市场为发展重点，在该系统中打造智慧城市云端一体化监控平台。
-为提高行业竞争力，企业影响力，细分领域用户体验，我司决定进军2B小微企业细分领域，主要受众群体为商圈门店个体户或连锁店。
-
-2020年6月，我司立项开发《视频智能监控小微平台》系统。
-该系统为用户提供视频监控、云存储回放、语音对讲、视频剪辑等基础视频能力；
-针对小微企业提供门店客流统计、人脸识别用户画像、大数据分析、方案定制等个性化软件功能；
-区别于2C用户，为小微企业提供800万像素，具备GPS、夜视等功能等抓拍枪机，并提供国标GB28181协议接入的硬件服务。
-该项目需求复杂；涉及智能摄像机，以及流媒体、AI人脸算法等技术领域。
-项目初期干系人目标并不明确，过程中需求变动频繁，项目范围难以明确。
-
-项目总投资3000万，工期21个月，高层要求该项目在 2021年10月 完成 Beta 版本发布，2022年3月完成正式版发布。
-我被任命为项目经理，负责该项目的管理和实施。
-项目组成员：需求分析师4人，系统设计师4人，系统开发工程师18人，系统测试人员5人，系统运维人员2人。
-
 2.范围管理理论知识
 
 项目范围管理，就是确保项目做且只做所需要的全部工作。
@@ -130,20 +105,17 @@
 
 科学的范围控制，可以避免项目的镀金、范围蔓延。在整个项目过程中，我随时监督项目范围状态，并结合基准对客户提出的每一个变更进行审计控制。
 对必要的变更评估赶工，对不必要的变更说服妥协，保障项目顺利开展。
-
-4.总结
-
-项目于2022年3月，正式通过我司高层验收，开始商用。期间运行良好，受到公司和用户的一致好评，并陆续接到多家大型零售商定制化需求，以及分省公司媒体节点私有化部署订单。
-
-经过项目实践，我总结了以下心得：
-1. 范围管理计划不能盲目制定，要根据项目的实际情况出发，科学有效的范围管理计划是项目成功的关键；
-2. 范围控制是贯穿整个项目管理实施的，项目经理在管理过程中应当持续不断监督范围状态，管理变更，维护范围基准。
-3. 牢记经验，吸取教训，相信通过不断的积累和不懈的努力，我的信息系统项目管理能力一定可以得到不断提高。
   `;
 
   doc.getElementById('outline-container').innerHTML = marked.parse(outline);
-  doc.getElementById('summary-container').innerHTML = marked.parse(summary) + `<p><code>${countingCharacters(summary)}</code>个字</p>`;
-  doc.getElementById('content-container').innerHTML = marked.parse(content) + `<p><code>${countingCharacters(content)}</code>个字</p>`;
+  summaryRender('范围管理过程')
+
+  // 正文
+  const len1 = projectBackgroundRender('范围管理过程');
+  const len2 = contentRender(content);
+  const len3 = conclusionRender('四', '范围管理');
+
+  doc.getElementById('count-container').innerHTML = `<p><code>共${len1 + len2 + len3}个字</code></p>`;
 </script>
 
 </html>
