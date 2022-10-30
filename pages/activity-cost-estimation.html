@@ -1,14 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>活动成本估算</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <img style="width:700px;" src="../images/activity-cost-estimation-1.png" alt="" />
-  <img style="width:700px;" src="../images/activity-cost-estimation-2.png" alt="" />
-</body>
+
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 活动成本估算
+
+![](../images/activity-cost-estimation.png)
+
+- 是对完成项目工作可能需要的成本的量化估算
+- 可以是汇总的或详细分列的
+- 应该覆盖活动所使用的全部资源
+- 如果间接成本也包含在项目估算中，则可在活动层次或更高层次上计列间接成本
+  `);
+</script>
+
 </html>

@@ -1,25 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>项目管理信息系统</title>
-  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../libs/markdown.css">
 </head>
-<body>
-  <h1>项目管理信息系统 PMIS</h1>
-  <p>✓ 事业环境因素的一部分</p>
-  <p>✓ 提供下列工具：</p>
-  <ul>
-    <li>进度计划工具</li>
-    <li>工作授权系统</li>
-    <li>配置管理系统</li>
-    <li>信息收集与发布系统</li>
-    <li>进入其他在线自动化系统的网络界面</li>
-    <li>也可用于自动收集和报告关键绩效指标（KPI）</li>
-  </ul>
 
-  <img src="../images/project-management-information-system.png" alt="">
-</body>
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 项目管理信息系统
+
+![](../images/project-management-information-system.png)
+
+- 事业环境因素的一部分
+- 提供下列工具：
+  - 进度计划工具
+  - 工作授权系统
+  - 配置管理系统
+  - 信息收集与发布系统
+  - 进入其他在线自动化系统的网络界面
+  - 也可用于自动收集和报告关键绩效指标（KPI）
+  `);
+</script>
+
 </html>
