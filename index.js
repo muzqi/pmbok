@@ -243,4 +243,5 @@ window.onload = () => {
   handleJumpPage('expert-judgment');                                          // <td class="expert-judgment">专家判断</td>
   handleJumpPage('benchmarking');                                          // <td class="benchmarking">标杆对照</td>
   handleJumpPage('bootstrapping-technology');                                          //                 <td class="bootstrapping-technology">引导技术</td>
+  handleJumpPage('document-review');                                          //                 <td class="document-review">文档审查</td>
 }
