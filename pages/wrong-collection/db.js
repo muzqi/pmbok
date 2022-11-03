@@ -4941,7 +4941,7 @@ const dataSource = [
   },
   {
     tag: TAGS.INFORMATION_TECHNOLOGY,
-    isFocus: true,
+    isFocus: false,
     title: '关于中间件的描述，不正确的是（）。',
     options: [
       '中间件是一种通用服务，解决了分布系统的异构问题',
@@ -5147,7 +5147,7 @@ const dataSource = [
     analysis: '<div id="detail_div" class="detail_div xe-removeblank"><p>此题不建议根据表格画出各结点的网络图，而建议采用试算+穷举法，即先求出从A到B的最短路径长度，然后求A到C的最短路径长度，依此类推。比如：试算A→F路径的下列路径：<br>① A→B→F：11+29=40<br>② A→C→F：16+22=38<br>③ A→D→F：24+17=41<br>④ A→E→F：36+15=51<br>不难看出A→C→F为最短距离且为38</p></div>',
   },
   {
-    tag: TAGS,OPERATIONS_RESEARCH,
+    tag: TAGS.OPERATIONS_RESEARCH,
     isFocus: true,
     title: '【动态规划】根据历史统计情况，某超市某种面包的日销量为100、110、120、130、140个的概率相同，每个面包的进价为4元，销售价为5元，但如果当天没有卖完，剩余的面包次日将以每个3元处理。为取得最大利润，该超市每天应进货这种面包（）个。',
     options: [
@@ -5432,7 +5432,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '关于需求管理的描述，正确的是：（）。',
     options: [
       '需求管理包括在产品生存周期中维持需求一致性和精确性的所有活动',
@@ -5462,7 +5462,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '建设项目要求在场地准备之前必须举行政府环境听证会，否则不许开工。这属于（）。',
     options: [
       '强制性依赖关系',
@@ -5528,7 +5528,7 @@ const dataSource = [
   },
   {
     tag: TAGS.PROJECT_MANAGEMENT,
-    isFocus: true,
+    isFocus: false,
     title: '以下选项中，属于管理项目团队输入的是（）',
     options: [
       '干系人登记册',

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目成本</title>
+  <link rel="stylesheet" href="../libs/markdown.css">
+</head>
+
+<body></body>
+<script src="../libs/marked.min.js"></script>
+<script>
+  document.body.innerHTML = marked.parse(`
+# 项目成本
+
+|成本|描述|
+|---|---|
+|全生命周期成本|研发成本，运营维护成本等所有成本|
+|可变成本|随着生产量、工作量或时间而变的成本|
+|固定成本|不随生产量、工作量或时间的变化而变化的非重复成本|
+|直接成本|直接可以归属于项目工作的成本。<br>如项目团队\`差旅费\`、\`工资\`、项目使用的\`物料及设备使用费\`等|
+|间接成本|来自一般\`管理费用科目\`或几个项目共同担负的项目成本所分摊给本项目的费用。<br>如\`税金\`、\`额外福利\`和\`保卫费用\`等|
+|沉没成本|在过去已经花的钱|
+|审计成本|用于审计工作所花的成本|
+  `);
+</script>
+
+</html>
